@@ -1,20 +1,17 @@
 @charset "UTF-8";
 :root {
-  --color:                #d5c4a1;
-  --color-h1:             #ebdbb2;
-  --color-h2:             #bdae93;
-  --color-alt:            #32302f;
+  --color:                #ebdbb2;
   --background-color:     #1d2021;
   --background-color-alt: #282828;
   --color-red:            #fb4934;
   --color-green:          #b8bb26;
-  --color-green-alt:      #98971a;
   --color-yellow:         #d79921;
   --color-blue:           #458588;
   --color-aqua:           #8ec07c;
   --color-orange:         #fe8019;
   --color-purple:         #b16286;
-  --color-grey:           #3c3836;
+  --color-grey:           #32302f;
+  --color-grey-alt:       #3c3836;
 }
 
 *::-webkit-scrollbar { display: none }
@@ -45,11 +42,6 @@ pre {
   padding: 1em;
   overflow: scroll;
   border: solid 2px var(--color-aqua);
-}
-
-hr {
-  margin-top: 1em;
-  border: dashed 2pt var(--color-grey);
 }
 
 ol,
@@ -100,7 +92,7 @@ nav>ul>li.right { float: right  }
 
 hgroup>p,
 p {
-  color: var(--color-h2);
+  color: var(--color);
   font-size: 1.2em;
   margin-top: 0;
   margin-bottom: 1em;
@@ -108,14 +100,14 @@ p {
 
 hgroup>h1,
 h1 {
-  color: var(--color-h1);
+  color: var(--color);
   font-size: 2em;
   margin-bottom: 5px;
   margin-top: 0;
 }
 
 h1 {
-  border-bottom: solid 2px var(--color-alt);
+  border-bottom: solid 2px var(--color-grey);
 }
 
 hgroup>h2,
@@ -123,22 +115,18 @@ hgroup>h3,
 h2,
 h3 {
   font-size: 1.5em;
-  color: var(--color-h2);
+  color: var(--color);
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.2;
 }
 
-header > hgroup > h1 {
-  border-bottom: none;
-}
-header > hgroup > p {
-  border-bottom: solid 2px var(--color-alt)
-}
+header > hgroup > h1 { border-bottom: none }
+header > hgroup > p { border-bottom: solid 2px var(--color-grey) }
 
 article {
   padding: 10px;
-  border: solid 2px var(--color-alt);
+  border: solid 2px var(--color-grey);
   background-color: var(--background-color-alt);
   overflow: scroll;
   max-width: 80ch;
@@ -152,7 +140,7 @@ article {
 article hgroup>h2,
 article hgroup>h3 {
   font-size: 1.5em;
-  color: var(--color-h2);
+  color: var(--color);
   margin-top: 0.5em;
   line-height: 1;
 }
@@ -186,7 +174,7 @@ article hgroup>h3 {
   padding: 0.8em 3em;
   font-size: 0.8em;
   color: var(--color);
-  background-color: var(--color-alt);
+  background-color: var(--color-grey);
   border-radius: 5px;
   transition: all 0.6s;
 }
@@ -196,9 +184,7 @@ article hgroup>h3 {
   background-color: var(--color-orange);
 }
 
-a>.tag {
-  color: var(--color)
-}
+a>.tag { color: var(--color) }
 
 .list { display: none }
 
@@ -219,7 +205,7 @@ a>.tag {
   margin-left: 2em;
   margin-right: 8em;
   padding: 1em;
-  border: solid 2px var(--color-grey);
+  border: solid 2px var(--color-grey-alt);
   border-radius: 5px;
   max-width: 50ch;
 }
@@ -250,7 +236,7 @@ a>.tag {
 
   hgroup>h1,
   h1 {
-    color: var(--color-h1);
+    color: var(--color);
     font-size: 1.3em;
     margin-bottom: 1;
     margin-top: 1;
@@ -261,7 +247,7 @@ a>.tag {
   h2,
   h3 {
     font-size: 1em;
-    color: var(--color-h2);
+    color: var(--color);
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1.2;
@@ -324,7 +310,7 @@ a>.tag {
 
   .list {
     display: block;
-    border-bottom: solid 2px var(--color-alt);
+    border-bottom: solid 2px var(--color-grey);
     margin-top: 2em;
   }
 
