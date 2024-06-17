@@ -55,11 +55,11 @@
 }
 
 .github                        { border-color: var(--color-purple) }
-.linkedin                      { border-color: var(--color-azure)  }
+.linkedin                      { border-color: var(--color-aqua)  }
 .raylib                        { border-color: var(--color-blue)   }
 
 .github:hover                  { background-color: var(--color-purple) }
-.linkedin:hover                { background-color: var(--color-azure)  }
+.linkedin:hover                { background-color: var(--color-aqua)  }
 .raylib:hover                  { background-color: var(--color-blue)   }
 
 .github>hgroup>h3,

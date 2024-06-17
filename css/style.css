@@ -11,7 +11,7 @@
   --color-green-alt:      #98971a;
   --color-yellow:         #d79921;
   --color-blue:           #458588;
-  --color-azure:          #8ec07c;
+  --color-aqua:           #8ec07c;
   --color-orange:         #fe8019;
   --color-purple:         #b16286;
   --color-grey:           #3c3836;
@@ -32,7 +32,7 @@ a {
 }
 
 time,
-a:hover { color: var(--color-azure) }
+a:hover { color: var(--color-aqua) }
 
 s {
   color: var(--color-red);
@@ -40,11 +40,11 @@ s {
 }
 
 pre {
-  color: var(--color-azure);
+  color: var(--color-aqua);
   background-color: var(--background-color);
   padding: 1em;
   overflow: scroll;
-  border: solid 2px var(--color-azure);
+  border: solid 2px var(--color-aqua);
 }
 
 hr {
@@ -162,13 +162,11 @@ article hgroup>h3 {
   font-size: 1.2em;
 }
 
-.nav-link:hover { color: var(--color-green-alt) }
-
 .voltar { position: fixed }
 
 .card time {
   float: right;
-  color: var(--color-azure);
+  color: var(--color-aqua);
 }
 
 .card {
@@ -229,7 +227,7 @@ a>.tag {
 .avatar {
   width: 14em;
   opacity: 90%;
-  border: solid 2px var(--color-azure);
+  border: solid 2px var(--color-aqua);
   border-radius: 5px;
   margin-bottom: 2em;
 }
