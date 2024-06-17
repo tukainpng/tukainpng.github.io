@@ -3,9 +3,9 @@ layout: post
 created: 28/05/2024
 title: Harebuild
 tags:
+    - programação
     - projetos
     - low-level
-categories: programação
 description: Um build system no estilo do Zig Build System
 ---
 <p>Quanto tempo meu caro leitor, espero que você esteja bem.</p>

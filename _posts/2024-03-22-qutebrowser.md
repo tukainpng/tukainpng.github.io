@@ -3,8 +3,9 @@ layout: post
 title: Qutebrowser
 created: 22/03/2024
 tags:
+    - open-source
+    - web
     - minimalista
-categories: open-source navegador
 description: Meu navegador web favorito
 ---
 

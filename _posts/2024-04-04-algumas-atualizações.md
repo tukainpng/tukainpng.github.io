@@ -3,8 +3,9 @@ layout: post
 created: 04/04/2024
 title: Algumas atualizações
 tags:
+    - open-source
+    - programação
     - atualização
-categories: open-source programação
 description: Porquê eu sou tão indeciso?
 ---
 <p>Tudo bem com você? Espero que sim. Bom, na última semana eu ando passando

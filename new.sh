@@ -12,7 +12,6 @@ layout: post
 created: $(date +%d/%m/%Y)
 title: $TITLE
 tags:
-categories:
 description: $DESCRIPTION
 ---
 EOF

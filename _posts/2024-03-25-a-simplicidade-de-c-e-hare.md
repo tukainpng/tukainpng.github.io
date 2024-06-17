@@ -3,8 +3,8 @@ layout: post
 created: 25/03/2024
 title: A simplicidade da C e Hare
 tags:
+    - programação
     - low-level
-categories: programação
 description: Nem um pouco parecido com um mostro de 7 cabeças
 ---
 <p>Recentemente eu fiz um post sobre os meus estudos com a linguagem de

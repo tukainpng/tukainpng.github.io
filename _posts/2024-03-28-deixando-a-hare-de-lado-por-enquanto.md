@@ -3,8 +3,8 @@ layout: post
 created: 28/03/2024
 title: Deixando a Hare de lado... Por enquanto.
 tags:
+    - programação
     - low-level
-categories: programação
 description: Devo me concentrar em apenas uma linguagem por enquanto.
 ---
 <p>Irei começar me explicando o porquê de eu ter decidido isso de forma tão

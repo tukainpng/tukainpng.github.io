@@ -3,10 +3,10 @@ layout: post
 created: 19/04/2024
 title: Meu progresso
 tags:
+    - programação
     - projetos
     - low-level
     - atualização
-categories: programação
 description: Como anda o meu progresso com o raylib.ha
 ---
 <p>Nos últimos dias eu tive um foco maior nos exemplos que eu deixo no

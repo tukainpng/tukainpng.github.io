@@ -3,8 +3,8 @@ layout: post
 title: Reconstruindo meu site
 created: 22/03/2024
 tags:
+    - web
     - minimalista
-categories: web
 description: Como foi refazer o meu site usando o pico.css 2.0
 ---
 <p>Bom, eu fiz de novo, eu refiz o meu website. Isso pode soar extranho caso

@@ -3,8 +3,10 @@ layout: post
 created: 06/06/2024
 title: O que ando fazendo
 tags:
+    - programação
+    - web
+    - editores
     - projetos
-categories: programação web editores
 description: Algumas das coisas que fiz e estou fazendo no momento
 ---
 <p>Nada melhor do que fazer um post antes de ir almoçar, né?</p>

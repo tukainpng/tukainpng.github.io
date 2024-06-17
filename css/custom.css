@@ -5,21 +5,17 @@
   flex-wrap: wrap;
 }
 
-.categories,
 .tags {
   background-color: var(--color-alt);
   color: var(--color);
 }
 
-.categories:hover,
 .tags:hover {
   color: var(--background-color);
   background-color: var(--color-orange);
 }
 
-.categories:hover { background-color: var(--color-yellow) }
 
-.more-categories,
 .more-tags,
 .more-dotfiles,
 .more-source {
@@ -29,7 +25,6 @@
   flex: 15%;
 }
 
-.more-categories>p,
 .more-tags>p,
 .more-dotfiles>p,
 .more-source>p {
@@ -37,17 +32,14 @@
   margin: 0;
 }
 
-.more-categories          { border-color: var(--color-yellow) }
 .more-tags                { border-color: var(--color-orange) }
 .more-dotfiles            { border-color: var(--color-green)  }
 .more-source              { border-color: var(--color-purple) }
 
-.more-categories:hover    { background-color: var(--color-yellow) }
 .more-tags:hover          { background-color: var(--color-orange) }
 .more-dotfiles:hover      { background-color: var(--color-green)  }
 .more-source:hover        { background-color: var(--color-purple) }
 
-.more-categories:hover>p,
 .more-tags:hover>p,
 .more-dotfiles:hover>p,
 .more-source:hover>p { color: var(--background-color) }
@@ -56,7 +48,6 @@
 .linkedin,
 .raylib,
 .more-tags,
-.more-categories,
 .more-dotfiles,
 .more-source {
   border-style: solid;

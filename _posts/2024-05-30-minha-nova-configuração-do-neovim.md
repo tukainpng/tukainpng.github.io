@@ -3,8 +3,8 @@ layout: post
 created: 30/05/2024
 title: Minha nova configuração do Neovim
 tags:
+    - editores
     - vim-like
-categories: editores
 description: Eu fiz muita coisa desde a última vez que comentei sobre ele.
 ---
 <p>Tô começando a achar que editores de texto são o meu Thanos, porquê depois que

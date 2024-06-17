@@ -3,8 +3,8 @@ layout: post
 created: 02/04/2024
 title: Até mais, Pico.css!
 tags:
+    - web
     - framework
-categories: web
 description: Você foi extremamente útil, mas não preciso mais de você.
 ---
 <p>Com a excessão de pouquíssimas coisas, o site deve estar idêntico, porém,

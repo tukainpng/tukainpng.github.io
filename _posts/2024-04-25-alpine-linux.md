@@ -3,8 +3,8 @@ layout: post
 created: 25/04/2024
 title: Alpine Linux
 tags:
+    - open-source
     - linux
-categories: open-source
 description: Simplesmente incrível
 ---
 <p>Ontem, eu desinstalei o Arch Linux e instalei o Alpine no lugar, o motivo

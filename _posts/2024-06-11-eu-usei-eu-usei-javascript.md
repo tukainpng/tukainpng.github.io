@@ -3,8 +3,9 @@ layout: post
 created: 11/06/2024
 title: Eu usei... Eu usei Javascript 💀
 tags:
+    - web
+    - programação
     - projetos
-categories: web programação
 description: Pelo menos não é React.
 ---
 <p>É, é isso mesmo que você leu. Esse blog oficialmente fez uso de Javascript.</p>

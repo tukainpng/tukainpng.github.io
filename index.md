@@ -18,9 +18,11 @@ description: Meu blog pessoal
     </a>
     <div style="overflow: scroll">
     {% for tag in post.tags %}
+        <a href="/tags#{{ tag }}">
         <p class="tag">
             {{ tag }}
         </p>
+        </a>
     {% endfor %}
     </div>
 </article>
