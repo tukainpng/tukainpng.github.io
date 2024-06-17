@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="{{ site.lang }}">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="{{ site.lang }}" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="author" content="{{ site.author }}" />
+  <meta name="generator" content="jekyll" />
+  <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/custom.css" type="text/css" media="screen" />
+  <link rel="icon" href="{{ site.avatar }}" type="image/webp" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+</head>
+<body>
+<nav class="mobile">
+  <ul>
+    <li class="left">
+      <a class="nav-link" href="#main">
+        ~/posts
+      </a>
+    </li>
+    <li class="right">
+      <a class="nav-link" href="#about">
+        ~/sobre
+      </a>
+    </li>
+  </ul>
+</nav>
+  <br>
+  <div id="about" class="sidebar">
+    <article class="sidebar-card">
+      <a href="/">
+        <img class="avatar" src="{{ site.avatar }}">
+      </a>
+      <hgroup>
+        <h1>
+          Bem-vindo(a) ao meu blog!
+        </h1>
+        <p>
+          Aqui eu falo sobre assuntos envolvendo partes do meu cotidiano, coisas
+          relacionadas à minha experiência com a programação, com o mundo Linux e
+          também outros softwares open-source.
+        </p>
+      </hgroup>
+    </article>
+    <article class="sidebar-card">
+      <hgroup>
+        <h1>
+          Sobre mim
+        </h1>
+        <p>
+          Algumas das minhas redes sociais, projetos e informações de contato.
+        </p>
+      </hgroup>
+
+      <a href="https://github.com/tukainpng">
+        <article class="github">
+          <hgroup>
+            <h3>
+              Github
+            </h3>
+            <p>
+              Apesar de não ser um fã do Github, no mundo em que vivemos ele
+              é quase que um requesito. Sendo assim, eu tenho um perfil lá.
+            </p>
+          </hgroup>
+        </article>
+      </a>
+
+      <a href="https://www.linkedin.com/in/diogo-fernandes-710193282/">
+        <article class="linkedin">
+          <hgroup>
+            <h3>
+              LinkedIn
+            </h3>
+            <p>
+              Como praticamente qualquer pessoa que vive no mundo atual, eu
+              também tenho um perfil no LinkedIn, então, caso você tenha
+              interesse no meu perfil, sinta-se a vontade para entrar em contato.
+            </p>
+          </hgroup>
+        </article>
+      </a>
+
+      <a href="https://github.com/tukainpng/raylib.ha">
+        <article class="raylib">
+          <hgroup>
+            <h3>
+              raylib.ha
+            </h3>
+            <p>
+              Bindings do raylib para a linguagem de programação Hare.<br>
+              Meu primeiro projeto envolvendo uma linguagem de programação.
+            </p>
+          </hgroup>
+        </article>
+      </a>
+
+    </article>
+    <article class="sidebar-card">
+    <hgroup>
+      <h1>
+        Mais
+      </h1>
+      <br>
+        <div class="more">
+          <a href="/tags.html">
+            <article class="more-tags">
+              <p>Tags</p>
+            </article>
+          </a>
+          <a href="/categories.html">
+            <article class="more-categories">
+              <p>Categorias</p>
+            </article>
+          </a>
+          <a href="https://github.com/tukainpng/tukainpng.github.io">
+            <article class="more-source">
+              <p>Source</p>
+            </article>
+          </a>
+          <a href="https://github.com/tukainpng/dotfiles">
+            <article class="more-dotfiles">
+              <p>Dotfiles</p>
+            </article>
+          </a>
+        </div>
+    </hgroup>
+    </article>
+    <article class="sidebar-card">
+    <hgroup>
+      <h1>
+        Este site foi feito com:
+      </h1>
+      <br>
+        <div class="more">
+            <img
+            src="https://skillicons.dev/icons?i=html,css,linux,bash,neovim,git">
+            <img
+            style="width: 9em; margin-top: 0; padding: 0"
+            src="https://raw.githubusercontent.com/Snailedlt/devicon/19019de2120a787c771b0b83a72752912e0cd598/icons/jekyll/jekyll-original-wordmark.svg">
+        </div>
+    </hgroup>
+    </article>
+
+    </div>
+      <main id="main">
+
+        {{ content }}
+
+      </main>
+  </body>
+</html>

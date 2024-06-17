@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="{{ site.lang }}">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="{{ site.lang }}" />
+  <meta name="description" content="{{ post.description }}" />
+  <meta name="author" content="{{ post.author }}" />
+  <meta name="generator" content="jekyll" />
+  <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+  <link rel="icon" href="{{ site.avatar }}" type="image/webp" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ post.title }}</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li class="left">
+        <a class="nav-link voltar" href="/">
+          Voltar
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+
+    <article>
+      <header>
+        <hgroup>
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.description }}</p>
+        </hgroup>
+      </header>
+
+      {{ content }}
+
+    </article>
+  </main>
+</body>
+</html>
