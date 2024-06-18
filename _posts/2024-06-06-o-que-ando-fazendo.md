@@ -7,6 +7,7 @@ tags:
     - web
     - editores
     - projetos
+thumb: cogwheel.webp
 description: Algumas das coisas que fiz e estou fazendo no momento
 ---
 <p>Nada melhor do que fazer um post antes de ir almoçar, né?</p>

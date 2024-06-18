@@ -6,6 +6,7 @@ tags:
     - open-source
     - programação
     - atualização
+thumb: windows_update.webp
 description: Porquê eu sou tão indeciso?
 ---
 <p>Tudo bem com você? Espero que sim. Bom, na última semana eu ando passando
@@ -33,14 +34,14 @@ de mostrar a linha atual e depois disso a próxima e assim por diante,
 incrementando a posição atual.</p> <p>Eu provavelmente não vou conseguir
 escrever exatamente como que estava a linha de código que só mostrava a
 primeira linha, mas era algo mais ou menos assim:</p>
-<pre><code>23 fn lerArquivo(lines: []str) void = {
-24     let total = len(lines);
-25
-26     for (let i = 0z; i &lt; total) {
-27         fmt::println(lines[i])!;
-28         i=i+1;
-29     };
-30 };
+<pre><code class="line-numbers language-rust">fn lerArquivo(lines: []str) void = {
+   let total = len(lines);
+
+   for (let i = 0z; i &lt; total) {
+       fmt::println(lines[i])!;
+       i=i+1;
+   };
+};
 </code></pre>
 <p>O erro está na linha 28, eu tentei fazer o valor de "i" ser incrementado por
 "1" até que o valor de "i" fosse igual ao "total", o que em questão de lógica
@@ -55,8 +56,8 @@ módulos usados, mas a lógica em si e a execução foram feitos por conta
 própria.</p> <h1>O site sofreu várias mudanças</h1> <p>Acompanhada dessa minha
 saga de estudos sobre programação, vieram também diversas mudanças com esse
 site. Se bem que nesse aspecto, mudar o site é algo extremamente
-recorrente.</p> <a href="/Automatizei%20o%20sistema%20de%20blogs%20do%20site.html"><s>Mas devo mencionar a atual presença de nenhum framework ou
-    gerador de site estático sendo usada para a criação de páginas/posts.</s></a> <p>Em
+recorrente.</p> <s><a href="/Automatizei%20o%20sistema%20de%20blogs%20do%20site.html">Mas devo mencionar a atual presença de nenhum framework ou
+    gerador de site estático sendo usada para a criação de páginas/posts.</a></s> <p>Em
 relação a Web, a única coisa que se mantém consistente em todas as versões do
 meu site que já existiram é a falta ou presença mínima de javascript. Com
 excessão disso, já fiz diversas mudanças que variam de coisas como a estrutura
@@ -98,10 +99,10 @@ repositório serão refletidas nos demais.</p> <h1>Voltei a usar o Neovim</h1>
 <p>Bom, eu já esperava que essa volta viria cedo ou tarde. O Helix é um ótimo
 editor de texto, e ele realmente é melhor que a minha configuração do Neovim,
 porém, o problema vive justamente aí, eu posso deixar o meu Neovim melhor que o
-Helix com apenas alguns ajustes e 2/3 plugins.</p> <a href="/Minha%20nova%20configura%C3%A7%C3%A3o%20do%20Neovim.html"><s>E eu fiz diversas
+Helix com apenas alguns ajustes e 2/3 plugins.</p> <s><a href="/Minha%20nova%20configura%C3%A7%C3%A3o%20do%20Neovim.html">E eu fiz diversas
 mudanças na minha configuração do Neovim, a única coisa que está faltando mesmo
 é suporte a lsp, tirando isso, ela já está melhor que o Helix em seu estado
-atual.</s></a> <p>A simples possibilidade de modificar a interface e como as coisas
+atual.</a></s> <p>A simples possibilidade de modificar a interface e como as coisas
 funcionam da forma que quiser já é algo que me faz preferir o Neovim. Claro que
 eu não sou um maníaco por customização, sempre que uma opção limitada for
 melhor que a customizável em certa tarefa, eu vou usar a opção limitada, e bom,

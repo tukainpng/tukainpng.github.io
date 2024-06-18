@@ -24,7 +24,7 @@ próprio código-fonte do programa.</p>
 <p>Por enquanto, como eu já disse, ela é basicamente um shell-script glorificado,
 mas para fins de tranparência (já que eu não criei um repositório para esse
 projeto no momento) aqui está o código-fonte dela:</p>
-<pre><code>use fmt;
+<pre><code class="line-numbers language-rust">use fmt;
 use os;
 use os::exec;
 

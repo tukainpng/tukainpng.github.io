@@ -6,6 +6,7 @@ tags:
     - web
     - programação
     - projetos
+thumb: javascript.webp
 description: Pelo menos não é React.
 ---
 <p>É, é isso mesmo que você leu. Esse blog oficialmente fez uso de Javascript.</p>

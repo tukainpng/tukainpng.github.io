@@ -5,6 +5,7 @@ title: Até mais, Pico.css!
 tags:
     - web
     - framework
+thumb: picocss.webp
 description: Você foi extremamente útil, mas não preciso mais de você.
 ---
 <p>Com a excessão de pouquíssimas coisas, o site deve estar idêntico, porém,

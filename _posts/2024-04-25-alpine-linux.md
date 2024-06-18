@@ -5,6 +5,7 @@ title: Alpine Linux
 tags:
     - open-source
     - linux
+thumb: alpine_linux.webp
 description: Simplesmente incrível
 ---
 <p>Ontem, eu desinstalei o Arch Linux e instalei o Alpine no lugar, o motivo

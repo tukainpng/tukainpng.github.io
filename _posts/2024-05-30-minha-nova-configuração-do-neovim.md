@@ -5,6 +5,7 @@ title: Minha nova configuração do Neovim
 tags:
     - editores
     - vim-like
+thumb: neovim.webp
 description: Eu fiz muita coisa desde a última vez que comentei sobre ele.
 ---
 <p>Tô começando a achar que editores de texto são o meu Thanos, porquê depois que

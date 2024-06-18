@@ -1,38 +1,71 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="{{ site.lang }}">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta http-equiv="Content-Language" content="{{ site.lang }}" />
-  <meta name="description" content="{{ post.description }}" />
-  <meta name="author" content="{{ post.author }}" />
-  <meta name="generator" content="jekyll" />
-  <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
-  <link rel="icon" href="{{ site.avatar }}" type="image/webp" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ post.title }}</title>
-</head>
-<body>
-  <nav>
-    <ul>
-      <li class="left">
-        <a class="nav-link voltar" href="/">
-          Voltar
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <main>
+<!doctype html>
+<html lang="pt-br" data-bs-theme="dark">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="{{ site.lang }}" />
+    <meta name="description" content="{{ post.description }}" />
+    <meta name="author" content="{{ post.author }}" />
+    <meta name="generator" content="jekyll" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ site.avatar }}" type="image/webp" />
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/prism.css" rel="stylesheet">
+    <title>{{ page.title }}</title>
+  </head>
+  <style>
+    img {
+      max-width: 600px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media only screen and (orientation: portrait) {
+      img {
+        max-width: 300px;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <nav aria-label="breadcrumb" class="navbar navbar-expand-lg
+        bg-body-tertiary">
+        <div style="margin-top:1em" class="container-sm">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/blog.html">Blog</a></li>
+            <li class="breadcrumb-item">{{ page.date | date: "%Y" }}</li>
+            <li class="breadcrumb-item">{{ page.date | date: "%m" }}</li>
+            <li class="breadcrumb-item">{{ page.date | date: "%d" }}</li>
+            <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+          </ol>
+        </div>
+      </nav>
+    </header>
+    <main style="margin-top:1em;max-width:80ch" class="container-sm">
 
     <article>
-      <header>
-        <hgroup>
-          <h1>{{ page.title }}</h1>
-          <p>{{ page.description }}</p>
-        </hgroup>
-      </header>
+      {% if page.thumb contains "placeholder.webp" or page.thumb == null %}
+      <img
+        class="card-img-top rounded"
+        style="margin-bottom: 1em; min-width:100%"
+        src="/assets/img/posts/thumbnail/placeholder.webp"
+      >
+      {% else %}
+      <img
+        class="card-img-top rounded"
+        style="margin-bottom: 1em; min-width:100%"
+        src="/assets/img/posts/thumbnail/{{ page.thumb }}"
+      >
+      {% endif %}
+      <hgroup>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.description }}</p>
+      </hgroup>
+      <hr>
 
       {{ content }}
 
+    <script src="/assets/scripts/bootstrap.js"></script>
+    <script src="/assets/scripts/prism.js"></script>
     </article>
   </main>
 </body>

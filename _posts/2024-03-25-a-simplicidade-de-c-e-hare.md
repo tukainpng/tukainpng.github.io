@@ -5,6 +5,7 @@ title: A simplicidade da C e Hare
 tags:
     - programação
     - low-level
+thumb: c.webp
 description: Nem um pouco parecido com um mostro de 7 cabeças
 ---
 <p>Recentemente eu fiz um post sobre os meus estudos com a linguagem de
@@ -34,7 +35,7 @@ switch-case, structs e alguns types também (tanto em C quanto em Hare).</p>
 esses conceitos na minha cabeça, um exemplo desses programas é um programa que
 cria um arquivo vazio usando um nome que o usuário fornece.</p>
 <h1>Escrito em C:</h1>
-<pre><code>#include "stdio.h"
+<pre><code class="line-numbers language-c">#include "stdio.h"
 
 int main()
 {
@@ -55,7 +56,7 @@ int main()
 }
 </code></pre>
 <h1>Escrito em Hare:</h1>
-<pre><code>use fmt;
+<pre><code class="line-numbers language-rust">use fmt;
 use os;
 use bufio;
 use strings;

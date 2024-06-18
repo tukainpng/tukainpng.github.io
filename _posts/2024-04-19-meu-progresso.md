@@ -7,6 +7,7 @@ tags:
     - projetos
     - low-level
     - atualização
+thumb: cogwheel.webp
 description: Como anda o meu progresso com o raylib.ha
 ---
 <p>Nos últimos dias eu tive um foco maior nos exemplos que eu deixo no

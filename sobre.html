@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/assets/img/avatar.webp" type="image/webp" />
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <title>Sobre</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-sm" style="margin-top:0.5em; padding-bottom:0.5em">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Início</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-right mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/sobre.html">Sobre</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <style>
+      .avatar {
+        display: block;
+        float: right;
+        margin: 1em;
+      }
+      @media only screen and (orientation: portrait) {
+        .avatar {
+          margin-left: auto;
+          margin-right: auto;
+          width: 120px;
+        }
+        .badges {
+          width: 16em;
+        }
+        .jekyll {
+          width: 5em;
+        }
+      }
+    </style>
+    <main style="margin-top: 1em" class="container-sm">
+
+      <div style="padding: 1em">
+        <img
+          src="/assets/img/avatar.webp"
+          class="img-thumbnail avatar"
+        >
+      </div>
+      <div style="margin-top: 2em">
+        <h1>
+          Diogo Fernandes
+        </h1>
+        <p>
+          Usuário Linux, amante de window managers e blogger
+        </p>
+        <p>
+          Olá! Espero que você esteja bem. Meu apelido online é tukainpng, e eu
+          sou alguém que ama o mundo Linux e do software livre e open-source.
+          Atualmente estou estudando desenvolvimento web, e este site é o meu
+          blog/experimento do que estou aprendendo.
+        </p>
+      </div>
+
+      <div>
+        <h1>Este site foi feito com:</h1>
+        <img class="badges" src="https://skillicons.dev/icons?i=html,css,bootstrap,linux,bash,neovim,git">
+        <img class="jekyll" src="/assets/img/jekyll.svg">
+      </div>
+
+    </main>
+    <script src="/assets/scripts/bootstrap.js"></script>
+  </body>
+</html>
+
