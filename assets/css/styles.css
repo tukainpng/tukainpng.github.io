@@ -1,0 +1,13 @@
+footer {
+  margin-top: 12em;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  width: 100%;
+}
+
+footer > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
