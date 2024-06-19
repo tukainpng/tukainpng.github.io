@@ -1,5 +1,12 @@
 <footer class="bg-body-tertiary">
   <div>
-    <h6>{{ site.url }} © {{ site.author }}, {{ page.date | date: "%Y" }}.</h6>
+    <h6>
+      {{ site.url }} © {{ site.author }},
+      {% if page.date == null %}
+        2024.
+      {% else %}
+        {{ page.date | date: "%Y" }}.
+      {% endif %}
+    </h6>
   </div>
 </footer>
