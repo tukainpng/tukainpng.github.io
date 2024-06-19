@@ -3,6 +3,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   padding: 1em;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
   width: 100%;
 }
 
