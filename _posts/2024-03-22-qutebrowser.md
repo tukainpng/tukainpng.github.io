@@ -15,6 +15,7 @@ O Qutebrowser é um navegador (quem diria) que usa o
 motor qtwebengine, que em si é baseado no motor do Chromium, ou seja, o
 Qutebrowser é um chrome da vida, que nem o Brave, Edge, Opera, Vivaldi e assim
 por diante.
+
 # O que ele tem de especial
 O que torna o
 Qutebrowser diferente dos outros é uma coisa: o foco no uso do teclado.
