@@ -1,26 +1,13 @@
 ---
 layout: 
+title: 404 - Não encontrado
 ---
-<!doctype html>
-<html lang="pt-br" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{{ site.avatar }}" type="image/webp" />
-    <link href="/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="/assets/css/styles.css" rel="stylesheet">
-    <title>404 - Não encontrado</title>
-  </head>
-  <body>
-    {% include header.html %}
-    <body>
-      <main class="alert alert-danger container-sm" role="alert"
-        style="margin-top: 1em">
-        <hgroup>
-          <h1>Página não encontrada - Erro 404</h1>
-          <p>A página requisitada não foi encontrada.</p>
-        </hgroup>
-      </main>
-      {% include footer.html %}
-  </body>
-</html>
+{% include header.html %}
+  <main class="alert alert-danger container-sm" role="alert"
+    style="margin-top: 1em">
+    <hgroup>
+      <h1>Página não encontrada - Erro 404</h1>
+        <p>A página requisitada não foi encontrada.</p>
+    </hgroup>
+  </main>
+{% include footer.html %}
