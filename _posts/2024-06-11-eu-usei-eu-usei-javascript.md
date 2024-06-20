@@ -6,6 +6,7 @@ tags:
     - web
     - programação
     - projetos
+    - soydev
 thumb: javascript.webp
 description: Pelo menos não é React.
 ---

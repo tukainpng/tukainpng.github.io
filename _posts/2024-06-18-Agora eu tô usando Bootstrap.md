@@ -4,6 +4,10 @@ created: 18/06/2024
 title: Agora eu tô usando Bootstrap
 thumb: bootstrap.webp
 tags:
+    - web
+    - projetos
+    - soydev
+    - programação
 description: Eita que cara que não sabe se usa ou não um framework
 ---
 

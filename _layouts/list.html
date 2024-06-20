@@ -1,34 +1,15 @@
-<!doctype html>
-<html lang="pt-br" data-bs-theme="dark">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="Content-Language" content="{{ site.lang }}" />
-    <meta name="description" content="{{ site.description }}" />
-    <meta name="author" content="{{ site.author }}" />
-    <meta name="generator" content="jekyll" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{{ site.avatar }}" type="image/webp" />
-    <link href="/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="/assets/css/styles.css" rel="stylesheet">
-    <title>Blog</title>
-  </head>
-  <body>
+{% include header.html %}
+<main style="margin-top:1em" class="container-sm">
+  <div style="margin-bottom:2em; display:flex; flex-wrap:wrap; justify-content:center">
+  <div class="list-group list-group-horizontal">
+    <a class="listgroup-item btn btn-secondary" href="/tags.html">Tags</a>
+  </div>
+  </div>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center">
 
-    {% include header.html %}
+    {{ content }}
 
-    <main style="margin-top:1em" class="container-sm">
-
-      <div style="display:flex; flex-wrap:wrap; justify-content:center">
-
-        {{ content }}
-
-      </div>
-
-    </main>
-
-    {% include footer.html %}
-
-    <script src="/assets/scripts/bootstrap.js"></script>
-  </body>
-</html>
+  </div>
+</main>
+{% include footer.html %}
 

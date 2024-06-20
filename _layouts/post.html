@@ -1,18 +1,4 @@
-<!doctype html>
-<html lang="pt-br" data-bs-theme="dark">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="Content-Language" content="{{ site.lang }}" />
-    <meta name="description" content="{{ post.description }}" />
-    <meta name="author" content="{{ post.author }}" />
-    <meta name="generator" content="jekyll" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{{ site.avatar }}" type="image/webp" />
-    <link href="/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="/assets/css/styles.css" rel="stylesheet">
-    <link href="/assets/css/prism.css" rel="stylesheet">
-    <title>{{ page.title }}</title>
-  </head>
+{% include head.html %}
   <style>
     img {
       max-width: 600px;
@@ -69,6 +55,4 @@
     <script src="/assets/scripts/prism.js"></script>
     </article>
   </main>
-  {% include footer.html %}
-</body>
-</html>
+{% include footer.html %}
