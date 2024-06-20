@@ -1,0 +1,24 @@
+---
+title: Tags
+---
+{% include header.html %}
+<main>
+<div class="container-sm" style="display:flex; flex-wrap:wrap;
+  justify-content:center; margin-top:1em">
+{% for tags in site.tags %}
+<div id="{{ tags[0] }}" class="list-group card" style="width:18em; margin:0.5em">
+  <div class="card-body">
+  <h3 class="card-title">{{ tags[0] }}</h3>
+  {% for post in tags[1] %}
+  <li class="list-group-item list-group-item-action ">
+    <a style="text-decoration: none" class="text-body" href="{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </li>
+  {% endfor %}
+  </div>
+</div>
+{% endfor %}
+</div>
+</main>
+{% include footer.html %}
