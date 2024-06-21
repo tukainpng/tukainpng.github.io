@@ -5,6 +5,7 @@ title: Voltei ao VSCode
 thumb: vscode.webp
 tags:
     - soydev
+    - vscode-like
     - os
 description: E a usar o VSCode também.
 ---
