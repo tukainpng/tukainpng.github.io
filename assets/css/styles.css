@@ -5,13 +5,11 @@ header {
   box-shadow: 0 0 2em 0 rgba(0, 0, 0, .5);
 }
 
-main {
-  padding-bottom: 8em;
-}
-
 footer {
+  margin-top: 8em;
   padding: 1em;
   bottom: 0;
   width: 100%;
   text-align: center;
+  height: 5em;
 }
