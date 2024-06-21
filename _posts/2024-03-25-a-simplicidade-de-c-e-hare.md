@@ -3,40 +3,56 @@ layout: post
 created: 25/03/2024
 title: A simplicidade da C e Hare
 tags:
-    - programação
-    - low-level
+  - programação
+  - low-level
 thumb: c.webp
 description: Nem um pouco parecido com um mostro de 7 cabeças
 ---
-<p>Recentemente eu fiz um post sobre os meus estudos com a linguagem de
+
+Recentemente eu fiz um post sobre os meus estudos com a linguagem de
 programação Hare, falei sobre o que eu planejo fazer com esse conhecimento
 entre outras coisas. Mas algo que eu não comentei sobre foi o fato de eu estar
 estudando Hare em conjunto com C (só mencionei que a sintaxe da Hare é
-semelhante a C).</p> <h1>Por quê estou fazendo isso?</h1> <p>Bom, isso é algo
-que eu simplesmente esqueci de comentar no meu último post, estou fazendo isso
-por 2 motivos principais:</p> <p>As sintaxes são semelhantes, então posso pegar
+semelhante a C).
+
+# Por quê estou fazendo isso?
+
+Bom, isso é algo que eu simplesmente esqueci de comentar no meu último post, estou fazendo isso
+por 2 motivos principais:
+
+As sintaxes são semelhantes, então posso pegar
 um conhecimento novo de uma e levar para outra; Ambas são linguagens low-level,
 com foco em alto desempenho e possuem manipulação manual de memória, então
 posso aprender esse conceito de forma prática. Claro que existem outros motivos
 para eu fazer algo nesse estilo, mas eu não vejo a necessidade de listar todos
 eles aqui. Afinal, já é algo "estranho" para um jovem da minha idade ter
 interesse em uma "linguagem defasada e insegura" como a C, ao invés de querer
-aprender algo como Python, Ruby ou Javascript.</p> <h1>Existe algum outro
-  motivo?</h1> <p>Óbviamente que sim. Aprender C/Hare é algo como um sonho que
+aprender algo como Python, Ruby ou Javascript.
+
+# Existe algum outro motivo?
+
+Óbviamente que sim. Aprender C/Hare é algo como um sonho que
 quero, e posso, tornar realidade. É algo que chega perto de uma romantização,
 um sentimento que dá vontade de correr atrás, de se esforçar para
-alcança-lo.</p> <p>Quase como você sonha em ter seu próprio carro, viver
-sozinho, ou viajar o mundo. Não é um sentimento fácil de por em palavras.</p>
-<h1>Como está meu progresso até agora?</h1> <p>Bom, eu iniciei meus estudos a
+alcança-lo.
+
+Quase como você sonha em ter seu próprio carro, viver
+sozinho, ou viajar o mundo. Não é um sentimento fácil de por em palavras.
+
+# Como está meu progresso até agora?
+
+Bom, eu iniciei meus estudos a
 pouquíssimo tempo, então ainda estou em meus estágios iniciais. Porém já
 aprendi alguns conceitos básicos como if statements, which loop, for loop,
-switch-case, structs e alguns types também (tanto em C quanto em Hare).</p>
-<p>Também comecei a fazer alguns programas extremamente simples só para fixar
-esses conceitos na minha cabeça, um exemplo desses programas é um programa que
-cria um arquivo vazio usando um nome que o usuário fornece.</p>
-<h1>Escrito em C:</h1>
-<pre><code class="line-numbers language-c">#include "stdio.h"
+switch-case, structs e alguns types também (tanto em C quanto em Hare).
 
+Também comecei a fazer alguns programas extremamente simples só para fixar
+esses conceitos na minha cabeça, um exemplo desses programas é um programa que
+cria um arquivo vazio usando um nome que o usuário fornece.
+
+# Escrito em C:
+
+```c
 int main()
 {
   FILE *arq;
@@ -54,9 +70,11 @@ int main()
    arq = fopen(nome, "w");
  }
 }
-</code></pre>
-<h1>Escrito em Hare:</h1>
-<pre><code class="line-numbers language-rust">use fmt;
+```
+
+# Escrito em Hare:
+
+```rust
 use os;
 use bufio;
 use strings;
@@ -77,14 +95,26 @@ fn nomeDoArquivo() str = {
   const inputUser = bufio::read_line(os::stdin)! as []u8;
   return strings::fromutf8(inputUser)!;
 };
-</code></pre>
-<h1>As diferenças</h1> <p>Algo que já para notar nesses exemplos é que o código
+```
+
+# As diferenças
+
+Algo que já para notar nesses exemplos é que o código
 em Hare é um pouco maior que o código em C, o motivo disso é que a Hare tem um
 foco na manipulação de erros. O que faz com que você tenha não só ter plena
 noção do que deve ser feito em caso de algum erro, mas também dizer ao programa
-o que ele vai fazer em caso de erro.</p> <p>A consequência disso é ter um pouco
+o que ele vai fazer em caso de erro.
+
+A consequência disso é ter um pouco
 mais de linhas de código necessárias e também mais símbolos para serem
-utilizados durante a escrita do programa.</p> <p>Apesar disso, eu acho a
+utilizados durante a escrita do programa.
+
+Apesar disso, eu acho a
 sintaxe da Hare mais legível que a C em alguns casos, como por exemplo na
-criação e utilização de structs.</p> <h1><em>Fin</em></h1> <p>Bem, isso é tudo
-o que eu tenho a dizer por agora.</p> <p>Até o próximo post!</p>
+criação e utilização de structs.
+
+# _Fin_
+
+Bem, isso é tudo o que eu tenho a dizer por agora.
+
+Até o próximo post!

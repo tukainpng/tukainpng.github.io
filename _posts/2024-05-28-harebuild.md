@@ -8,23 +8,39 @@ tags:
     - low-level
 description: Um build system no estilo do Zig Build System
 ---
-<p>Quanto tempo meu caro leitor, espero que você esteja bem.</p>
-<p>Hoje eu trago algo que comecei a fazer a pouco tempo, e que, pelo menos para
+
+
+Quanto tempo meu caro leitor, espero que você esteja bem.
+
+
+Hoje eu trago algo que comecei a fazer a pouco tempo, e que, pelo menos para
 mim, é algo que acho que será útil assim que estiver concluído. Estou me
 referindo a um build-system que comecei a fazer para a Hare, ele está em seus
-estágios iniciais, eu nem sequer li sobre como fazer um build-system ainda.</p>
-<h1>Então como que ele funciona por enquanto?</h1>
-<p>No momento ele é basicamente um shell-script glorificado, não que isso seja um
+estágios iniciais, eu nem sequer li sobre como fazer um build-system ainda.
+
+
+# Então como que ele funciona por enquanto?
+
+
+No momento ele é basicamente um shell-script glorificado, não que isso seja um
 problema, mas ainda assim continua sendo algo que um shell-script (ou Makefile)
-conseguiria fazer de forma até mesmo mais simples.</p>
-<p>Porém, a ideia é ter uma forma de compilar um programa feito em Hare, usando um
+conseguiria fazer de forma até mesmo mais simples.
+
+
+Porém, a ideia é ter uma forma de compilar um programa feito em Hare, usando um
 outro programa feito em Hare, quiçá até mesmo integrar o build-system no
-próprio código-fonte do programa.</p>
-<h1>Como está a implementação atual?</h1>
-<p>Por enquanto, como eu já disse, ela é basicamente um shell-script glorificado,
+próprio código-fonte do programa.
+
+
+# Como está a implementação atual?
+
+
+Por enquanto, como eu já disse, ela é basicamente um shell-script glorificado,
 mas para fins de tranparência (já que eu não criei um repositório para esse
-projeto no momento) aqui está o código-fonte dela:</p>
-<pre><code class="line-numbers language-rust">use fmt;
+projeto no momento) aqui está o código-fonte dela:
+
+```rust
+use fmt;
 use os;
 use os::exec;
 
@@ -74,9 +90,16 @@ export fn main() void = {
 @fini fn init() void = {
 	fmt::println("Programa compilado!")!;
 };
-</code></pre>
-<p>Como eu disse, extremamente simples, um shell-script glorificado, mas apesar
-disso, ainda é um começo de algo que pode vir a ser útil.</p>
-<h1><em>Fin</em></h1>
-<p>Bem, isso é tudo o que eu tenho a dizer por hoje.</p>
-<p>Te vejo no próximo post!</p>
+```
+
+Como eu disse, extremamente simples, um shell-script glorificado, mas apesar
+disso, ainda é um começo de algo que pode vir a ser útil.
+
+
+# _Fin_
+
+
+Bem, isso é tudo o que eu tenho a dizer por hoje.
+
+
+Te vejo no próximo post!
