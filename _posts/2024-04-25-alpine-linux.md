@@ -5,6 +5,7 @@ title: Alpine Linux
 tags:
     - open-source
     - linux
+    - os
 thumb: alpine_linux.webp
 description: Simplesmente incrível
 ---
