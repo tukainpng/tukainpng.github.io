@@ -36,3 +36,9 @@ Na prática, somente minhas chaves pgp, por uma falha no meu sistema de backups,
 Ou seja, em termos de dados perdidos, foram virtualmente 0.
 
 Em questão de programas, ouve uma substituição no lugar de perda, como por exemplo, o VSCode está substituindo a combinação do Neovim com o Lazygit.
+
+# _Fin_
+
+Bem, é isso, não é muito, mas já é um post.
+
+Até o próximo post!
