@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  transition: all 1s;
 }
 
 :root {
@@ -105,7 +106,8 @@ footer {
 
 .card img {
   border-radius: 5px;
-  max-width: 16em;
+  width: 100%;
+  height: 100px;
   margin-bottom: 1em;
   object-fit: cover;
 }
@@ -230,6 +232,20 @@ ol,
 }
 
 @media only screen and (orientation: portrait) {
+  nav {
+    font-size: smaller;
+  }
+
+  .container {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  .compacto {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
   .avatar {
     margin-left: auto;
     margin-right: auto;
@@ -244,4 +260,32 @@ ol,
   .sobre p {
     font-size: 1.2em;
   }
+
+  .post hgroup > h1 {
+    font-size: 2em;
+    margin: 0 !important;
+  }
+
+  .post hgroup > p {
+    font-size: 1.3em;
+  }
+
+  .post {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .post h1 {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  ul,
+  ol,
+  .post p {
+    font-size: 1.1em;
+  }
+
 }

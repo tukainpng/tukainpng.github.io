@@ -8,12 +8,10 @@ description: Meu blog pessoal
   <a id="post" class="post-link" href="{{ post.url }}">
   {% if post.thumb == null %}
     <img
-      class="card-img-top"
       src="/assets/img/posts/thumbnail/placeholder.webp"
     >
   {% else %}
     <img
-      class="card-img-top"
       src="/assets/img/posts/thumbnail/{{ post.thumb }}"
     >
   {% endif %}
