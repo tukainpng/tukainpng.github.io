@@ -4,18 +4,38 @@
   transition: all 1s;
 }
 
-:root {
-  --background:     #282A36;
-  --background-alt: #44475A;
-  --foreground:     #F8F8F2;
-  --red:            #FF5555;
-  --green:          #50FA7B;
-  --yellow:         #F1FA8C;
-  --blue:           #6272A4;
-  --purple:         #BD93F9;
-  --cyan:           #8BE9FD;
+@font-face {
+  src: url("/assets/fonts/JetBrainsMono-Regular.woff2");
+  font-family: jetbrainsmono-regular;
+  font-style: normal;
+}
 
-  font-family: monospace;
+@font-face {
+  src: url("/assets/fonts/JetBrainsMono-Bold.woff2");
+  font-family: jetbrainsmono-bold;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("/assets/fonts/JetBrainsMono-Italic.woff2");
+  font-family: jetbrainsmono-italic;
+  font-style: italic;
+  font-weight: normal;
+}
+
+:root {
+  --background:     #1e2326;
+  --background-alt: #2e383c;
+  --foreground:     #d3c6aa;
+  --red:            #e67e80;
+  --green:          #a7c080;
+  --yellow:         #dbbc7f;
+  --blue:           #7fbbb3;
+  --purple:         #d688b6;
+  --cyan:           #e69875;
+
+  font-family: jetbrainsmono-regular;
 }
 
 body {
@@ -32,8 +52,18 @@ a:hover {
   opacity: 90%;
 }
 
+i {
+  font-family: jetbrainsmono-italic;
+}
+
+b {
+  font-family: jetbrainsmono-bold;
+}
+
+
 hr {
   border-width: 1px;
+  border-color: var(--foreground);
 }
 
 main {
@@ -53,11 +83,11 @@ nav {
   padding-right: 1em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   display: flex;
   justify-content: space-between;
   background-color: var(--background-alt);
-  font-size: medium;
+  font-size: small;
 }
 
 nav > ul > li {
@@ -146,11 +176,11 @@ footer {
 
 .btn-primary {
   background-color: var(--blue);
-  color: var(--foreground);
+  color: var(--background);
 }
 
 .btn-secondary {
-  background-color: var(--foreground);
+  background-color: var(--green);
   color: var(--background);
 }
 
@@ -221,14 +251,23 @@ ol,
 
 .sobre {
   max-width: 80ch;
+  margin-top: 2em;
 }
 
 .sobre h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .sobre p {
-  font-size: 2em;
+  font-size: 1.5em;
+}
+
+.desktop {
+  display: inline;
+}
+
+.mobile {
+  display: none;
 }
 
 @media only screen and (orientation: portrait) {
@@ -236,14 +275,22 @@ ol,
     font-size: smaller;
   }
 
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline
+  }
+
   .container {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
   }
 
   .compacto {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 0em;
+    margin-right: 0em;
   }
 
   .avatar {
@@ -253,21 +300,26 @@ ol,
     float: none;
   }
 
+  .sobre {
+    margin: 0;
+    padding: 0;
+  }
+
   .sobre h1 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .sobre p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .post hgroup > h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0 !important;
   }
 
   .post hgroup > p {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   .post {
@@ -285,7 +337,7 @@ ol,
   ul,
   ol,
   .post p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
 }
