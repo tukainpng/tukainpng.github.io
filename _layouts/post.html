@@ -15,10 +15,15 @@
   <body>
     <header>
       <nav>
-        <ul>
+        <ul class="desktop">
         <li>
           <a href="/blog.html">Blog</a> / {{ page.date | date: "%Y" }} / {{ page.date | date: "%m" }} / {{ page.date | date: "%d" }} / {{ page.title }}
         </li>
+        </ul>
+        <ul class="mobile">
+          <li>
+            <a href="/blog.html">Blog</a>
+          </li>
         </ul>
       </nav>
     </header>
