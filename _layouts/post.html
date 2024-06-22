@@ -14,31 +14,24 @@
   </style>
   <body>
     <header>
-      <nav aria-label="breadcrumb" class="navbar navbar-expand-lg
-        bg-body-tertiary">
-        <div style="margin-top:1em" class="container-sm">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/blog.html">Blog</a></li>
-            <li class="breadcrumb-item">{{ page.date | date: "%Y" }}</li>
-            <li class="breadcrumb-item">{{ page.date | date: "%m" }}</li>
-            <li class="breadcrumb-item">{{ page.date | date: "%d" }}</li>
-            <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
-          </ol>
-        </div>
+      <nav>
+        <ul>
+        <li>
+          <a href="/blog.html">Blog</a> / {{ page.date | date: "%Y" }} / {{ page.date | date: "%m" }} / {{ page.date | date: "%d" }} / {{ page.title }}
+        </li>
+        </ul>
       </nav>
     </header>
-    <main style="margin-top:1em;max-width:80ch" class="container-sm">
+    <main style="max-width:80ch" class="container center post">
 
     <article>
       {% if page.thumb contains "placeholder.webp" or page.thumb == null %}
       <img
-        class="card-img-top rounded"
         style="margin-bottom: 1em; min-width:100%"
         src="/assets/img/posts/thumbnail/placeholder.webp"
       >
       {% else %}
       <img
-        class="card-img-top rounded"
         style="margin-bottom: 1em; min-width:100%"
         src="/assets/img/posts/thumbnail/{{ page.thumb }}"
       >
