@@ -415,6 +415,10 @@ ol,
     margin-bottom: 0.5em;
   }
 
+  .post-content img {
+    max-width: 90%;
+  }
+
   .post-thumbnail {
     max-width: 300px;
     max-height: 150px;
