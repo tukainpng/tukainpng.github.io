@@ -5,7 +5,7 @@ created: 22/03/2024
 tags:
     - web
     - minimalista
-thumb: cogwheel.webp
+thumb: "｡◕ ‿ ◕｡"
 description: Como foi refazer o meu site usando o pico.css 2.0
 ---
 Bom, eu fiz de novo, eu refiz o meu website. Isso pode soar extranho caso

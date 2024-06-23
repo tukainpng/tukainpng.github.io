@@ -7,7 +7,7 @@ tags:
     - projetos
     - low-level
     - atualização
-thumb: cogwheel.webp
+thumb: "ᕙ(⇀‸↼‶)ᕗ"
 description: Como anda o meu progresso com o raylib.ha
 ---
 

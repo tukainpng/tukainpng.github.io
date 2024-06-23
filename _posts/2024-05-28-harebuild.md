@@ -2,6 +2,7 @@
 layout: post
 created: 28/05/2024
 title: Harebuild
+thumb: "(@ _ @)"
 tags:
     - programação
     - projetos

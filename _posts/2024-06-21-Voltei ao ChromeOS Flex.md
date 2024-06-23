@@ -2,7 +2,7 @@
 layout: post
 created: 21/06/2024
 title: Voltei ao VSCode
-thumb: vscode.webp
+thumb: "ŏﺡó"
 tags:
     - soydev
     - vscode-like

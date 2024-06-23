@@ -6,7 +6,7 @@ tags:
     - open-source
     - programação
     - atualização
-thumb: windows_update.webp
+thumb: "(─‿‿─)"
 description: Porquê eu sou tão indeciso?
 ---
 

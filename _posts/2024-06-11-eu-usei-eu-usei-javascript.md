@@ -1,13 +1,13 @@
 ---
 layout: post
 created: 11/06/2024
-title: Eu usei... Eu usei Javascript 💀
+title: Eu usei... Eu usei Javascript. 
 tags:
     - web
     - programação
     - projetos
     - soydev
-thumb: javascript.webp
+thumb: 💀
 description: Pelo menos não é React.
 ---
 

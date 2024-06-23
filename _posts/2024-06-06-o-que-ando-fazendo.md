@@ -7,7 +7,7 @@ tags:
     - web
     - editores
     - projetos
-thumb: cogwheel.webp
+thumb: "ತಎತ"
 description: Algumas das coisas que fiz e estou fazendo no momento
 ---
 

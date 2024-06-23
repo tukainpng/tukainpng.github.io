@@ -2,6 +2,7 @@
 layout: post
 created: 28/03/2024
 title: Deixando a Hare de lado... Por enquanto.
+thumb: "(Ծ‸ Ծ)"
 tags:
     - programação
     - low-level

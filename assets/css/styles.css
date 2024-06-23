@@ -292,7 +292,8 @@ ol,
   font-size: 1.5em;
 }
 
-.placeholder {
+.thumbnail {
+  display: flex;
   border-radius: 5px;
   width: 256px;
   height: 100px;
@@ -300,8 +301,31 @@ ol,
   background-color: var(--grey);
 }
 
-.post-content img,
+.thumbnail > p {
+  align-content: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .post-thumbnail {
+  display: flex;
+  border-radius: 5px;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1em;
+  background-color: var(--grey);
+}
+
+.post-thumbnail > p {
+  align-content: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+}
+
+.post-content img {
   margin-bottom: 1em;
   min-width: 100%;
   max-width: 600px;

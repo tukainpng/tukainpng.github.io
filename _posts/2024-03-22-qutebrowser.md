@@ -6,7 +6,7 @@ tags:
     - open-source
     - web
     - minimalista
-thumb: qutebrowser.webp
+thumb: "(ღˇ◡ˇ)~♥"
 description: Meu navegador web favorito
 ---
 

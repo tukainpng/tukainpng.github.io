@@ -11,7 +11,7 @@ cat << EOF > _posts/"$(date +%Y-%m-%d)-$TITLE.md"
 layout: post
 created: $(date +%d/%m/%Y)
 title: $TITLE
-thumb: placeholder.webp
+thumb: "???"
 tags:
 description: $DESCRIPTION
 ---

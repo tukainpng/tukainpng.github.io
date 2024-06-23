@@ -5,7 +5,7 @@ title: A simplicidade da C e Hare
 tags:
   - programação
   - low-level
-thumb: c.webp
+thumb: "(>'o')> ♥ <('o'<)"
 description: Nem um pouco parecido com um mostro de 7 cabeças
 ---
 

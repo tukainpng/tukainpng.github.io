@@ -7,11 +7,13 @@ description: Meu blog pessoal
 <article class="card">
   <a id="post" class="post-link" href="{{ post.url }}">
   {% if post.thumb == null %}
-    <div class="placeholder"></div>
+    <div class="thumbnail">
+      <p class="center">???</p>
+    </div>
   {% else %}
-    <img
-      src="/assets/img/posts/thumbnail/{{ post.thumb }}"
-    >
+    <div class="thumbnail">
+      <p class="center">{{ post.thumb }}</p>
+    </div>
   {% endif %}
   <hgroup>
     <h3>{{ post.title }}</h3>

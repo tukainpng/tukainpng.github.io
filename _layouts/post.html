@@ -17,12 +17,15 @@
     <main style="max-width:80ch" class="container center post">
 
     <article>
-      {% unless page.thumb contains "placeholder.webp" or page.thumb == null %}
-        <img
-          class="post-thumbnail"
-          src="/assets/img/posts/thumbnail/{{ page.thumb }}"
-        >
-      {% endunless %}
+      {% if page.thumb contains "placeholder.webp" or page.thumb == null %}
+        <div class="post-thumbnail">
+          <p class="center">???</p>
+        </div>
+      {% else %}
+        <div class="post-thumbnail">
+          <p class="center">{{ page.thumb }}</p>
+        </div>
+      {% endif %}
       <hgroup>
         <h1>{{ page.title }}</h1>
         <p>{{ page.description }}</p>

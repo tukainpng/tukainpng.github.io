@@ -5,7 +5,7 @@ title: Até mais, Pico.css!
 tags:
     - web
     - framework
-thumb: picocss.webp
+thumb: "(°ℇ °)"
 description: Você foi extremamente útil, mas não preciso mais de você.
 ---
  

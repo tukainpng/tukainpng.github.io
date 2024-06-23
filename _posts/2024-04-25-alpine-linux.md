@@ -6,7 +6,7 @@ tags:
     - open-source
     - linux
     - os
-thumb: alpine_linux.webp
+thumb: "🐧"
 description: Simplesmente incrível
 ---
 

@@ -5,7 +5,7 @@ title: Automatizei o sistema de blogs do site
 tags:
     - web
     - projetos
-thumb: cogwheel.webp
+thumb: "🔧"
 description: Agora a criação de posts é semelhante ao Hugo.
 ---
 

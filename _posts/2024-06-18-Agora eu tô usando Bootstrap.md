@@ -2,7 +2,7 @@
 layout: post
 created: 18/06/2024
 title: Agora eu tô usando Bootstrap
-thumb: bootstrap.webp
+thumb: "щ(ಥДಥщ)"
 tags:
     - web
     - projetos
