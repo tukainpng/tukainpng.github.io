@@ -23,8 +23,9 @@ pequena. A única forma de provar isso, é tendo exemplos usando as bindings.
 No momento, eu tenho 2 exemplos
 prontos, e um teles também tem uma versão re-escrita em C, como forma de
 demonstrar a similaridade entre eles. O primeiro exemplo é uma sequência
-Fibonacci, e o segundo é... bem... 
-![screenshot](https://raw.githubusercontent.com/tukainpng/raylib.ha/main/examples/screenshots/game.png")
+Fibonacci, e o segundo é... bem...
+
+![screenshot](/assets/img/posts/meu-progresso.webp)
 
 
 Não, isso não é um screenshot do Undertale, isso é o segundo exemplo do raylib.ha.

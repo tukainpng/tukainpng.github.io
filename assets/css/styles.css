@@ -4,6 +4,7 @@
   --foreground:     #ebdbb2;
   --grey:           #323232;
   --red:            #cc241d;
+  --light-red:      #fb4934;
   --green:          #98971a;
   --yellow:         #d79921;
   --blue:           #458588;
@@ -290,6 +291,33 @@ ol,
   font-size: 1.5em;
 }
 
+.placeholder {
+  border-radius: 5px;
+  width: 256px;
+  height: 100px;
+  margin-bottom: 1em;
+  background-color: var(--grey);
+}
+
+.post-content img,
+.post-thumbnail {
+  margin-bottom: 1em;
+  min-width: 100%;
+  max-width: 600px;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alert {
+  border: solid 5px var(--background-alt);
+  background-color: var(--red);
+  color: var(--background);
+  padding: 3em;
+}
+
 .desktop {
   display: inline;
 }
@@ -360,6 +388,10 @@ ol,
     font-size: 1.5em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+  }
+
+  .post-thumbnail {
+    max-width: 300px;
   }
 
   ul,
