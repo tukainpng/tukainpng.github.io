@@ -1,14 +1,14 @@
 
     <article class="card">
-      <a class="post-link" href="/posts/teastea.html">
+      <a class="post-link" href="/posts/Isso-é-um-teste.html">
         <div class="thumbnail">
           <p class="center">
-            fdsafsafsa
+            >:)
           </p>
         </div>
         <hgroup>
-          <h3>teastea</h3>
-          <p>fsdafdfs</p>
+          <h3>Isso é um teste</h3>
+          <p>Vamo ver se isso tá funcionando</p>
         </hgroup>
       </a>
     </article>

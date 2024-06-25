@@ -1,0 +1,15 @@
+      <div class="post-thumbnail">
+        <p class="center">
+          :o
+        </p>
+      </div>
+      <hgroup>
+        <h1>Segundo teste</h1>
+        <p>Esse é o segundo teste</p>
+      </hgroup>
+      <hr>
+      <div class="post-content">
+
+        CONTEÚDO
+
+      </div>

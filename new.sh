@@ -33,7 +33,10 @@ cat << EOF > tmp/middle
     </article>
 EOF
 
-cat << EOF | wl-copy
+head --lines=27 posts/$POSTNAME.html > tmp/post-top
+tail --lines=+28 posts/$POSTNAME.html > tmp/post-bottom
+
+cat << EOF > tmp/post-middle
       <div class="post-thumbnail">
         <p class="center">
           $THUMB
@@ -52,11 +55,18 @@ cat << EOF | wl-copy
 EOF
 
 cp blog.html blog.html.bk
+cp posts/$POSTNAME.html $POSTNAME.html.bk
 
 cat tmp/top     >  blog.html
 printf "\n"     >> blog.html
 cat tmp/middle  >> blog.html
 printf "\n"     >> blog.html
 cat tmp/bottom  >> blog.html
+
+cat tmp/post-top      >  posts/$POSTNAME.html
+printf "\n"           >> posts/$POSTNAME.html
+cat tmp/post-middle   >> posts/$POSTNAME.html
+printf "\n"           >> posts/$POSTNAME.html
+cat tmp/post-bottom   >> posts/$POSTNAME.html
 
 $EDITOR posts/$POSTNAME.html
