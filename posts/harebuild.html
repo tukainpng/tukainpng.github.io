@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="pt-br" />
+  <meta name="description" content="Meu blog pessoal" />
+  <meta name="author" content="Diogo Fernandes" />
+  <meta name="generator" content="none :P" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/img/avatar.webp" type="image/webp" />
+  <link href="/assets/css/styles.css" rel="stylesheet">
+  <link href="/assets/css/prism.css" rel="stylesheet">
+  <title>Meu blog pessoal</title>
+</head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="desktop">
+          <li>
+            <a href="/blog.html">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main style="max-width:80ch" class="container center post">
+
+    <article>
+      
+        <div class="post-thumbnail">
+          <p class="center">(@ _ @)</p>
+        </div>
+      
+      <hgroup>
+        <h1>Harebuild</h1>
+        <p>Um build system no estilo do Zig Build System</p>
+      </hgroup>
+      <hr>
+
+      <div class="post-content">
+        <p>Quanto tempo meu caro leitor, espero que você esteja bem.</p>
+
+<p>Hoje eu trago algo que comecei a fazer a pouco tempo, e que, pelo menos para
+mim, é algo que acho que será útil assim que estiver concluído. Estou me
+referindo a um build-system que comecei a fazer para a Hare, ele está em seus
+estágios iniciais, eu nem sequer li sobre como fazer um build-system ainda.</p>
+
+<h1>Então como que ele funciona por enquanto?</h1>
+
+<p>No momento ele é basicamente um shell-script glorificado, não que isso seja um
+problema, mas ainda assim continua sendo algo que um shell-script (ou Makefile)
+conseguiria fazer de forma até mesmo mais simples.</p>
+
+<p>Porém, a ideia é ter uma forma de compilar um programa feito em Hare, usando um
+outro programa feito em Hare, quiçá até mesmo integrar o build-system no
+próprio código-fonte do programa.</p>
+
+<h1>Como está a implementação atual?</h1>
+
+<p>Por enquanto, como eu já disse, ela é basicamente um shell-script glorificado,
+mas para fins de tranparência (já que eu não criei um repositório para esse
+projeto no momento) aqui está o código-fonte dela:</p>
+
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">use</span> <span class="n">fmt</span><span class="p">;</span>
+<span class="k">use</span> <span class="n">os</span><span class="p">;</span>
+<span class="k">use</span> <span class="nn">os</span><span class="p">::</span><span class="n">exec</span><span class="p">;</span>
+
+<span class="k">type</span> <span class="n">Build</span> <span class="o">=</span> <span class="k">struct</span> <span class="p">{</span>
+	<span class="n">flag</span><span class="p">:</span>	<span class="nb">str</span><span class="p">,</span>
+	<span class="n">target</span><span class="p">:</span>	<span class="nb">str</span><span class="p">,</span>
+	<span class="n">link</span><span class="p">:</span>	<span class="nb">str</span><span class="p">,</span>
+	<span class="n">output</span><span class="p">:</span>	<span class="nb">str</span><span class="p">,</span>
+	<span class="n">src</span><span class="p">:</span>	<span class="nb">str</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="k">fn</span> <span class="nf">build</span><span class="p">(</span><span class="n">b</span><span class="p">:</span> <span class="n">Build</span><span class="p">)</span> <span class="n">void</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="k">let</span> <span class="n">cmd</span> <span class="o">=</span> <span class="nn">exec</span><span class="p">::</span><span class="nf">cmd</span><span class="p">(</span>
+		<span class="s">"hare"</span><span class="p">,</span>
+		<span class="s">"build"</span><span class="p">,</span>
+		<span class="s">"-a"</span><span class="p">,</span>
+		<span class="n">b</span><span class="py">.target</span><span class="p">,</span>
+		<span class="n">b</span><span class="py">.flag</span><span class="p">,</span>
+		<span class="n">b</span><span class="py">.link</span><span class="p">,</span>
+		<span class="s">"-o"</span><span class="p">,</span>
+		<span class="n">b</span><span class="py">.output</span><span class="p">,</span>
+		<span class="n">b</span><span class="py">.src</span><span class="p">,</span>
+	<span class="p">)</span><span class="o">!</span><span class="p">;</span>
+	<span class="k">let</span> <span class="n">proc</span> <span class="o">=</span> <span class="nn">exec</span><span class="p">::</span><span class="nf">start</span><span class="p">(</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">cmd</span><span class="p">)</span><span class="o">!</span><span class="p">;</span>
+	<span class="k">let</span> <span class="n">status</span> <span class="o">=</span> <span class="nn">exec</span><span class="p">::</span><span class="nf">wait</span><span class="p">(</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">proc</span><span class="p">)</span><span class="o">!</span><span class="p">;</span>
+	<span class="nf">assert</span><span class="p">(</span><span class="nn">exec</span><span class="p">::</span><span class="nf">check</span><span class="p">(</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">status</span><span class="p">)</span> <span class="n">is</span> <span class="n">void</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="n">def</span> <span class="n">src_file</span> <span class="o">=</span> <span class="s">"hello.ha"</span><span class="p">;</span>
+
+<span class="n">export</span> <span class="k">fn</span> <span class="nf">main</span><span class="p">()</span> <span class="n">void</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="k">let</span> <span class="n">prog</span> <span class="o">=</span> <span class="n">Build</span> <span class="p">{</span>
+		<span class="n">target</span> <span class="o">=</span>	<span class="nn">os</span><span class="p">::</span><span class="nf">machine</span><span class="p">(),</span>
+		<span class="n">flag</span> <span class="o">=</span>		<span class="s">"-R"</span><span class="p">,</span>
+		<span class="n">link</span> <span class="o">=</span>		<span class="s">"-L."</span><span class="p">,</span>
+		<span class="n">src</span> <span class="o">=</span>		<span class="n">src_file</span><span class="p">,</span>
+		<span class="n">output</span> <span class="o">=</span>	<span class="s">"hello"</span><span class="p">,</span>
+	<span class="p">};</span>
+
+	<span class="nf">build</span><span class="p">(</span><span class="n">prog</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="o">@</span><span class="n">init</span> <span class="k">fn</span> <span class="nf">init</span><span class="p">()</span> <span class="n">void</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="nn">fmt</span><span class="p">::</span><span class="nf">printfln</span><span class="p">(</span><span class="s">"Compilando: {}"</span><span class="p">,</span> <span class="n">src_file</span><span class="p">)</span><span class="o">!</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="o">@</span><span class="n">fini</span> <span class="k">fn</span> <span class="nf">init</span><span class="p">()</span> <span class="n">void</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="nn">fmt</span><span class="p">::</span><span class="nf">println</span><span class="p">(</span><span class="s">"Programa compilado!"</span><span class="p">)</span><span class="o">!</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>Como eu disse, extremamente simples, um shell-script glorificado, mas apesar
+disso, ainda é um começo de algo que pode vir a ser útil.</p>
+
+<h1><em>Fin</em></h1>
+
+<p>Bem, isso é tudo o que eu tenho a dizer por hoje.</p>
+
+<p>Te vejo no próximo post!</p>
+
+      </div>
+
+    <script src="/assets/scripts/prism.js"></script>
+    </article>
+  </main>
+</body>
+<footer>
+  <div>
+    <p>
+      https://tukainpng.github.io © Diogo Fernandes,
+      
+        2024.
+      
+    </p>
+  </div>
+</footer>
+<script src="/assets/scripts/prism.js"></script>
+</html>
+

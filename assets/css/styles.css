@@ -74,10 +74,20 @@ b {
   font-family: jetbrainsmono-bold;
 }
 
-
 hr {
   border-width: 1px;
   border-color: var(--foreground);
+}
+
+blockquote {
+  border-left: solid 2px var(--blue);
+  margin-left: 1em;
+}
+
+cite > p,
+blockquote > p {
+  color: var(--blue);
+  margin-left: 10px;
 }
 
 main {
@@ -343,25 +353,9 @@ ol,
   padding: 3em;
 }
 
-.desktop {
-  display: inline;
-}
-
-.mobile {
-  display: none;
-}
-
 @media only screen and (orientation: portrait) {
   nav {
     font-size: smaller;
-  }
-
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: inline
   }
 
   .container {
