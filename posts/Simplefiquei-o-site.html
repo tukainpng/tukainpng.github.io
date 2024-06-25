@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="pt-br" />
+  <meta name="description" content="Meu blog pessoal" />
+  <meta name="author" content="Diogo Fernandes" />
+  <meta name="generator" content="none :P" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/img/avatar.webp" type="image/webp" />
+  <link href="/assets/css/styles.css" rel="stylesheet">
+  <link href="/assets/css/prism.css" rel="stylesheet">
+  <title>Meu blog pessoal</title>
+</head>
+  <body>
+    <header>
+      <nav>
+        <ul class="desktop">
+          <li>
+            <a href="/blog.html">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main style="max-width:80ch" class="container center post">
+    <article>
+
+
+      <div class="post-thumbnail">
+        <p class="center">
+          c[_] Vai um café?
+        </p>
+      </div>
+      <hgroup>
+        <h1>Simplefiquei o site</h1>
+        <p>Não estou mais usando nem o Bootstrap, nem o Jekyll.</p>
+      </hgroup>
+      <hr>
+      <div class="post-content">
+
+        <p>Pois é, essa é mais uma prova do quão indeciso eu consigo ser com
+        esse site. Eu quase que fiz um refactor completo de como o site
+        funciona, o motivo? Eu queria deixar esse site mais fácil de ser
+        editado (ou até mesmo atualizado) pelo Neocities.</p>
+
+        <h1>Como ele funciona agora?</h1>
+
+        <p>Agora esse site basicamente voltou a sua origem de quando eu tinha
+        que escrever o HTML de cada post na mão. Claro que eu sempre tinha uma
+        template para poder agilizar esse trabalho, mas ainda assim era bem
+        ineficiênte.</p>
+
+        <p>A diferença é que agora eu fiz um shell-script que cuida de fazer
+        todo o processo repetitivo e me deixa por conta de simplesmente
+        escrever o conteúdo.</p>
+
+        <p>O script é tão simples que eu posso tornar ele em um script posix
+        sem muitas dificuldades.</p>
+
+        <h1>Tive que sacrificar algumas coisas</h1>
+
+        <p>Como toda mudança, são necessários alguns sacrifícios, e no caso
+        desse site, foram as tags.</p>
+
+        <p>Isso não é lá um grande problema, mas ainda assim é uma feature a
+        menos aqui.</p>
+
+        <p>Como eu vou estudar Javascript, eu acho que eu posso implementar um
+        sistema de tags simples, no mesmo estilo que o meu antigo sistema de
+        tabela de conteúdos.</p>
+
+        <h1>As dependências do script</h1>
+
+        <p>Em termos simples: uma distro Linux ou sistema unix-like.</p>
+
+        <p>Tudo o que esse script faz é uma manipulação de arquivos e nada além
+        disso, e para poder provar isso, aqui está todo o código do script:</p>
+
+        <pre>
+        <code class="language-bash">
+#!/usr/bin/env bash
+
+echo "Nome do post: "
+read TMPNAME
+echo "Descrição do post: "
+read DESCR
+echo "Thumbnail: "
+read THUMB
+
+POSTNAME="$(echo "$TMPNAME" | tr ' ' '-')"
+
+touch posts/$POSTNAME.html
+cat posts/_template.html &gt; posts/$POSTNAME.html
+
+mkdir -p tmp
+
+head --lines=33 blog.html &gt; tmp/top
+tail --lines=+34 blog.html &gt; tmp/bottom
+
+cat &lt;&lt; EOF &gt; tmp/middle
+    &lt;article class="card"&gt;
+      &lt;a class="post-link" href="/posts/$POSTNAME.html"&gt;
+        &lt;div class="thumbnail"&gt;
+          &lt;p class="center"&gt;
+            $THUMB
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;hgroup&gt;
+          &lt;h3&gt;$TMPNAME&lt;/h3&gt;
+          &lt;p&gt;$DESCR&lt;/p&gt;
+        &lt;/hgroup&gt;
+      &lt;/a&gt;
+    &lt;/article&gt;
+EOF
+
+head --lines=27 posts/$POSTNAME.html &gt; tmp/post-top
+tail --lines=+28 posts/$POSTNAME.html &gt; tmp/post-bottom
+
+cat &lt;&lt; EOF &gt; tmp/post-middle
+      &lt;div class="post-thumbnail"&gt;
+        &lt;p class="center"&gt;
+          $THUMB
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;hgroup&gt;
+        &lt;h1&gt;$TMPNAME&lt;/h1&gt;
+        &lt;p&gt;$DESCR&lt;/p&gt;
+      &lt;/hgroup&gt;
+      &lt;hr&gt;
+      &lt;div class="post-content"&gt;
+
+        CONTEÚDO
+
+      &lt;/div&gt;
+EOF
+
+cp blog.html blog.html.bk
+cp posts/$POSTNAME.html $POSTNAME.html.bk
+
+cat tmp/top     &gt;  blog.html
+printf "\n"     &gt;&gt; blog.html
+cat tmp/middle  &gt;&gt; blog.html
+printf "\n"     &gt;&gt; blog.html
+cat tmp/bottom  &gt;&gt; blog.html
+
+cat tmp/post-top      &gt;  posts/$POSTNAME.html
+printf "\n"           &gt;&gt; posts/$POSTNAME.html
+cat tmp/post-middle   &gt;&gt; posts/$POSTNAME.html
+printf "\n"           &gt;&gt; posts/$POSTNAME.html
+cat tmp/post-bottom   &gt;&gt; posts/$POSTNAME.html
+
+$EDITOR posts/$POSTNAME.html
+        </code>
+        </pre>
+
+        <p>Eu sei que esse código não é o mais eficiênte, mas o importante é
+        que ele funciona.</p>
+
+        <h1><em>Fin</em></h1>
+        <p>Bem, isso é tudo o que eu tenho a dizer por agora.</p>
+        <p>Até o próximo post!</p>
+
+      </div>
+
+
+    </article>
+  </main>
+</body>
+<footer>
+  <div>
+    <p>
+      https://tukainpng.github.io © Diogo Fernandes, 2024.
+    </p>
+  </div>
+</footer>
+<script src="/assets/scripts/prism.js"></script>
+</html>
+
