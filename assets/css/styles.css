@@ -1,15 +1,13 @@
 :root {
-  --background:     #1d2021;
-  --background-alt: #282828;
-  --foreground:     #ebdbb2;
-  --grey:           #323232;
-  --red:            #cc241d;
-  --light-red:      #fb4934;
-  --green:          #98971a;
-  --yellow:         #d79921;
-  --blue:           #458588;
-  --purple:         #b16286;
-  --cyan:           #689d6a;
+  --background:     #282c34;
+  --foreground:     #abb2bf;
+  --grey:           #3a4150;
+  --red:            #e06c75;
+  --green:          #98c379;
+  --yellow:         #e5c07b;
+  --blue:           #61afef;
+  --purple:         #c678dd;
+  --cyan:           #56b6c2;
 
   font-family: jetbrainsmono-regular;
 }
@@ -17,19 +15,11 @@
 * {
   margin: 0;
   padding: 0;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 *::-webkit-scrollbar {
-  background-color: var(--background);
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--background-alt);
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background-color: var(--green);
+  display: none;
 }
 
 @font-face {
@@ -110,7 +100,7 @@ nav {
   margin-bottom: 1em;
   display: flex;
   justify-content: space-between;
-  background-color: var(--background-alt);
+  background-color: var(--background);
   font-size: small;
 }
 
@@ -155,7 +145,7 @@ footer {
   min-width: 16em;
   max-width: 16em;
   margin: 0.5em;
-  background-color: var(--background-alt);
+  background-color: var(--background);
   border-radius: 5px;
 }
 
@@ -286,7 +276,7 @@ ol,
   margin: 1em;
   max-width: 400px;
   border-radius: 5px;
-  border: solid 2px var(--blue);
+  border: solid 4px var(--grey);
 }
 
 .sobre {
@@ -347,7 +337,7 @@ ol,
 }
 
 .alert {
-  border: solid 5px var(--background-alt);
+  border: solid 5px var(--background);
   background-color: var(--red);
   color: var(--background);
   padding: 3em;
