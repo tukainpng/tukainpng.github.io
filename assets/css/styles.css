@@ -53,7 +53,7 @@ a {
 }
 
 a:hover {
-  opacity: 90%;
+  opacity: 80%;
 }
 
 i {
@@ -123,6 +123,10 @@ article {
   border: solid 2px var(--grey);
 }
 
+article:hover {
+  border-color: var(--blue);
+}
+
 p,
 hr,
 ul,
@@ -147,6 +151,7 @@ footer {
   margin: 0.5em;
   background-color: var(--background);
   border-radius: 5px;
+  box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, .5);
 }
 
 .card img {
@@ -277,6 +282,7 @@ ol,
   max-width: 400px;
   border-radius: 5px;
   border: solid 4px var(--grey);
+  box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, .5);
 }
 
 .sobre {
@@ -315,6 +321,7 @@ ol,
   height: 200px;
   margin-bottom: 1em;
   background-color: var(--grey);
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, .5);
 }
 
 .post-thumbnail > p {
@@ -327,13 +334,15 @@ ol,
 
 .post-content img {
   margin-bottom: 1em;
-  min-width: 100%;
+  min-width: 600px;
   max-width: 600px;
   max-height: 300px;
   object-fit: cover;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: solid 3px var(--grey);
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, .5);
 }
 
 .alert {
@@ -400,7 +409,8 @@ ol,
   }
 
   .post-content img {
-    max-width: 90%;
+    min-width: 120px;
+    max-width: 300px;
   }
 
   .post-thumbnail {
