@@ -1,13 +1,13 @@
     <article class="card">
-      <a class="post-link" href="/posts/Segundo-teste.html">
+      <a class="post-link" href="/posts/teste.html">
         <div class="thumbnail">
           <p class="center">
-            :o
+            <img src="https://i.pinimg.com/originals/3c/98/14/3c981401f47fd9f612d0eedcf10a81d3.gif">
           </p>
         </div>
         <hgroup>
-          <h3>Segundo teste</h3>
-          <p>Esse é o segundo teste</p>
+          <h3>teste</h3>
+          <p>ricardo milos be like</p>
         </hgroup>
       </a>
     </article>

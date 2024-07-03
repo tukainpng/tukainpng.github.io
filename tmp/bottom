@@ -1,17 +1,18 @@
 
     <article class="card">
-      <a class="post-link" href="/posts/Isso-é-um-teste.html">
+      <a class="post-link" href="/posts/Simplifiquei-o-site.html">
         <div class="thumbnail">
           <p class="center">
-            >:)
+            c[_] Vai um café?
           </p>
         </div>
         <hgroup>
-          <h3>Isso é um teste</h3>
-          <p>Vamo ver se isso tá funcionando</p>
+          <h3>Simplifiquei o site</h3>
+          <p>Não estou mais usando nem o Bootstrap, nem o Jekyll.</p>
         </hgroup>
       </a>
     </article>
+
 
 
 
