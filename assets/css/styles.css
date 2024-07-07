@@ -1,13 +1,13 @@
 :root {
-  --background:     #282c34;
-  --foreground:     #abb2bf;
-  --grey:           #3a4150;
-  --red:            #e06c75;
-  --green:          #98c379;
-  --yellow:         #e5c07b;
-  --blue:           #61afef;
-  --purple:         #c678dd;
-  --cyan:           #56b6c2;
+  --background:     #1f1f1f;
+  --foreground:     #ffffff;
+  --grey:           #303030;
+  --red:            #f81118;
+  --green:          #2dc55e;
+  --yellow:         #ecba0f;
+  --blue:           #2a84d2;
+  --purple:         #4e5ab7;
+  --cyan:           #1081d6;
 
   font-family: jetbrainsmono-regular;
 }
