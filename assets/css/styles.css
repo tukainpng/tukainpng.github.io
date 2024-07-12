@@ -9,7 +9,7 @@
   --purple:         #4e5ab7;
   --cyan:           #1081d6;
 
-  font-family: jetbrainsmono-regular;
+  font-family: sans;
 }
 
 * {
@@ -22,24 +22,9 @@
   display: none;
 }
 
-@font-face {
-  src: url("/assets/fonts/JetBrainsMono-Regular.woff2");
-  font-family: jetbrainsmono-regular;
-  font-style: normal;
-}
-
-@font-face {
-  src: url("/assets/fonts/JetBrainsMono-Bold.woff2");
-  font-family: jetbrainsmono-bold;
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  src: url("/assets/fonts/JetBrainsMono-Italic.woff2");
-  font-family: jetbrainsmono-italic;
-  font-style: italic;
-  font-weight: normal;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 body {
@@ -54,14 +39,6 @@ a {
 
 a:hover {
   opacity: 80%;
-}
-
-i {
-  font-family: jetbrainsmono-italic;
-}
-
-b {
-  font-family: jetbrainsmono-bold;
 }
 
 hr {
@@ -83,6 +60,8 @@ blockquote > p {
 main {
   padding-left: 3em;
   padding-right: 3em;
+  margin-bottom: 6em;
+  background-color: var(--background);
 }
 
 header {
@@ -136,11 +115,20 @@ ol {
 }
 
 footer {
-  margin-top: 8em;
-  padding: 1em;
+  position: absolute;
+  clear: both;
+  left: 0;
   bottom: 0;
+  padding: 1em 0;
   text-align: center;
-  height: 5em;
+  width: 100%;
+  background-color: var(--grey);
+  overflow: hidden;
+}
+
+footer > p {
+  margin: 0;
+  padding: 0;
 }
 
 .card {
