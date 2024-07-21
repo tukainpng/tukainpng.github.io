@@ -9,7 +9,7 @@
   --purple:         #4e5ab7;
   --cyan:           #1081d6;
 
-  font-family: sans;
+  font-family: "Noto Sans", "Sans";
 }
 
 * {
@@ -51,6 +51,7 @@ blockquote {
   margin-left: 1em;
 }
 
+figcaption,
 cite > p,
 blockquote > p {
   color: var(--blue);
@@ -79,7 +80,7 @@ nav {
   margin-bottom: 1em;
   display: flex;
   justify-content: space-between;
-  background-color: var(--background);
+  background-color: var(--grey);
   font-size: small;
 }
 
@@ -257,6 +258,10 @@ footer > p {
   margin-bottom: 0.5em;
 }
 
+.post-content > h1 {
+  border-bottom: 2px solid var(--grey);
+}
+
 ul,
 ol,
 .post p {
@@ -338,6 +343,41 @@ ol,
   background-color: var(--red);
   color: var(--background);
   padding: 3em;
+}
+
+table, th, td {
+  border: solid 2px var(--grey);
+  padding: 5px;
+  border-collapse: collapse;
+}
+
+table {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  border: none;
+  overflow: scroll;
+}
+
+th, td {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0;
+}
+
+th {
+  font-weight: bold;
+  background-color: var(--grey);
+}
+
+th:hover {
+  opacity: 80%;
+}
+
+td:hover {
+  background-color: var(--grey);
+  opacity: 50%;
 }
 
 @media only screen and (orientation: portrait) {
