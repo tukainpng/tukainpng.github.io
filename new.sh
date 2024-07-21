@@ -14,8 +14,8 @@ cat posts/_template.html > posts/$POSTNAME.html
 
 mkdir -p tmp
 
-head --lines=33 blog.html > tmp/top
-tail --lines=+34 blog.html > tmp/bottom
+head -n 33 blog.html > tmp/top
+tail -n +34 blog.html > tmp/bottom
 
 cat << EOF > tmp/middle
     <article class="card">
@@ -33,8 +33,8 @@ cat << EOF > tmp/middle
     </article>
 EOF
 
-head --lines=27 posts/$POSTNAME.html > tmp/post-top
-tail --lines=+28 posts/$POSTNAME.html > tmp/post-bottom
+head -n 27 posts/$POSTNAME.html > tmp/post-top
+tail -n +28 posts/$POSTNAME.html > tmp/post-bottom
 
 cat << EOF > tmp/post-middle
       <div class="post-thumbnail">

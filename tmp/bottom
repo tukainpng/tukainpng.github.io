@@ -1,5 +1,20 @@
 
     <article class="card">
+      <a class="post-link" href="/posts/Um-setup-(quase)-completamente-novo.html">
+        <div class="thumbnail">
+          <p class="center">
+            E lá vamos nós...
+          </p>
+        </div>
+        <hgroup>
+          <h3>Um setup (quase) completamente novo</h3>
+          <p>Os pensamentos intrusivos me dominaram</p>
+        </hgroup>
+      </a>
+    </article>
+
+
+    <article class="card">
       <a class="post-link" href="/posts/Simplifiquei-o-site.html">
         <div class="thumbnail">
           <p class="center">
@@ -368,14 +383,12 @@
 
   </div>
 </main>
-</body>
-<footer>
-  <div>
+  <footer>
     <p>
       https://tukainpng.github.io © Diogo Fernandes, 2024.
     </p>
-  </div>
-</footer>
+  </footer>
+</body>
 </html>
 
 
