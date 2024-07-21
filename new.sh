@@ -54,14 +54,15 @@ cat << EOF > tmp/post-middle
       </div>
 EOF
 
-cp blog.html blog.html.bk
-cp posts/$POSTNAME.html $POSTNAME.html.bk
+mkdir -p backup/posts
+cp blog.html backup/blog.html.bk
+cp posts/$POSTNAME.html backup/posts/$POSTNAME.html.bk
 
-cat tmp/top     >  blog.html
-printf "\n"     >> blog.html
-cat tmp/middle  >> blog.html
-printf "\n"     >> blog.html
-cat tmp/bottom  >> blog.html
+cat tmp/top           >  blog.html
+printf "\n"           >> blog.html
+cat tmp/middle        >> blog.html
+printf "\n"           >> blog.html
+cat tmp/bottom        >> blog.html
 
 cat tmp/post-top      >  posts/$POSTNAME.html
 printf "\n"           >> posts/$POSTNAME.html
