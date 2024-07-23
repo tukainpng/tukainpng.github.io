@@ -161,11 +161,6 @@ footer > p {
   margin-right: 1em;
 }
 
-.compacto {
-  margin-left: 5em;
-  margin-right: 5em;
-}
-
 .center {
   display: flex;
   flex-wrap: wrap;
@@ -248,16 +243,6 @@ ul,
 ol,
 .post p {
   font-size: 1.3em;
-}
-
-.avatar {
-  display: block;
-  float: right;
-  margin: 1em;
-  max-width: 400px;
-  border-radius: 5px;
-  border: solid 4px var(--grey);
-  box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, .5);
 }
 
 .sobre {
@@ -373,18 +358,6 @@ td:hover {
   .container {
     margin-left: 0.2em;
     margin-right: 0.2em;
-  }
-
-  .compacto {
-    margin-left: 0em;
-    margin-right: 0em;
-  }
-
-  .avatar {
-    margin-left: auto;
-    margin-right: auto;
-    width: 120px;
-    float: none;
   }
 
   .sobre {
