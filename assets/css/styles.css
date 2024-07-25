@@ -49,13 +49,16 @@ hr {
 blockquote {
   border-left: solid 2px var(--blue);
   margin-left: 1em;
+  padding: 10px;
+  background-color: var(--grey);
+  color: var(--blue);
 }
 
 figcaption,
 cite > p,
 blockquote > p {
-  color: var(--blue);
-  margin-left: 10px;
+  color: inherit;
+  background-color: inherit;
 }
 
 main {
