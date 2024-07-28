@@ -1,3 +1,2 @@
-*.bk
-tmp*
-backup*
+_site
+.jekyll-cache

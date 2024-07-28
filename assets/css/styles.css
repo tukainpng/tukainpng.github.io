@@ -1,3 +1,4 @@
+@import "/assets/css/highlight.css";
 :root {
   --background:     #1f1f1f;
   --foreground:     #ffffff;
@@ -15,7 +16,6 @@
 * {
   margin: 0;
   padding: 0;
-  transition: all 0.2s;
 }
 
 *::-webkit-scrollbar {
@@ -104,6 +104,7 @@ hgroup {
 
 article {
   border: solid 2px var(--grey);
+  transition: all 0.2s;
 }
 
 article:hover {
@@ -353,6 +354,12 @@ td:hover {
   opacity: 50%;
 }
 
+.highlight {
+  padding: 1em;
+  margin: 0;
+  overflow: scroll;
+}
+
 @media only screen and (orientation: portrait) {
   nav {
     font-size: smaller;
@@ -414,3 +421,4 @@ td:hover {
   }
 
 }
+
