@@ -1,14 +1,21 @@
 {% include head.html %}
 <header>
   <nav>
-    <ul class="desktop">
+    <ul>
       <li>
-        <a href="/blog.html">Blog</a>
+        <a href="/blog.html">
+          Blog 
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        {{ page.date | date: '%d/%m/%Y' }}
       </li>
     </ul>
   </nav>
 </header>
-<main style="max-width:80ch" class="container center post">
+<main class="container center post">
   <article>
     <div class="post-thumbnail">
       <p class="center">

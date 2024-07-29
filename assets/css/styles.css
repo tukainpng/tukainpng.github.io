@@ -1,15 +1,6 @@
 @import "/assets/css/highlight.css";
+@import "/assets/css/colors.css";
 :root {
-  --background:     #1f1f1f;
-  --foreground:     #ffffff;
-  --grey:           #303030;
-  --red:            #f81118;
-  --green:          #2dc55e;
-  --yellow:         #ecba0f;
-  --blue:           #2a84d2;
-  --purple:         #4e5ab7;
-  --cyan:           #1081d6;
-
   font-family: "Noto Sans", "Sans";
 }
 
@@ -176,34 +167,13 @@ footer > p {
   justify-content: center;
 }
 
-.btn {
-  padding: 8px;
-  margin: 10px;
-  border-radius: 5px;
+.welcome > hgroup > p {
+  max-width: 60ch;
 }
 
-.btn-primary,
-.btn-secondary {
-  background-color: var(--background);
-  color: var(--foreground);
-}
-
-.btn-primary {
-  border: solid 2px var(--blue);
-}
-
-.btn-secondary {
-  border: solid 2px var(--cyan);
-}
-
-.btn-primary:hover {
-  background-color: var(--blue);
-  color: var(--background);
-}
-
-.btn-secondary:hover {
-  background-color: var(--cyan);
-  color: var(--background);
+.sobre,
+.post {
+  max-width: 80ch;
 }
 
 .post article {
@@ -245,8 +215,13 @@ footer > p {
 
 ul,
 ol,
+time,
 .post p {
   font-size: 1.3em;
+}
+
+time {
+  color: var(--foreground)
 }
 
 .sobre {
@@ -254,7 +229,6 @@ ol,
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  max-width: 80ch;
 }
 
 .sobre h1 {

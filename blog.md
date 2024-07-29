@@ -19,5 +19,4 @@ title: Posts
     </article>
 {% endfor %}
 </div>
-{% include footer.html %}
 
