@@ -17,7 +17,6 @@ title: Posts
           <h3>{{ post.title }}</h3>
           <p>{{ post.description }}</p>
         </hgroup>
-        <time>{{ post.date }}</time>
       </a>
     </article>
 {% endfor %}
