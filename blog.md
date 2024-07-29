@@ -1,10 +1,8 @@
 ---
+layout: default
 title: Posts
 ---
-{% include head.html %}
-{% include navbar.html %}
-<main>
-  <div class="center">
+<div class="center">
 {% for post in site.posts %}
     <article class="card">
       <a class="post-link" href="{{ post.url }}">
@@ -20,7 +18,6 @@ title: Posts
       </a>
     </article>
 {% endfor %}
-  </div>
-</main>
+</div>
 {% include footer.html %}
 
