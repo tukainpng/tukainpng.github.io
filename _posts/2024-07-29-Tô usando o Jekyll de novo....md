@@ -81,13 +81,12 @@ puts "Digite a descrição do post"
 description = gets.chomp
 puts "Digite a thumbnail do post"
 thumbnail = gets.chomp
-d = DateTime.now
-date = d.strftime("%Y-%m-%d-")
+date = DateTime.now.strftime("%Y-%m-%d-")
 
-post = File.new(date + title + ".md", "w")
 post_name = date + title + ".md"
+post_file = File.new(post_name, "w")
 
-File.open(post, "w") do |f|
+File.open(post_file, "w") do |f|
   f.write("---
 layout: post
 thumbnail: #{thumbnail}
