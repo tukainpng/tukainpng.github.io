@@ -334,8 +334,11 @@ td:hover {
   opacity: 50%;
 }
 
-.highlight {
+.highlight pre {
   padding: 1em;
+}
+
+.highlight {
   margin: 0;
   overflow: scroll;
 }
