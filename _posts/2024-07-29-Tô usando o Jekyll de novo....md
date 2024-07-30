@@ -59,7 +59,7 @@ novos posts.
 
 O que é que tá diferente nele?
 
-Simple.
+Simples.
 
 Ele não é mais um shell-script, ele é um script Ruby!
 
