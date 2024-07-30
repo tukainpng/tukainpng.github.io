@@ -38,8 +38,11 @@ hr {
 }
 
 blockquote {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-left: solid 2px var(--blue);
-  margin-left: 1em;
+  max-width: 70ch;
   padding: 10px;
   background-color: var(--grey);
   color: var(--blue);
