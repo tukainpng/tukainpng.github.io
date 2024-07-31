@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bem-vindo!
+title: Tukain's Blog
 ---
 <div class="welcome">
   <hgroup>
