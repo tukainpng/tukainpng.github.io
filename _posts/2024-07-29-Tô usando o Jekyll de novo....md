@@ -2,7 +2,7 @@
 layout: post
 created: 29/07/2024
 title: Tô usando o Jekyll de novo...
-thumbnail: 😐
+thumbnail: ._.
 description: Acho melhor eu ir logo a um psicólogo, isso não deve ser normal
 ---
 É isso mesmo que você acabou de ler. Eu tô usando o Jekyll de novo. Cara, eu
