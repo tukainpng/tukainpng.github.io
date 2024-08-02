@@ -7,7 +7,7 @@ title: Posts
     <article class="card">
       <a class="post-link" href="{{ post.url }}">
         <div class="thumbnail">
-          <p class="center">
+          <p>
             {{ post.thumbnail }}
           </p>
         </div>
