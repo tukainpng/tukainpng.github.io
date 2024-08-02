@@ -31,8 +31,8 @@ a:hover {
 }
 
 hr {
-  border-width: 1px;
-  border-color: var(--foreground);
+  border: 1px solid var(--grey);
+  border-bottom: none;
 }
 
 blockquote {
