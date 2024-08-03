@@ -7,7 +7,9 @@ title: Tutoriais
         <h1>Tutoriais</h1>
         <p>Alguns tutoriais sobre coisas que uso, feitos por mim.</p>
     </hgroup>
-    <a href="/pages/tutorial/rss.xml"><img style="border-radius:3px" width="16px" src="/assets/img/rss.webp" /></a>
+    <a href="/pages/tutorial/rss.xml">
+        <img style="border-radius:3px" width="16px" src="/assets/img/rss.webp" />
+    </a>
 </div>
 <div class="center">
 {% for tutorial in site.tutorials %}

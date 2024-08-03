@@ -3,6 +3,7 @@ layout: tutorial
 title: Como usar o Jekyll
 description: "Um guia rápido para utilizar o Jekyll"
 thumbnail: "Jekyll > Hugo"
+draft: true
 ---
 * TOC
 {:toc}
@@ -130,3 +131,5 @@ O que você vai colocar nesta pasta depende exclusivamente de você.
 
 Agora vamos para uma das partes mais importantes do Jekyll, o diretório
 `_layouts`.
+
+

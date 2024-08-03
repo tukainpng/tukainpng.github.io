@@ -3,11 +3,19 @@
 <main class="post">
   <article>
     <div class="center">
+    {% if page.draft %}
+      <div class="alert post-thumbnail">
+        <p class="center">
+          Artigo em produção!
+        </p>
+      </div>
+      {% else %}
       <div class="post-thumbnail">
         <p class="center">
           {{ page.thumbnail }}
         </p>
       </div>
+    {% endif %}
     </div>
     <hgroup>
       <h1>{{ page.title }}</h1>
@@ -17,4 +25,5 @@
     <div class="post-content">
       {{ content }}
     </div>
+</main>
 {% include footer.html %}
