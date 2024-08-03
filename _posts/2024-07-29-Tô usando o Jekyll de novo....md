@@ -5,6 +5,9 @@ title: Tô usando o Jekyll de novo...
 thumbnail: ._.
 description: Acho melhor eu ir logo a um psicólogo, isso não deve ser normal
 ---
+* TOC
+{:toc}
+
 É isso mesmo que você acabou de ler. Eu tô usando o Jekyll de novo. Cara, eu
 devo estar inconscientemente treinando para conseguir o recorde mundial de
 pessoa mais indecisa, eu simplesmente não consigo entender o porquê de eu fazer

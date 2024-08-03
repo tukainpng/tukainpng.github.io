@@ -18,6 +18,8 @@ thumbnail: #{thumbnail}
 title: #{title}
 description: #{description}
 ---
+* TOC
+{:toc}
 ")
 end
 

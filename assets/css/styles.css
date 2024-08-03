@@ -1,6 +1,33 @@
 @import "/assets/css/highlight.css";
 @import "/assets/css/colors.css";
 
+@font-face {
+  src: url("/assets/fonts/JetBrainsMono-Regular.woff2");
+  font-family: "jetbrains-regular";
+}
+
+@font-face {
+  src: url("/assets/fonts/JetBrainsMono-Bold.woff2");
+  font-family: "jetbrains-bold";
+}
+
+@font-face {
+  src: url("/assets/fonts/JetBrainsMono-Italic.woff2");
+  font-family: "jetbrains-italic";
+}
+
+html,h1,h2,h3,h4,h5,h6,p,li,ol,ul,td,th,table,pre,code,kbd {
+  font-family: "jetbrains-regular";
+}
+
+b,strong {
+  font-family: "jetbrains-bold";
+}
+
+i,em,cite {
+  font-family: "jetbrains-italic";
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +38,6 @@
 }
 
 html {
-  font-family: "Noto Sans", Sans-serif;
   position: relative;
   min-height: 100%;
 }
@@ -336,6 +362,27 @@ td:hover {
   overflow: scroll;
 }
 
+.language-plaintext {
+  background-color: var(--grey);
+  color: var(--green);
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+#markdown-toc {
+  background-color: var(--grey);
+  border: solid 2px var(--blue);
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  left: 10px;
+  top: 5.05em;
+  list-style: none;
+  overflow-y: scroll;
+  font-size: 1em;
+  max-width: 26ch;
+}
+
 @media only screen and (orientation: portrait) {
   nav {
     font-size: smaller;
@@ -389,6 +436,10 @@ td:hover {
   ol,
   .post p {
     font-size: 1em;
+  }
+
+  #markdown-toc {
+    display: none;
   }
 
 }

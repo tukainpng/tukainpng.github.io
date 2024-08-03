@@ -36,6 +36,7 @@ description: "Os pensamentos intrusivos me dominaram"
 <p>
   O resultado final é esse aqui:
 </p>
+
 ```c
 #include <stdio.h>
 

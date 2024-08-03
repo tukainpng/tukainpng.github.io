@@ -9,7 +9,8 @@
 .highlight .o   { color: var(--red) } /* Operator */
 .highlight .p   { color: var(--foreground) } /* Punctuation */
 .highlight .cm  { color: var(--grey) } /* Comment.Multiline */
-.highlight .cp  { color: var(--grey) } /* Comment.Preproc */
+.highlight .cp  { color: var(--green) } /* Comment.Preproc */
+.highlight .cpf { color: var(--green) } /* Comment.Preproc */
 .highlight .c1  { color: var(--grey) } /* Comment.Single */
 .highlight .cs  { color: var(--grey) } /* Comment.Special */
 .highlight .ge  { font-style: italic } /* Generic.Emph */

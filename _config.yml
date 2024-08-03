@@ -5,3 +5,7 @@ lang: pt-br
 author: Diogo Fernandes
 description: Meu blog pessoal
 highlighter: rouge
+markdown: kramdown
+collections:
+  tutorials:
+    output: true
