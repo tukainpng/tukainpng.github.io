@@ -3,7 +3,7 @@ layout: tutorial
 title: Como usar o Jekyll
 description: "Um guia rápido para utilizar o Jekyll"
 thumbnail: "Jekyll > Hugo"
-draft: true
+draft: false
 ---
 * TOC
 {:toc}
@@ -224,3 +224,67 @@ description: "Meu primeiro site utilizando Jekyll!"
 {% endraw %}
 ```
 
+Depois disso, é só escrever qualquer coisa que você quiser abaixo da
+`front-matter`
+
+```liquid
+{% raw %}
+---
+layout: default
+title: "Página Inicial"
+description: "Meu primeiro site utilizando Jekyll!"
+---
+
+Oiê :3
+
+Meu nome é Jorjingameplay420_69, tudo bom com você?
+{% endraw %}
+```
+
+Você pode repetir isso para as outras páginas também.
+
+# Chegou a hora de por isso em prática
+
+Agora que você já fez a estrutura dos arquivos, já fez blocos reutilizáveis de
+código (`_includes`) e já fez também um layout padrão, tudo o que você precisa
+fazer agora é abrir o seu terminal, e digitar:
+
+```bash
+jekyll build
+```
+
+Se eu lembrei de te contar tudo o que você precisava fazer e você fez tudo o
+que eu te disse, você vai ter no final disso tudo um diretório chamado `_site`
+contendo o produto final do seu trabalho.
+
+Você vai ficar bastante tempo criando layout's e include's, mas no final, você
+vai conseguir criar novas páginas cada vez mais rápido, sem contar que quando
+você edita um include, por exemplo, todos os arquivos que usam este include vão
+ser modificados também. Evitando assim um possível retrabalho que levaria de
+alguns minutos a algumas horas ou quem sabe até mesmo dias.
+
+# Conclusão
+
+Com toda certeza eu não te dei uma visão geral completa do que é o Jekyll, até
+porquê essa não é a minha intenção, só quero te dar um pequeno empurrão para
+conhecer esta ferramenta incrível.
+
+Este website inclusive, é construído inteiramente utilizando o Jekyll. Fazendo
+uso de partes mais programáticas do Jekyll e outras mais avançadas (nem tanto
+na verdade). Tanto que eu não faço uso de nenhuma linha de Javascript, só uso
+coisas que são nativas do Jekyll, e também faço 30 pactos com o cara da
+biqueira embaixo da terra para fazer um CSS que faz parecer que eu tô usando
+React ou TailwindCSS.
+
+Sinta-se livre para examinar o "[código-fonte](https://github.com/tukainpng/tukainpng.github.io)"
+deste website, quem sabe você aprenda algo de verdade vendo como que se usa o
+Jekyll na prática.
+
+Logicamente, eu recomendo fortemente que você [RTFM](https://jekyllrb.com/docs/)
+(pesquise no Google o que isso significa 😁)
+
+Enfim, eu vou dar o fora agora, qualquer erro que você perceba neste artigo ou
+qualquer ideia que você tenha para melhorar ele, por favor, abra uma issue no
+Github comentando sobre.
+
+Espero que eu tenha sido útil para você, e até a próxima!
