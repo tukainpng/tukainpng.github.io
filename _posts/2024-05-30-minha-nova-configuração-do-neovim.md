@@ -4,41 +4,44 @@ thumbnail: ">:)"
 title: "Minha nova configuração do Neovim"
 description: "Eu fiz muita coisa desde a última vez que comentei sobre ele."
 ---
-<p>Tô começando a achar que editores de texto são o meu Thanos, porquê depois que
+* TOC
+{:toc}
+
+Tô começando a achar que editores de texto são o meu Thanos, porquê depois que
 eu uso um, é inevitável que vou fazer um post sobre ele, as vezes até mesmo
-mais de um.</p>
+mais de um.
 
-<h1>Mas qual é a novidade?</h1>
+# Mas qual é a novidade?
 
-<p>Lembro bem que em um post relativamente antigo, eu comentei que havia deixado
+Lembro bem que em um post relativamente antigo, eu comentei que havia deixado
 de usar o Helix em favor de voltar ao Neovim, e naquele mesmo post eu disse que
-a única coisa que eu não tinha configurado era o suporte a LSP’s.</p>
+a única coisa que eu não tinha configurado era o suporte a LSP’s.
 
-<p>Acho que já dá para adivinhar que eu adicionei esse suporte.</p>
+Acho que já dá para adivinhar que eu adicionei esse suporte.
 
-<p>O lance é que eu fiz isso a quase 1 mês, e eu esqueci completamente de comentar
-sobre.</p>
+O lance é que eu fiz isso a quase 1 mês, e eu esqueci completamente de comentar
+sobre.
 
-<p>Eu até mesmo comentei sobre o LSP da Zig, mas eu não dei o contexto de que o
-meu Neovim estava com o suporte já configurado.</p>
+Eu até mesmo comentei sobre o LSP da Zig, mas eu não dei o contexto de que o
+meu Neovim estava com o suporte já configurado.
 
-<h1>Algo mais?</h1>
+# Algo mais?
 
-<p>Além do mais importante para mim, que é o LSP, eu também adicionei uma porrada
+Além do mais importante para mim, que é o LSP, eu também adicionei uma porrada
 de paletas de cores (totalizando 35), uma nova dashboard, novas teclas de
-atalho e reorganizei a estrutura dos arquivos de configurações.</p>
+atalho e reorganizei a estrutura dos arquivos de configurações.
 
-<p>Basicamente, eu estou transformando o Neovim em uma IDE customizada, até agora,
+Basicamente, eu estou transformando o Neovim em uma IDE customizada, até agora,
 os únicos LSP’s que eu tenho instalados são o clangd e o lua-ls, já que até o
 momento, não existe um LSP para a Hare (a minha languagem de programação
-favorita).</p>
+favorita).
 
-<p>Lógico que ainda tem coisas que eu preciso configurar, como o none-ls por
+Lógico que ainda tem coisas que eu preciso configurar, como o none-ls por
 exemplo, mas pelo menos por enquanto, essa configuração me agrada, não só isso
-como supera o Helix para o meu uso.</p>
+como supera o Helix para o meu uso.
 
-<h1><em>Fin</em></h1>
+# _Fin_
 
-<p>Bom, isso é tudo o que eu tenho a dizer por hoje.</p>
+Bom, isso é tudo o que eu tenho a dizer por hoje.
 
-<p>Até o próximo post!</p>
+Até o próximo post!

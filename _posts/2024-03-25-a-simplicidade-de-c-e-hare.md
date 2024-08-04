@@ -4,49 +4,51 @@ title: A simplicidade de C e Hare
 thumbnail: "(>'o')> ♥ <('o'<)"
 description: "Nem um pouco parecido com um mostro de 7 cabeças"
 ---
+* TOC
+{:toc}
 
-<p>Recentemente eu fiz um post sobre os meus estudos com a linguagem de
+Recentemente eu fiz um post sobre os meus estudos com a linguagem de
 programação Hare, falei sobre o que eu planejo fazer com esse conhecimento
 entre outras coisas. Mas algo que eu não comentei sobre foi o fato de eu estar
 estudando Hare em conjunto com C (só mencionei que a sintaxe da Hare é
-semelhante a C).</p>
+semelhante a C).
 
-<h1>Por quê estou fazendo isso?</h1>
+# Por quê estou fazendo isso?
 
-<p>Bom, isso é algo que eu simplesmente esqueci de comentar no meu último post, estou fazendo isso
-por 2 motivos principais:</p>
+Bom, isso é algo que eu simplesmente esqueci de comentar no meu último post, estou fazendo isso
+por 2 motivos principais:
 
-<p>As sintaxes são semelhantes, então posso pegar
+As sintaxes são semelhantes, então posso pegar
 um conhecimento novo de uma e levar para outra; Ambas são linguagens low-level,
 com foco em alto desempenho e possuem manipulação manual de memória, então
 posso aprender esse conceito de forma prática. Claro que existem outros motivos
 para eu fazer algo nesse estilo, mas eu não vejo a necessidade de listar todos
 eles aqui. Afinal, já é algo “estranho” para um jovem da minha idade ter
 interesse em uma “linguagem defasada e insegura” como a C, ao invés de querer
-aprender algo como Python, Ruby ou Javascript.</p>
+aprender algo como Python, Ruby ou Javascript.
 
-<h1>Existe algum outro motivo?</h1>
+# Existe algum outro motivo?
 
-<p>Óbviamente que sim. Aprender C/Hare é algo como um sonho que
+Óbviamente que sim. Aprender C/Hare é algo como um sonho que
 quero, e posso, tornar realidade. É algo que chega perto de uma romantização,
 um sentimento que dá vontade de correr atrás, de se esforçar para
-alcança-lo.</p>
+alcança-lo.
 
-<p>Quase como você sonha em ter seu próprio carro, viver
-sozinho, ou viajar o mundo. Não é um sentimento fácil de por em palavras.</p>
+Quase como você sonha em ter seu próprio carro, viver
+sozinho, ou viajar o mundo. Não é um sentimento fácil de por em palavras.
 
-<h1>Como está meu progresso até agora?</h1>
+# Como está meu progresso até agora?
 
-<p>Bom, eu iniciei meus estudos a
+Bom, eu iniciei meus estudos a
 pouquíssimo tempo, então ainda estou em meus estágios iniciais. Porém já
 aprendi alguns conceitos básicos como if statements, which loop, for loop,
-switch-case, structs e alguns types também (tanto em C quanto em Hare).</p>
+switch-case, structs e alguns types também (tanto em C quanto em Hare).
 
-<p>Também comecei a fazer alguns programas extremamente simples só para fixar
+Também comecei a fazer alguns programas extremamente simples só para fixar
 esses conceitos na minha cabeça, um exemplo desses programas é um programa que
-cria um arquivo vazio usando um nome que o usuário fornece.</p>
+cria um arquivo vazio usando um nome que o usuário fornece.
 
-<h1>Escrito em C:</h1>
+# Escrito em C:
 
 ```c
 int main()
@@ -68,7 +70,7 @@ int main()
 }
 ```
 
-<h1>Escrito em Hare:</h1>
+# Escrito em Hare:
 
 ```rust
 use os;
@@ -93,25 +95,25 @@ fn nomeDoArquivo() str = {
 };
 ```
 
-<h1>As diferenças</h1>
+# As diferenças
 
-<p>Algo que já para notar nesses exemplos é que o código
+Algo que já para notar nesses exemplos é que o código
 em Hare é um pouco maior que o código em C, o motivo disso é que a Hare tem um
 foco na manipulação de erros. O que faz com que você tenha não só ter plena
 noção do que deve ser feito em caso de algum erro, mas também dizer ao programa
-o que ele vai fazer em caso de erro.</p>
+o que ele vai fazer em caso de erro.
 
-<p>A consequência disso é ter um pouco
+A consequência disso é ter um pouco
 mais de linhas de código necessárias e também mais símbolos para serem
-utilizados durante a escrita do programa.</p>
+utilizados durante a escrita do programa.
 
-<p>Apesar disso, eu acho a
+Apesar disso, eu acho a
 sintaxe da Hare mais legível que a C em alguns casos, como por exemplo na
-criação e utilização de structs.</p>
+criação e utilização de structs.
 
-<h1><em>Fin</em></h1>
+# _Fin_
 
-<p>Bem, isso é tudo o que eu tenho a dizer por agora.</p>
+Bem, isso é tudo o que eu tenho a dizer por agora.
 
-<p>Até o próximo post!</p>
+Até o próximo post!
 

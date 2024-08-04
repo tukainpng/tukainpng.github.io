@@ -4,86 +4,90 @@ thumbnail: "(@ _ @)"
 title: "Harebuild"
 description: "Um build system no estilo do Zig Build System"
 ---
-<p>Quanto tempo meu caro leitor, espero que você esteja bem.</p>
+* TOC
+{:toc}
 
-<p>Hoje eu trago algo que comecei a fazer a pouco tempo, e que, pelo menos para
+Quanto tempo meu caro leitor, espero que você esteja bem.
+
+Hoje eu trago algo que comecei a fazer a pouco tempo, e que, pelo menos para
 mim, é algo que acho que será útil assim que estiver concluído. Estou me
 referindo a um build-system que comecei a fazer para a Hare, ele está em seus
-estágios iniciais, eu nem sequer li sobre como fazer um build-system ainda.</p>
+estágios iniciais, eu nem sequer li sobre como fazer um build-system ainda.
 
-<h1>Então como que ele funciona por enquanto?</h1>
+# Então como que ele funciona por enquanto?
 
-<p>No momento ele é basicamente um shell-script glorificado, não que isso seja um
+No momento ele é basicamente um shell-script glorificado, não que isso seja um
 problema, mas ainda assim continua sendo algo que um shell-script (ou Makefile)
-conseguiria fazer de forma até mesmo mais simples.</p>
+conseguiria fazer de forma até mesmo mais simples.
 
-<p>Porém, a ideia é ter uma forma de compilar um programa feito em Hare, usando um
+Porém, a ideia é ter uma forma de compilar um programa feito em Hare, usando um
 outro programa feito em Hare, quiçá até mesmo integrar o build-system no
-próprio código-fonte do programa.</p>
+próprio código-fonte do programa.
 
-<h1>Como está a implementação atual?</h1>
+# Como está a implementação atual?
 
-<p>Por enquanto, como eu já disse, ela é basicamente um shell-script glorificado,
+Por enquanto, como eu já disse, ela é basicamente um shell-script glorificado,
 mas para fins de tranparência (já que eu não criei um repositório para esse
-projeto no momento) aqui está o código-fonte dela:</p>
+projeto no momento) aqui está o código-fonte dela:
 
-<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">use</span> <span class="n">fmt</span><span class="p">;</span>
-<span class="k">use</span> <span class="n">os</span><span class="p">;</span>
-<span class="k">use</span> <span class="nn">os</span><span class="p">::</span><span class="n">exec</span><span class="p">;</span>
+```rust
+use fmt;
+use os;
+use os::exec;
 
-<span class="k">type</span> <span class="n">Build</span> <span class="o">=</span> <span class="k">struct</span> <span class="p">{</span>
-	<span class="n">flag</span><span class="p">:</span>	<span class="nb">str</span><span class="p">,</span>
-	<span class="n">target</span><span class="p">:</span>	<span class="nb">str</span><span class="p">,</span>
-	<span class="n">link</span><span class="p">:</span>	<span class="nb">str</span><span class="p">,</span>
-	<span class="n">output</span><span class="p">:</span>	<span class="nb">str</span><span class="p">,</span>
-	<span class="n">src</span><span class="p">:</span>	<span class="nb">str</span><span class="p">,</span>
-<span class="p">};</span>
+type Build = struct {
+	flag:	str,
+	target:	str,
+	link:	str,
+	output:	str,
+	src:	str,
+};
 
-<span class="k">fn</span> <span class="nf">build</span><span class="p">(</span><span class="n">b</span><span class="p">:</span> <span class="n">Build</span><span class="p">)</span> <span class="n">void</span> <span class="o">=</span> <span class="p">{</span>
-	<span class="k">let</span> <span class="n">cmd</span> <span class="o">=</span> <span class="nn">exec</span><span class="p">::</span><span class="nf">cmd</span><span class="p">(</span>
-		<span class="s">"hare"</span><span class="p">,</span>
-		<span class="s">"build"</span><span class="p">,</span>
-		<span class="s">"-a"</span><span class="p">,</span>
-		<span class="n">b</span><span class="py">.target</span><span class="p">,</span>
-		<span class="n">b</span><span class="py">.flag</span><span class="p">,</span>
-		<span class="n">b</span><span class="py">.link</span><span class="p">,</span>
-		<span class="s">"-o"</span><span class="p">,</span>
-		<span class="n">b</span><span class="py">.output</span><span class="p">,</span>
-		<span class="n">b</span><span class="py">.src</span><span class="p">,</span>
-	<span class="p">)</span><span class="o">!</span><span class="p">;</span>
-	<span class="k">let</span> <span class="n">proc</span> <span class="o">=</span> <span class="nn">exec</span><span class="p">::</span><span class="nf">start</span><span class="p">(</span><span class="o">&</span><span class="n"></span><span class="p"></span><span class="n">cmd</span><span class="p">)</span><span class="o">!</span><span class="p">;</span>
-	<span class="k">let</span> <span class="n">status</span> <span class="o">=</span> <span class="nn">exec</span><span class="p">::</span><span class="nf">wait</span><span class="p">(</span><span class="o">&</span><span class="n"></span><span class="p"></span><span class="n">proc</span><span class="p">)</span><span class="o">!</span><span class="p">;</span>
-	<span class="nf">assert</span><span class="p">(</span><span class="nn">exec</span><span class="p">::</span><span class="nf">check</span><span class="p">(</span><span class="o">&</span><span class="n"></span><span class="p"></span><span class="n">status</span><span class="p">)</span> <span class="n">is</span> <span class="n">void</span><span class="p">);</span>
-<span class="p">};</span>
+fn build(b: Build) void = {
+	let cmd = exec::cmd(
+		"hare",
+		"build",
+		"-a",
+		b.target,
+		b.flag,
+		b.link,
+		"-o",
+		b.output,
+		b.src,
+	)!;
+	let proc = exec::start(&cmd)!;
+	let status = exec::wait(&proc)!;
+	assert(exec::check(&status) is void);
+};
 
-<span class="n">def</span> <span class="n">src_file</span> <span class="o">=</span> <span class="s">"hello.ha"</span><span class="p">;</span>
+def src_file = "hello.ha";
 
-<span class="n">export</span> <span class="k">fn</span> <span class="nf">main</span><span class="p">()</span> <span class="n">void</span> <span class="o">=</span> <span class="p">{</span>
-	<span class="k">let</span> <span class="n">prog</span> <span class="o">=</span> <span class="n">Build</span> <span class="p">{</span>
-		<span class="n">target</span> <span class="o">=</span>	<span class="nn">os</span><span class="p">::</span><span class="nf">machine</span><span class="p">(),</span>
-		<span class="n">flag</span> <span class="o">=</span>		<span class="s">"-R"</span><span class="p">,</span>
-		<span class="n">link</span> <span class="o">=</span>		<span class="s">"-L."</span><span class="p">,</span>
-		<span class="n">src</span> <span class="o">=</span>		<span class="n">src_file</span><span class="p">,</span>
-		<span class="n">output</span> <span class="o">=</span>	<span class="s">"hello"</span><span class="p">,</span>
-	<span class="p">};</span>
+export fn main() void = {
+	let prog = Build {
+		target =	os::machine(),
+		flag =		"-R",
+		link =		"-L.",
+		src =		src_file,
+		output =	"hello",
+	};
 
-	<span class="nf">build</span><span class="p">(</span><span class="n">prog</span><span class="p">);</span>
-<span class="p">};</span>
+	build(prog);
+};
 
-<span class="o">@</span><span class="n">init</span> <span class="k">fn</span> <span class="nf">init</span><span class="p">()</span> <span class="n">void</span> <span class="o">=</span> <span class="p">{</span>
-	<span class="nn">fmt</span><span class="p">::</span><span class="nf">printfln</span><span class="p">(</span><span class="s">"Compilando: {}"</span><span class="p">,</span> <span class="n">src_file</span><span class="p">)</span><span class="o">!</span><span class="p">;</span>
-<span class="p">};</span>
+@init fn init() void = {
+	fmt::printfln("Compilando: {}", src_file)!;
+};
 
-<span class="o">@</span><span class="n">fini</span> <span class="k">fn</span> <span class="nf">init</span><span class="p">()</span> <span class="n">void</span> <span class="o">=</span> <span class="p">{</span>
-	<span class="nn">fmt</span><span class="p">::</span><span class="nf">println</span><span class="p">(</span><span class="s">"Programa compilado!"</span><span class="p">)</span><span class="o">!</span><span class="p">;</span>
-<span class="p">};</span>
-</code></pre></div></div>
+@fini fn init() void = {
+	fmt::println("Programa compilado!")!;
+};
+```
 
-<p>Como eu disse, extremamente simples, um shell-script glorificado, mas apesar
-disso, ainda é um começo de algo que pode vir a ser útil.</p>
+Como eu disse, extremamente simples, um shell-script glorificado, mas apesar
+disso, ainda é um começo de algo que pode vir a ser útil.
 
-<h1><em>Fin</em></h1>
+# _Fin_
 
-<p>Bem, isso é tudo o que eu tenho a dizer por hoje.</p>
+Bem, isso é tudo o que eu tenho a dizer por hoje.
 
-<p>Te vejo no próximo post!</p>
+Te vejo no próximo post!

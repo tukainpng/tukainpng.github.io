@@ -4,42 +4,45 @@ thumbnail: "ᕙ(⇀‸↼‶)ᕗ"
 title: "Meu progresso"
 description: "Como anda o meu progresso com o raylib.ha"
 ---
-<p>Nos últimos dias eu tive um foco maior nos exemplos que eu deixo no
+* TOC
+{:toc}
+
+Nos últimos dias eu tive um foco maior nos exemplos que eu deixo no
 repositório do raylib.ha. Afinal, eles são formas de demonstrar que as bindings
 não só estão funcionando, como sua curva de aprendizado é ridiculamente
-pequena. A única forma de provar isso, é tendo exemplos usando as bindings.</p>
+pequena. A única forma de provar isso, é tendo exemplos usando as bindings.
 
-<h1>E então, o que eu consegui?</h1>
+# E então, o que eu consegui?
 
-<p>No momento, eu tenho 2 exemplos
+No momento, eu tenho 2 exemplos
 prontos, e um deles também tem uma versão re-escrita em C, como forma de
 demonstrar a similaridade entre eles. O primeiro exemplo é uma sequência
-Fibonacci, e o segundo é… bem…</p>
+Fibonacci, e o segundo é… bem…
 
-<p><img src="/assets/img/posts/meu-progresso.webp" alt="screenshot" /></p>
+<img src="/assets/img/posts/meu-progresso.webp" alt="screenshot" />
 
-<p>Não, isso não é um screenshot do Undertale, isso é o segundo exemplo do raylib.ha.
+Não, isso não é um screenshot do Undertale, isso é o segundo exemplo do raylib.ha.
 No momento, com as bindings atuais, é possível fazer um jogo semelhante ao
-Undertale. Sendo assim, eu quis demonstrar isso de forma mais explícita.</p>
+Undertale. Sendo assim, eu quis demonstrar isso de forma mais explícita.
 
-<p>Esse exemplo não é uma recriação completa desta sala do undertale, na
+Esse exemplo não é uma recriação completa desta sala do undertale, na
 verdade você não consegue interagir com nada. Só existem paredes invisíveis
 para que o player não saia da sala, uma música que toca de fundo e um menu de
-informações que o usuário pode abrir.</p>
+informações que o usuário pode abrir.
 
-<h1>E agora?</h1>
+# E agora?
 
-<p>Por enquanto, eu
+Por enquanto, eu
 voltarei a me focar na criação de bindings. Já estou completando as bindings do
 módulo raudio e já finalizei as do rshapes. As próximas serão as bindings
-relacionadas a janelas e texto.</p>
+relacionadas a janelas e texto.
 
-<p>Isso tudo está sendo uma ótima
-experiência de aprendizado.</p>
+Isso tudo está sendo uma ótima
+experiência de aprendizado.
 
-<h1><em>Fin</em></h1>
+# _Fin_
 
-<p>Enfim, isso é tudo o
-que eu tenho a dizer por hoje.</p>
+Enfim, isso é tudo o
+que eu tenho a dizer por hoje.
 
-<p>Até o próximo post!</p>
+Até o próximo post!

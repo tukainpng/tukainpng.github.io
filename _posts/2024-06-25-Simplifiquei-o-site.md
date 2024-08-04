@@ -4,43 +4,46 @@ thumbnail: "c[_] Vai um café?"
 title: "Simplifiquei o site"
 description: "Não estou mais usando nem o Bootstrap, nem o Jekyll."
 ---
-<p>Pois é, essa é mais uma prova do quão indeciso eu consigo ser com
+* TOC
+{:toc}
+
+Pois é, essa é mais uma prova do quão indeciso eu consigo ser com
 esse site. Eu quase que fiz um refactor completo de como o site
 funciona, o motivo? Eu queria deixar esse site mais fácil de ser
-editado (ou até mesmo atualizado) pelo Neocities.</p>
+editado (ou até mesmo atualizado) pelo Neocities.
 
-<h1>Como ele funciona agora?</h1>
+# Como ele funciona agora?
 
-<p>Agora esse site basicamente voltou a sua origem de quando eu tinha
+Agora esse site basicamente voltou a sua origem de quando eu tinha
 que escrever o HTML de cada post na mão. Claro que eu sempre tinha uma
 template para poder agilizar esse trabalho, mas ainda assim era bem
-ineficiênte.</p>
+ineficiênte.
 
-<p>A diferença é que agora eu fiz um shell-script que cuida de fazer
+A diferença é que agora eu fiz um shell-script que cuida de fazer
 todo o processo repetitivo e me deixa por conta de simplesmente
-escrever o conteúdo.</p>
+escrever o conteúdo.
 
-<p>O script é tão simples que eu posso tornar ele em um script posix
-sem muitas dificuldades.</p>
+O script é tão simples que eu posso tornar ele em um script posix
+sem muitas dificuldades.
 
-<h1>Tive que sacrificar algumas coisas</h1>
+# Tive que sacrificar algumas coisas
 
-<p>Como toda mudança, são necessários alguns sacrifícios, e no caso
-desse site, foram as tags.</p>
+Como toda mudança, são necessários alguns sacrifícios, e no caso
+desse site, foram as tags.
 
-<p>Isso não é lá um grande problema, mas ainda assim é uma feature a
-menos aqui.</p>
+Isso não é lá um grande problema, mas ainda assim é uma feature a
+menos aqui.
 
-<p>Como eu vou estudar Javascript, eu acho que eu posso implementar um
+Como eu vou estudar Javascript, eu acho que eu posso implementar um
 sistema de tags simples, no mesmo estilo que o meu antigo sistema de
-tabela de conteúdos.</p>
+tabela de conteúdos.
 
-<h1>As dependências do script</h1>
+# As dependências do script
 
-<p>Em termos simples: uma distro Linux ou sistema unix-like.</p>
+Em termos simples: uma distro Linux ou sistema unix-like.
 
-<p>Tudo o que esse script faz é uma manipulação de arquivos e nada além
-disso, e para poder provar isso, aqui está todo o código do script:</p>
+Tudo o que esse script faz é uma manipulação de arquivos e nada além
+disso, e para poder provar isso, aqui está todo o código do script:
 
 ```bash
 #!/usr/bin/env bash
@@ -68,11 +71,11 @@ cat << EOF > tmp/middle
         <div class="thumbnail">
           <p class="center">
             $THUMB
-          </p>
+          
         </div>
         <hgroup>
           <h3>$TMPNAME</h3>
-          <p>$DESCR</p>
+          $DESCR
         </hgroup>
       </a>
     </article>
@@ -85,11 +88,11 @@ cat << EOF > tmp/post-middle
       <div class="post-thumbnail">
         <p class="center">
           $THUMB
-        </p>
+        
       </div>
       <hgroup>
-        <h1>$TMPNAME</h1>
-        <p>$DESCR</p>
+        # $TMPNAME
+        $DESCR
       </hgroup>
       <hr>
       <div class="post-content">
@@ -117,10 +120,10 @@ cat tmp/post-bottom   >> posts/$POSTNAME.html
 $EDITOR posts/$POSTNAME.html
 ```
 
-<p>Eu sei que esse código não é o mais eficiênte, mas o importante é
-que ele funciona.</p>
+Eu sei que esse código não é o mais eficiênte, mas o importante é
+que ele funciona.
 
-<h1><em>Fin</em></h1>
-<p>Bem, isso é tudo o que eu tenho a dizer por agora.</p>
-<p>Até o próximo post!</p>
+# _Fin_
+Bem, isso é tudo o que eu tenho a dizer por agora.
+Até o próximo post!
 

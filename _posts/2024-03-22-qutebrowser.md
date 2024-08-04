@@ -4,36 +4,37 @@ thumbnail: "(ღˇ◡ˇ)~♥"
 title: "Qutebrowser"
 description: "Meu navegador web favorito"
 ---
-<h1>O que é isso?</h1>
-<p>O Qutebrowser é um navegador (quem diria) que usa o
+* TOC
+{:toc}
+
+# O que é isso?
+O Qutebrowser é um navegador (quem diria) que usa o
 motor qtwebengine, que em si é baseado no motor do Chromium, ou seja, o
 Qutebrowser é um chrome da vida, que nem o Brave, Edge, Opera, Vivaldi e assim
-por diante.</p>
+por diante.
 
-<h1>O que ele tem de especial</h1>
-<p>O que torna o
+# O que ele tem de especial
+O que torna o
 Qutebrowser diferente dos outros é uma coisa: o foco no uso do teclado.
 Como que ele faz isso? Usando a movimentação do Vim e teclas de atalho
 semelhantes. Você quase que não precisa de um mouse para navegar pela internet,
-praticamente tudo você consegue fazer usando o teclado.</p>
+praticamente tudo você consegue fazer usando o teclado.
 
-<p>Como que você
+Como que você
 interage com o site? Simples. É só apertar f e todos os elementos clicáveis da
 página vão aparecer com uma sequência de letras, quando você digitar a
 sequência que você deseja, o Qutebrowser vai agir como se você tivesse usado o
 mouse para clicar naquele elemento.
 Bom ele tem várias outras
-particuliaridades, mas por enquanto só vou ficar por aqui mesmo.</p>
+particuliaridades, mas por enquanto só vou ficar por aqui mesmo.
 
-<h1>Porquê estou usando ele</h1>
-<p>Duas coisas:</p>
+# Porquê estou usando ele
+Duas coisas:
 
-<ul>
-  <li>Porque eu gosto do Vim</li>
-  <li>Porque ele é minimalista</li>
-</ul>
+- Porque eu gosto do Vim
+- Porque ele é minimalista
 
-<p>O Qutebrowser tem uma
+O Qutebrowser tem uma
 interface extremamente minimalista, e depois de algumas configurações ele fica
 ainda mais minimalista. No meu caso, quando só tem uma aba aberta, ele esconde
 a barra com as abas, então a única barra visível é a barra inferior, que mostra
@@ -41,11 +42,11 @@ alguns status no lado direito e em qual modo eu estou no lado esquerdo.
 Outra coisa é que o Qutebrowser é surpreendentimente leve e rápido, algo
 que é difícil de se achar hoje em dia. Meu notebook mal sente o impacto do
 Qutebrowser, e olha que o meu notebook é só um Celeron com 4Gb de ram (sim, ele
-é um guerreiro).</p>
+é um guerreiro).
 
-<h1><em>Fin</em></h1>
-<p>Tendo dito toda essa ladainha, se
+# _Fin_
+Tendo dito toda essa ladainha, se
 você é alguém que usa Linux, ou que gosta do Vim, dê o Qutebrowser uma chance,
-confie em mim, é algo sem igual.</p>
+confie em mim, é algo sem igual.
 
-<p>Te vejo no próximo post!</p>
+Te vejo no próximo post!
