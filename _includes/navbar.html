@@ -1,17 +1,20 @@
 <header>
   <nav>
-    <ul>
-      <li>
-        <a href="/">Início</a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <a href="/pages/blog">Blog</a>
-      </li>
-      <li>
-        <a href="/pages/tutorial">Tutoriais</a>
-      </li>
-    </ul>
+    <!--https://www.youtube.com/watch?v=8eFeIFKAKHw-->
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">Menu</label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">Fechar</label>
+      <a class="home-link" href="/">Início</a>
+      <a href="/pages/blog/">Blog</a>
+      <a href="/pages/tutorial/">Tutorial</a>
+      <div class="sidebar-about">
+        <img src="/assets/img/fav.webp">
+        <hgroup>
+          <h1>Diogo Fernandes</h1>
+          <p>Usuário Linux / Blogger</p>
+        </hgroup>
+      </div>
+    </div>
   </nav>
 </header>

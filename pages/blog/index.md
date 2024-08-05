@@ -14,11 +14,13 @@ title: Posts
 {% for post in site.posts %}
     <article class="card">
       <a title="{{ post.date | date: '%d/%m/%Y' }}" class="post-link" href="{{ post.url }}">
+      <div class="center">
         <div class="thumbnail">
           <p class="center">
             {{ post.thumbnail }}
           </p>
         </div>
+      </div>
         <hgroup>
           <h3>{{ post.title }}</h3>
           <p>{{ post.description }}</p>
