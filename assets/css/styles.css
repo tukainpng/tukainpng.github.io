@@ -248,9 +248,7 @@ time {
 
 .post-content img {
   margin-bottom: 1em;
-  min-width: 600px;
-  max-width: 600px;
-  max-height: 300px;
+  max-width: 100%;
   object-fit: cover;
   display: block;
   margin-left: auto;
@@ -454,11 +452,6 @@ nav img, nav hgroup, .open-sidebar-button, .close-sidebar-button {
     font-size: 1.5em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-  }
-
-  .post-content img {
-    min-width: 120px;
-    max-width: 300px;
   }
 
   .post-thumbnail {
