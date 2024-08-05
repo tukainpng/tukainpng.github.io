@@ -435,19 +435,6 @@ nav img, nav hgroup, .open-sidebar-button, .close-sidebar-button {
     left: 0;
   }
 
-  .sobre {
-    margin: 0;
-    padding: 0;
-  }
-
-  .sobre h1 {
-    font-size: 1.5em;
-  }
-
-  .sobre p {
-    font-size: 1em;
-  }
-
   .post hgroup > h1 {
     font-size: 1.5em;
     margin: 0 !important;
@@ -475,7 +462,6 @@ nav img, nav hgroup, .open-sidebar-button, .close-sidebar-button {
   }
 
   .post-thumbnail {
-    max-width: 300px;
     max-height: 150px;
   }
 
