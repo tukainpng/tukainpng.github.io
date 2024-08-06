@@ -216,7 +216,7 @@ time {
 }
 
 .post img {
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .post h1 {
@@ -247,7 +247,6 @@ time {
 }
 
 .post-content img {
-  margin-bottom: 1em;
   max-width: 100%;
   object-fit: cover;
   display: block;
@@ -371,8 +370,13 @@ nav img, nav hgroup, .open-sidebar-button, .close-sidebar-button {
   display: none;
 }
 
+@media only screen and (max-width: 1359px) {
+  #markdown-toc {
+    display: none;
+  }
+}
 
-@media only screen and (orientation: portrait) {
+@media only screen and (max-width: 768px) {
   nav {
     backdrop-filter: none;
     background-color: var(--grey);
