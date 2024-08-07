@@ -34,6 +34,7 @@ i,em,cite {
 * {
   margin: 0;
   padding: 0;
+  scroll-padding: 4.5em;
 }
 
 *::-webkit-scrollbar {
@@ -257,9 +258,9 @@ iframe,
 }
 
 .alert {
-  border: solid 5px var(--background);
+  border: solid 5px var(--background-alt);
   background-color: var(--red);
-  color: var(--background);
+  color: var(--background-alt);
   padding: 3em;
 }
 
