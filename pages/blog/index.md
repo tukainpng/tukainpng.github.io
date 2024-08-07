@@ -8,7 +8,9 @@ title: Posts
         <p>Aqui, eu falo sobre coisas do meu cotidiano ou sobre assuntos que me
         interessam.</p>
     </hgroup>
-    <a href="/pages/blog/rss.xml"><img style="border-radius:3px" width="16px" src="/assets/img/rss.webp" /></a>
+    <a href="/pages/blog/rss.xml">
+        <img style="filter:saturate(0%);border-radius:3px" width="16px" src="/assets/img/rss.webp" />
+    </a>
 </div>
 <div class="center">
 {% for post in site.posts %}

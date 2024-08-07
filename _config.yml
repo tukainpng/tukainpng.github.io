@@ -7,5 +7,5 @@ description: Meu blog pessoal
 highlighter: rouge
 markdown: kramdown
 collections:
-  tutorials:
+  tutorial:
     output: true

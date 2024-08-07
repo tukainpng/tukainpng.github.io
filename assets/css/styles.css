@@ -67,7 +67,7 @@ hr {
 blockquote {
   border-left: solid 5px var(--blue);
   padding: 10px 1em;
-  background-color: var(--grey);
+  background-color: var(--background-alt);
   color: var(--blue);
 }
 
@@ -246,12 +246,12 @@ time {
   font-size: 2em;
 }
 
+iframe,
 .post-content img {
   max-width: 100%;
   object-fit: cover;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1em auto;
   border: solid 3px var(--grey);
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, .5);
 }
@@ -270,7 +270,6 @@ table, th, td {
 }
 
 table {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -315,7 +314,7 @@ td:hover {
 }
 
 #markdown-toc {
-  background-color: var(--background);
+  background-color: var(--background-alt);
   border: solid 2px var(--blue);
   border-radius: 5px;
   padding: 10px;
@@ -330,7 +329,7 @@ td:hover {
 
 nav {
   backdrop-filter: blur(15px);
-  background-color: rgba(38,38,38,.8);
+  background-color: rgba(.8);
   height: 60px;
   display: flex;
   align-items: center;

@@ -1,12 +1,13 @@
 :root {
-  --background:     #1f1f1f;
-  --background-alt: #0d0d0d;
-  --foreground:     #ffffff;
-  --grey:           #303030;
-  --red:            #f81118;
-  --green:          #2dc55e;
-  --yellow:         #ecba0f;
-  --blue:           #2a84d2;
-  --purple:         #4e5ab7;
-  --cyan:           #1081d6;
+  --background-alt: #1d2021;
+  --background:     #282828;
+  --grey:           #3c3836;
+  --foreground:     #ebdbb2;
+
+  --red:            #cc241d;
+  --green:          #98971a;
+  --yellow:         #d79921;
+  --blue:           #458588;
+  --purple:         #b16286;
+  --cyan:           #689d6a;
 }

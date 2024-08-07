@@ -1,6 +1,5 @@
 ---
 layout: post
-created: 29/07/2024
 title: Tô usando o Jekyll de novo...
 thumbnail: ._.
 description: Acho melhor eu ir logo a um psicólogo, isso não deve ser normal
@@ -90,7 +89,7 @@ post_name = date + title + ".md"
 post_file = File.new(post_name, "w")
 
 File.open(post_file, "w") do |f|
-  f.write("---
+f.write("---
 layout: post
 thumbnail: #{thumbnail}
 title: #{title}

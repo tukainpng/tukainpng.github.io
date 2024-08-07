@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 require 'date'
 
 puts "Digite o título do post"
@@ -12,7 +13,7 @@ post_name = date + title + ".md"
 post_file = File.new(post_name, "w")
 
 File.open(post_file, "w") do |f|
-  f.write("---
+f.write("---
 layout: post
 thumbnail: #{thumbnail}
 title: #{title}
