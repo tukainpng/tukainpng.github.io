@@ -2,15 +2,17 @@
 layout: default
 title: Tukain's Blog
 ---
-<div class="welcome">
-  <hgroup>
-    <h1>Bem-vindo(a) ao meu website!</h1>
-    <p>
-      Aqui eu falo sobre assuntos envolvendo partes do meu cotidiano,
-      coisas relacionadas à minha experiência com a programação, com o
-      mundo Linux e também outros softwares open-source.
-    </p>
-  </hgroup>
+<div class="center">
+    <div style="max-width:60ch">
+        <hgroup>
+            <h1>Bem-vindo(a) ao meu website!</h1>
+            <p>
+                Aqui eu falo sobre assuntos envolvendo partes do meu cotidiano,
+                coisas relacionadas à minha experiência com a programação, com o
+                mundo Linux e também outros softwares open-source.
+            </p>
+        </hgroup>
+    </div>
 </div>
 
 <div class="center">
