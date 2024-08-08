@@ -9,7 +9,7 @@ title: Posts
         interessam.</p>
     </hgroup>
     <a href="/pages/blog/rss.xml">
-        <img style="filter:saturate(0%);border-radius:3px" width="16px" src="/assets/img/rss.webp" />
+        <img style="border-radius:3px" width="16px" src="/assets/img/rss.webp" />
     </a>
 </div>
 <div class="center">
