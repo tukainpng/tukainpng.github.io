@@ -1,16 +1,16 @@
 @import "/assets/css/colors.css";
 .highlight pre  { background-color: var(--grey); }
 .highlight .hll { background-color: var(--grey); }
-.highlight .c   { color: var(--blue) } /* Comment */
+.highlight .c   { font-style: italic; color: var(--foreground) } /* Comment */
 .highlight .err { color: var(--red) } /* Error */
 .highlight .k   { color: var(--red) } /* Keyword */
 .highlight .l   { color: var(--purple) } /* Literal */
 .highlight .n   { color: var(--purple) } /* Name */
 .highlight .o   { color: var(--red) } /* Operator */
 .highlight .p   { color: var(--foreground) } /* Punctuation */
-.highlight .cm  { color: var(--blue) } /* Comment.Multiline */
+.highlight .cm  { font-style: italic; color: var(--foreground) } /* Comment.Multiline */
 .highlight .cp  { color: var(--green) } /* Comment.Preproc */
-.highlight .cpf { color: var(--green) } /* Comment.Preproc */
+.highlight .cpf { color: var(--cyan) } /* Comment.Preproc */
 .highlight .c1  { color: var(--blue) } /* Comment.Single */
 .highlight .cs  { color: var(--blue) } /* Comment.Special */
 .highlight .ge  { font-style: italic } /* Generic.Emph */
@@ -20,7 +20,7 @@
 .highlight .kn  { color: var(--red) } /* Keyword.Namespace */
 .highlight .kp  { color: var(--blue) } /* Keyword.Pseudo */
 .highlight .kr  { color: var(--blue) } /* Keyword.Reserved */
-.highlight .kt  { color: var(--blue) } /* Keyword.Type */
+.highlight .kt  { color: var(--purple) } /* Keyword.Type */
 .highlight .ld  { color: var(--yellow) } /* Literal.Date */
 .highlight .m   { color: var(--cyan) } /* Literal.Number */
 .highlight .s   { color: var(--yellow) } /* Literal.String */

@@ -1,13 +1,31 @@
 :root {
-  --background-alt: #1d2021;
-  --background:     #282828;
-  --grey:           #3c3836;
-  --foreground:     #ebdbb2;
+  --background:     #171b23;
+  --foreground:     #abb2bf;
+  --grey:           #282c34;
 
-  --red:            #cc241d;
-  --green:          #98971a;
-  --yellow:         #d79921;
-  --blue:           #458588;
-  --purple:         #b16286;
-  --cyan:           #689d6a;
+  --red:            #e06c75;
+  --green:          #98c379;
+  --yellow:         #e5c07b;
+  --blue:           #61afef;
+  --purple:         #c678dd;
+  --cyan:           #56b6c2;
+}
+
+.color {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 200px;
+  margin: 0.2em;
+  padding: 0.2em;
+}
+
+.color > p {
+  align-content: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
