@@ -19,15 +19,20 @@
   font-display: swap;
 }
 
-html,h1,h2,h3,h4,h5,h6,p,li,ol,ul,td,th,table,pre,code,kbd {
+:root {
+  --border-grey: solid 2px var(--grey);
+  --border-radius: 5px;
+}
+
+html, h1, h2, h3, h4, h5, h6, p, li, ol, ul, td, th, table, pre, code, kbd {
   font-family: "jetbrains-regular";
 }
 
-b,strong {
+b, strong {
   font-family: "jetbrains-bold";
 }
 
-i,em,cite {
+i, em, cite {
   font-family: "jetbrains-italic";
 }
 
@@ -61,7 +66,7 @@ a:hover {
 }
 
 hr {
-  border: 2px solid var(--grey);
+  border: var(--border-grey);
   border-bottom: none;
 }
 
@@ -76,7 +81,7 @@ blockquote {
 kdb {
   background-color: var(--grey);
   color: var(--green);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 5px;
 }
 
@@ -93,8 +98,8 @@ main {
 
 article {
   background-color: var(--background);
-  border: solid 2px var(--grey);
-  border-radius: 5px;
+  border: var(--border-grey);
+  border-radius: var(--border-radius);
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, .5);
   padding: 1em;
 }
@@ -131,23 +136,19 @@ footer > p {
 
 .card {
   padding: 1em;
-  padding-bottom: 2em;
   min-width: 16em;
   max-width: 16em;
-  margin: 0.5em;
+  margin: 5px;
   background-color: var(--background);
-  border-radius: 5px;
-  box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, .5);
-  border: solid 2px var(--grey);
+  border-radius: var(--border-radius);
+  box-shadow: none;
+  border: var(--border-grey);
   transition: all 0.2s;
-}
-
-.card > p {
-  margin-bottom: 1em;
 }
 
 .card:hover {
   border-color: var(--blue);
+  box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, .8);
 }
 
 .center {
@@ -157,12 +158,12 @@ footer > p {
 }
 
 ul, ol, .post p {
-  font-size: 1.3em;
+  font-size: 16pt;
 }
 
 .thumbnail {
   display: flex;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   min-width: 100%;
   min-height: 6em;
   margin-bottom: 1em;
@@ -181,13 +182,13 @@ ul, ol, .post p {
 }
 
 .post hgroup > h1 {
-  font-size: 3em;
+  font-size: 24pt;
   margin: 0;
   padding: 0;
 }
 
 .post hgroup > p {
-  font-size: 1.5em;
+  font-size: 18pt;
 }
 
 .post-link {
@@ -201,11 +202,11 @@ ul, ol, .post p {
 }
 
 .post img {
-  border-radius: 5px;
+  border-radius: var(--border-radius);
 }
 
 .post h1 {
-  font-size: 2em;
+  font-size: 20pt;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
@@ -216,7 +217,7 @@ ul, ol, .post p {
 
 .post-thumbnail {
   display: flex;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   width: 100%;
   height: 200px;
   margin-bottom: 1em;
@@ -228,28 +229,27 @@ ul, ol, .post p {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: 2em;
+  font-size: 24pt;
 }
 
-iframe,
-.post-content img {
+iframe, .post-content img {
   max-width: 100%;
   object-fit: cover;
   display: block;
   margin: 1em auto;
-  border: solid 3px var(--grey);
+  border: var(--border-grey);
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, .5);
 }
 
 .alert {
-  border: solid 5px var(--grey);
+  border: var(--border-grey);
   background-color: var(--red);
   color: var(--grey);
   padding: 3em;
 }
 
 table, th, td {
-  border: solid 2px var(--grey);
+  border: var(--border-grey);
   padding: 5px;
   border-collapse: collapse;
 }
@@ -295,20 +295,20 @@ td:hover {
   background-color: var(--grey);
   color: var(--green);
   padding: 2px 5px;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
 }
 
 #markdown-toc {
   background-color: var(--grey);
   border: solid 2px var(--blue);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 10px;
   position: fixed;
   left: 10px;
   top: 5.3em;
   list-style: none;
   overflow-y: scroll;
-  font-size: 1em;
+  font-size: 12pt;
   max-width: 26ch;
 }
 
@@ -370,8 +370,8 @@ nav img, nav hgroup, .open-sidebar-button, .close-sidebar-button {
   nav img {
     display: block;
     margin: 0.8em;
-    border: solid 2px var(--grey);
-    border-radius: 5px;
+    border: var(--border-grey);
+    border-radius: var(--border-radius);
     max-width: 30%;
   }
 
@@ -404,7 +404,7 @@ nav img, nav hgroup, .open-sidebar-button, .close-sidebar-button {
 
     background-color: rgba(.9);
     backdrop-filter: blur(15px);
-    border: solid 2px var(--grey);
+    border: var(--border-grey);
 
     transition: 0.75s ease-out;
   }
@@ -427,12 +427,12 @@ nav img, nav hgroup, .open-sidebar-button, .close-sidebar-button {
   }
 
   .post hgroup > h1 {
-    font-size: 1.5em;
+    font-size: 22pt;
     margin: 0 !important;
   }
 
   .post hgroup > p {
-    font-size: 1em;
+    font-size: 16pt;
   }
 
   .post {
@@ -442,7 +442,7 @@ nav img, nav hgroup, .open-sidebar-button, .close-sidebar-button {
   }
 
   .post h1 {
-    font-size: 1.5em;
+    font-size: 18pt;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
@@ -451,10 +451,8 @@ nav img, nav hgroup, .open-sidebar-button, .close-sidebar-button {
     max-height: 150px;
   }
 
-  ul,
-  ol,
-  .post p {
-    font-size: 1em;
+  ul, ol, .post p {
+    font-size: 14pt;
   }
 
   #markdown-toc {
