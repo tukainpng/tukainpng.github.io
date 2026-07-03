@@ -86,7 +86,7 @@ export function blog() {
       tag("span", {
         "id": "entry_count",
         "style": "position: absolute; right: 0; bottom: 0; font-size: large",
-      }, `<span style="opacity: 0">|</span> ${posts.length} posts`),
+      }, `<span style="opacity: 0">|</span> `),
     ),
     tag("input", {
       "type": "text",
@@ -115,7 +115,15 @@ export function blog() {
       post.content.toLowerCase().includes(query)
     );
     displayPosts(filtered);
+    document.getElementById("entry_count").innerHTML =
+      `<span style="opacity: 0">|</span> ${
+        document.getElementById("entry_list").children.length
+      } posts`;
   });
 
   displayPosts(posts);
+  document.getElementById("entry_count").innerHTML =
+    `<span style="opacity: 0">|</span> ${
+      document.getElementById("entry_list").children.length
+    } posts`;
 }
