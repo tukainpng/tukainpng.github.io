@@ -16,7 +16,7 @@ export function about() {
       ),
       tag("h4", {
         "style":
-          "text-align: center; font-style: italic; font-weight: normal; margin-top: 2em",
+          "text-align: center; font-style: italic; font-weight: normal; margin-top: -1em",
       }, "Usuário Linux / Blogger / Aspirante a programador"),
       tag(
         "p",
