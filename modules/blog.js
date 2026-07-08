@@ -48,7 +48,7 @@ export function create_post() {
       `${post.title}`,
       tag(
         "div",
-        {},
+        { "style": "text-align: justify" },
         tag(
           "h3",
           { "style": "font-weight: normal" },
