@@ -157,7 +157,11 @@ Lorem [[https://www.lipsum.com/][Ipsum]] Dolor Sit Amet
 
 * Botões
 
-<ul> <li> <a class="blog_entry button" href="#testes">teste</a> </li> <li> <a class="blog_entry button" href="#testes">teste</a> </li> <li> <a class="blog_entry button" href="#testes">teste</a> </li> </ul>
+<ul>
+  <li><a class="blog_entry button" href="#testes">teste</a></li>
+  <li><a class="blog_entry button" href="#testes">teste</a></li>
+  <li><a class="blog_entry button" href="#testes">teste</a></li>
+</ul>
 
 <a class="button" href="#testes">teste</a>
 <a class="button" href="#testes">teste</a>
@@ -168,9 +172,9 @@ Lorem [[https://www.lipsum.com/][Ipsum]] Dolor Sit Amet
 <a class="button" style="display: inline-block" href="#testes">teste</a>
 
 <div style="display: flex">
-<a class="button" style="display: inline-block" href="#testes">teste</a>
-<a class="button" style="display: inline-block" href="#testes">teste</a>
-<a class="button" style="display: inline-block" href="#testes">teste</a>
+  <a class="button" style="display: inline-block" href="#testes">teste</a>
+  <a class="button" style="display: inline-block" href="#testes">teste</a>
+  <a class="button" style="display: inline-block" href="#testes">teste</a>
 </div>
 `,
       ),
