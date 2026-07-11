@@ -86,7 +86,7 @@ Também gosto de customizar a aparência do meu desktop e brincar com CSS.
           "style": `display: inline-block;
             flex-grow: 1;
             height: 32px;
-            border: solid 1px var(--bg-2);
+            border: solid 1px var(--fg);
             border-right: none;
             border-start-start-radius: 5px;
             border-end-start-radius: 5px;
@@ -96,7 +96,7 @@ Também gosto de customizar a aparência do meu desktop e brincar com CSS.
           "style": `display: inline-block;
             flex-grow: 1;
             height: 32px;
-            border: solid 1px var(--bg-2);
+            border: solid 1px var(--bg-0);
             border-left:  none;
             background-color: var(--bg-0)`,
         }),
@@ -104,7 +104,8 @@ Também gosto de customizar a aparência do meu desktop e brincar com CSS.
           "style": `display: inline-block;
             flex-grow: 1;
             height: 32px;
-            border: solid 1px var(--bg-2);
+            border: solid 1px var(--bg-0);
+            border-right: none;
             border-left:  none;
             background-color: var(--bg-1)`,
         }),
@@ -120,7 +121,7 @@ Também gosto de customizar a aparência do meu desktop e brincar com CSS.
           "style": `display: inline-block;
             flex-grow: 1;
             height: 32px;
-            border: solid 1px var(--bg-2);
+            border: solid 1px var(--red);
             border-left:  none;
             background-color: var(--red)`,
         }),
@@ -128,7 +129,7 @@ Também gosto de customizar a aparência do meu desktop e brincar com CSS.
           "style": `display: inline-block;
             flex-grow: 1;
             height: 32px;
-            border: solid 1px var(--bg-2);
+            border: solid 1px var(--green);
             border-left:  none;
             background-color: var(--green)`,
         }),
@@ -136,7 +137,7 @@ Também gosto de customizar a aparência do meu desktop e brincar com CSS.
           "style": `display: inline-block;
             flex-grow: 1;
             height: 32px;
-            border: solid 1px var(--bg-2);
+            border: solid 1px var(--yellow);
             border-left:  none;
             background-color: var(--yellow)`,
         }),
@@ -144,7 +145,7 @@ Também gosto de customizar a aparência do meu desktop e brincar com CSS.
           "style": `display: inline-block;
             flex-grow: 1;
             height: 32px;
-            border: solid 1px var(--bg-2);
+            border: solid 1px var(--blue);
             border-left:  none;
             background-color: var(--blue)`,
         }),
@@ -152,7 +153,7 @@ Também gosto de customizar a aparência do meu desktop e brincar com CSS.
           "style": `display: inline-block;
             flex-grow: 1;
             height: 32px;
-            border: solid 1px var(--bg-2);
+            border: solid 1px var(--purple);
             border-left:  none;
             background-color: var(--purple)`,
         }),
@@ -160,7 +161,7 @@ Também gosto de customizar a aparência do meu desktop e brincar com CSS.
           "style": `display: inline-block;
             flex-grow: 1;
             height: 32px;
-            border: solid 1px var(--bg-2);
+            border: solid 1px var(--cyan);
             border-left:  none;
             border-start-end-radius: 5px;
             border-end-end-radius: 5px;

@@ -1055,7 +1055,7 @@ ela é relativamente intuitiva (+/- né). O maneiro mesmo é escrever essas tabe
 por quê? Porque o Emacs formata automagicamente elas! É só começar uma tabela
 com ''| nome'' e apertar ''tab''!
 
-Além disso, também existe a tecla de atalho =Ctrl c }= que exibe alguns
+Além disso, também existe a tecla de atalho ''Ctrl c }'' que exibe alguns
 marcadores na tabela para poder facilitar o processo de escrever as fórmulas.
 
 Ficando +/- assim:
@@ -1092,7 +1092,7 @@ Uma das coisas mais maneiras do Emacs é a Elisp, a linguagem que ele é
 configurado, interpreta e é em boa parte escrito nela também. A parte de
 "interpretar" é que é a mais interessante, porquê isso permite que você teste
 um "plugin" sem a necessidade de instalar ele! Você só precisa criar um buffer
-ou abrir o "/scratch buffer/" e apertar =Ctrl c= =Ctrl e=. Isso vai fazer o
+ou abrir o "**scratch buffer**" e apertar ''Ctrl c'' ''Ctrl e''. Isso vai fazer o
 Emacs interpretar o buffer inteiro, e dessa forma, você pode testar o "plugin"
 à vontade enquanto o Emacs estiver aberto!
 

@@ -411,7 +411,7 @@ blockquote {
     left: 0;
     font-weight: normal;
     background-color: rgba(var(--ac-0), 1);
-    color: var(--bg-0);
+    color: var(--bg-1);
   }
 }
 
@@ -511,6 +511,7 @@ table {
 
   td {
     padding: 3px 5px;
+    color: var(--fg);
     &:nth-child(even) {
       border-right: solid 0.1em;
       border-left: solid 0.1em;
