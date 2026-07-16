@@ -15,14 +15,17 @@ html {
 body {
   background-color: var(--bg);
   color: var(--fg);
-  font-family: "Playwrite AU TAS", cursive, system-ui;
+  font-family: sans-serif, cursive, system-ui;
   background-image: url('./assets/background.png');
   background-position: left;
   background-position-y: -300px;
   background-repeat: no-repeat;
-  backdrop-filter: blur(5px);
   margin: 0;
   padding: 0;
+}
+
+main {
+  backdrop-filter: blur(5px);
   padding-top: 4em;
   position: relative;
   display: flex;
@@ -32,6 +35,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   animation: fade-in 1s both;
+  animation-delay: 300ms;
 }
 
 img {
@@ -43,7 +47,6 @@ img {
   border-radius: 100%;
   width: 250px;
   height: 250px;
-  animation: fade-in 500ms both;
   animation-delay: 500ms;
 }
 
@@ -57,7 +60,6 @@ hgroup {
 }
 
 h1 {
-  font-family: "Homemade Apple", system-ui;
   font-size: xxx-large;
   animation: fade-in 500ms both;
   animation-delay: 800ms;
@@ -89,6 +91,14 @@ div {
   position: relative;
   justify-content: center;
   background-color: var(--bg);
+  background-image:
+    linear-gradient(90deg, var(--ac) 1px, transparent 1px),
+    linear-gradient(0deg, var(--ac) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+#bot {
+  background-image: none;
 }
 
 hr {
@@ -101,14 +111,15 @@ hr {
 a {
   color: var(--ac);
   text-decoration: none;
-  padding: 1em;
-  margin: 1em;
   transition: all 300ms;
   border-radius: 5px;
   display: block;
+  padding: 0 1em;
+  margin: 1em;
+  font-size: xx-large;
   text-align: center;
   animation: fade-in 1s both;
-  animation-delay: 1500ms;
+  animation-delay: 1800ms;
 
   &:hover {
     background-color: var(--ac);
