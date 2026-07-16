@@ -2,6 +2,117 @@
 
 export const posts = [
   {
+    title: "Eu sou viciado em computador?",
+    date: "16.07.2026",
+    content: `
+Agora mesmo eu tive um questionamento que... eu sinceramente não sei qual seria
+a resposta correta, isso é, se com "resposta correta" eu não estiver apenas me
+referindo a uma resposta que não magoe meu ego.
+
+Desde pequeno eu tenho contado com computadores, acho que desde os meus 7 ou 8
+anos.
+
+#+begin_quote
+Graças à Deus eu não tive contato com a internet com essa idade também, o
+meu uso do computador era limitado a NFS Underground 2 e Crazy Taxi 2.
+#+end_quote
+
+Sendo assim, essas máquinas fazem parte da minha vida desde os meus primeiros
+anos de desenvolvimento. Por conta disso, naturalmente, eu criei um interesse
+por isso, um interesse que veio a fazer parte da minha identidade também. Não
+seria exagero dizer que se não fosse minha interação com computadores eu não
+seria quem sou hoje.
+
+Mas, apesar disso ter desenvolvido outros interesses que tenho hoje em dia,
+acho que também acabei desenvolvendo hábitos que não fazem bem para a minha
+saúde. A coisas que faço hoje que eu nem percebo e que não são boas, por
+exemplo, as vezes eu institivamente ligo o computador e fico coisa de 10 ou 15
+minutos tentando pensar em o quê que eu queria fazer que precisava do
+computador. É quase algo análogo ao costume de ligar o celular só para ver se
+você recebeu alguma notificação. A diferença é na quantidade de tempo que eu
+perco para realizar absolutamente *nada*.
+
+Além disso, acho que tem coisas que eu acreditava de pé junto que era um **sonho**
+ou um interesse genuíno meu, mas que com o passar do tempo eu comecei a duvidar
+cada vez mais.
+
+Assim como um outro vício que eu estou combatendo, esse sentimento que eu estou
+tendo em relação à computadores é... como eu descrevo? Eu sei que é um problema,
+sei que não me faz bem, mas eu faço quase que institivamente, e eu odeio isso.
+
+Eu nem sei se o que eu estou falando está fazendo sentido ou não, mas... sei lá.
+
+Muitos hobbies meus giram em torno do computador e da internet, eles fazem parte
+do que eu posso considerar o meu "eu". Mas, será que eu estou certo de fazer o
+que estou fazendo? Será que eu não deveria procurar outro hobbie?
+
+Nos últimos meses, eu e minha namorada estamos fazendo Crossfit. Eu estou
+gostando muito, é algo que está fazendo bem para mim, tanto pelo exercício em si
+quanto pelo fato de eu estar próximo de alguém que amo. E isso é o que também
+está me fazendo questionar a minha interação com computador. No momento eu ainda
+moro com meus pais, mas eu passo mais tempo no computador do que conversando
+com eles, ou com o meu irmão mais novo. Eu estou muito mais distante dentro de
+casa do que fora dela. E novamente, muitas vezes eu nem sequer consigo me
+recordar do porquê eu sequer liguei o computador!
+
+Isso com certeza deve deixa-los tristes, e só agora que comecei a reparar
+genuinamente nisso. Eu tenho pena principalmente do meu irmão mais novo, eu
+venho sendo um babaca com ele de maneira silenciosa e não estava percebendo. Eu
+quero mudar isso, quero tentar me desculpar, afinal de contas não tem como eu
+devolver o tempo que desperdicei reinstalando pela milionésima vez o Alpine no
+meu computador por qualquer motivo bosta que a minha cabeça tenha inventado na
+hora.
+
+*Porra*, eu tenho a droga de um Nintendo Switch com dois pares de joycons, dá
+facilmente para eu chamar ele para jogar algo junto comigo e a minha namorada,
+ou até jogar algo só eu e ele. Já fazem 10 meses que eu tenho essa droga na
+minha mesa, e eu só joguei com ele uma ou duas vezes. ,,red:Puta que pariu mano,,.
+
+Eu tenho culpa também dele se comportar de forma errática às vezes, não tem
+como eu negar isso. E eu preciso fazer algo a respeito disso.
+
+Eu já tenho 21 anos, estou aos poucos me estruturando e fazendo o possível para
+me tornar um homem independente, mas antes disso eu tenho que olhar para o que
+está bem na minha frente e resolver os problemas que eu mesmo criei
+sem perceber.
+
+Nunca vou conseguir me perdoar se eu simplesmente saio de casa sem resolver
+essas coisas. Eu simplesmente não suportaria.
+
+Já fiz tanta coisa para mim mesmo, para minha namorada ou até para amigos, mas
+eu não consigo pensar em mais de 2 coisas que eu tenha feito para meu irmão.
+Isso me enfurece. Eu posso fazer muito mais do que eu faço/fiz por ele, muito
+mais. E eu devo isso para ele.
+
+O mesmo vale para a minha mãe e para meu pai. Eu sou um filho muito ausente.
+Deve ser difícil para eles tentarem entender o que passa na minha cabeça. Nem
+consigo imaginar a angústia que eu possa ter causado sem querer.
+
+Já imaginou você ter um filho que mal fala com você, vive no quarto, e quando
+não está no quarto, está no trabalho ou na academia ou saindo com os amigos?
+Quase em nenhum momento do dia ele chega para trocar uma ideia com você,
+comenta como foi no trabalho, nem nada? Esse sou eu. Eu ,,red:odeio,, ser assim.
+
+Felizmente eu estou conseguindo mudar esse aspecto da minha personalidade, aos
+poucos. Espero que eu esteja realmente melhorando, e não que seja só uma ilusão
+minha.
+
+Não escrevi esse post querendo pôr a culpa em nada nem ninguém, tudo isso, toda
+essa situação, é de inteira e somente culpa minha. Sou *eu* quem tem que se pôr
+de volta nos trilhos. *Eu* que preciso melhorar. *Eu* que preciso dar mais valor
+a quem está próximo de mim. *Eu* que preciso saber impor limites sobre as coisas
+fúteis que faço. *Eu*, Diogo Fernandes, que preciso ser uma pessoa melhor.
+
+Um "bom dia"/"boa noite", um "eu te amo", nada disso tem valor se eu sou uma
+pessoa praticamente inexistente na minha própria casa. Eu tenho que ser mais
+presente na vida das pessoas que amo. Tenho que demonstrar mais.
+
+Enfim, acho que já falei demais.
+
+Até o próximo post!
+    `,
+  },
+  {
     title: "Detesto a utilidade do Github",
     date: "30.06.2026",
     content: `
