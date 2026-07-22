@@ -71,6 +71,7 @@ Eu lia esse volume sempre que dava na minha casa e também na escola (saudades d
   {
     title: "Akira, Vol. 3",
     cover: "akira_03.jpg",
+    nota: 5,
 
     progress: {
       current: "282",
