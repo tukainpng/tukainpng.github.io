@@ -73,8 +73,8 @@ Eu lia esse volume sempre que dava na minha casa e também na escola (saudades d
     cover: "akira_03.jpg",
 
     progress: {
-      current: "232",
-      maximum: "280",
+      current: "282",
+      maximum: "282",
     },
   },
   {
