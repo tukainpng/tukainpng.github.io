@@ -19,7 +19,10 @@ export function ideias() {
     ),
   );
 
-  for (const i of ideia) {
+  // Ordena por stat em ordem crescente
+  const ideias_ordenadas = [...ideia].sort((a, b) => a.stat - b.stat);
+
+  for (const i of ideias_ordenadas) {
     const details = (stat) => {
       document.getElementById("whiteboard").appendChild(
         tag(
@@ -33,15 +36,16 @@ export function ideias() {
 
     switch (i.stat) {
       case 1:
-        details("<span class='status doing'>Parcialmente feito<span>");
+        details("<span class='status' data-status='doing'>Parcialmente feito</span>");
         break;
       case 2:
-        details("<span class='status done'>Feito</span>");
+        details("<span class='status' data-status='done'>Feito</span>");
         break;
       default:
-        details("<span class='status not_done'>Não feito</span>");
+        details("<span class='status' data-status='not_done'>Não feito</span>");
         break;
     }
   }
 }
+
 export default ideias;

@@ -15,7 +15,6 @@ export function slug(text) {
     .replaceAll(";", "")
     .replaceAll("?", "")
     .replaceAll("!", "")
-    // .replaceAll("/", "")
     .replaceAll("%", "")
     .replaceAll("#", "")
     .replaceAll("*", "")

@@ -2,6 +2,68 @@
 
 export const posts = [
   {
+    title: "Não me sinto mais vontade para programar",
+    date: "05.09.2026",
+    content: `
+Já fazem meses desde a última vez que eu trabalhei em algum dos meus projetos
+de programação (fora esse site, claro), e sinceramente, eu não sinto a mesma
+vontade que um dia tive de fazer isso.
+
+Eu já não sei nem dizer que eu poderia chamar a programação/coding como um
+hobbie mais, ela só se tornou um meio necessário para fazer o que eu gosto. 
+Gosto de mexer com como as coisas funcionam no meu computador, como se aparecem,
+gosto de testar coisas diferentes nele. Acaba que se você faz isso com certa
+frequência uma hora ou outra você vai tocar na programação de alguma forma.
+
+O que me deixa apreensivo é um sentimento que venho tendo, o de que talvez
+toda aquele gás, todo aquele deslumbre que tive com programação, tenha feito
+com que eu me fechasse de testar outras coisas, outras áreas. Que talvez se não
+fosse isso eu poderia ter me aventurado com algo que eu teria um uso mais
+prático na minha vida. Talvez mecânica? Já que desde pequeno eu tenho um
+interesse por carros. Mas não seria isso um outro deslumbre? Será que eu só
+estou pensando isso pois me sinto frustrado? Mas do que eu me sinto frustrado?
+Sinto isso pois nunca tentei o bastante? Porque não corri atrás?
+
+Uma das coisas que eu almejava quando ainda estava no ensino médio era
+seguir uma carreira como programador, mas lentamente a minha visão sobre isso
+foi se desfazendo, principalmente conforme fui observando a indústria no geral.
+É um tipo de carreira que exige uma paixão da qual eu não sei dizer se tive
+algum dia. Além disso, não sinto que me sentiria feliz exercendo esse trabalho.
+
+Sempre quando alguém tenta vender a imagem de um programador são mostrados altos
+salários, viagens, prestígio e etc. Acho que eu não precisaria falar que isso
+é o caso de uma parcela minúscula da indústria né? Na realidade só uma parte
+dessa caracterização é verdadeira, o salário, o resto você só tem caso você estiver
+de férias ou se conseguir revolucionar a indústria como um todo, e mesmo assim, o
+salário alto só exite para quem tá trabalhando para peixe grande e que tá em uma
+equipe importante, se você é só um cara da equipe de UX, dificilmente você vai ter
+um salário inalcançável por alguém que nunca viu um computador na vida.
+
+Eu não estou dizendo isso para denegrir a imagem do programador, só digo isso
+por ter me imaginado nessa posição diversas vezes durante anos da minha vida. O que
+me leva a ter que pesar os prós e contras e as nuances dessa área.
+
+Do que me conheço, sei que é provável que eu teria uma renda estável se
+estivesse exercendo esse trabalho, mas me sentiria gasto, sem alma, infeliz.
+Rapidamente deixaria de olhar para a programação como algo do qual me divirto para 
+algo que eu gostaria de evitar o máximo que posso.
+
+É muita prepotência minha pensar dessa maneira e eu reconheço isso, afinal de contas
+eu nem cheguei a tentar propriamente. Mas para além da ansiedade e do medo, eu
+estagnei. Progrido muito lentamente, isso quando progido. Não vejo graça em fazer
+o que quer que seja envolvendo isso. Hoje eu me sinto melhor praticando um
+exercício físico do que programando. Eu deixei de fazer muitas coisas durante a minha
+adolescência para aprender a criar sites por exemplo. Gastei horas e horas no
+computador, aprendi a usar diversos softwares e ferramentas, e esse aprendizado eu
+carrego comigo até hoje. Mas, será que realmente valeu a pena? Não estou dizendo
+que isso foi inútil, nem sequer considero isso. Só não sei se todo o esforço 
+que prestei deu ou vai dar algum retorno significativo.
+
+Eu só... não quero que tenha sido em vão, e espero não estar me enganando
+quando me convenço de que não foi.
+`
+  },
+  {
     title: "Eu sou viciado em computador?",
     date: "16.07.2026",
     content: `

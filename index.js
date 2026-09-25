@@ -16,7 +16,6 @@ if (isFirefox) {
 
 import { tag } from "./modules/common.js";
 import { blog } from "./modules/blog.js";
-import { projects } from "./modules/projects.js";
 import { home } from "./modules/home.js";
 import { menu } from "./modules/menu.js";
 import { books } from "./modules/books.js";
@@ -69,7 +68,6 @@ function main() {
   document.getElementById("body").removeAttribute("id");
 
   home();
-  projects();
   blog();
   books();
   games();
@@ -217,58 +215,3 @@ document.getElementById("theme_switcher_mobile").addEventListener(
 if (localStorage.theme === "light") {
   document.documentElement.classList.add("light-mode");
 }
-
-//document.addEventListener("keydown", (e) => {
-//  switch (e.key) {
-//    case "p":
-//      document.location = "#projetos";
-//      break;
-//    case "b":
-//      document.location = "#blog";
-//      break;
-//    case "s":
-//      document.location = "#bookshelf";
-//      break;
-//    case "g":
-//      document.location = "#jogos";
-//      break;
-//    case "i":
-//      document.location = "#ideias";
-//      break;
-//    case "w":
-//      document.location = "#links";
-//      break;
-//    case "a":
-//      document.location = "#about";
-//      break;
-//    case "t":
-//      document.location = "#testes";
-//      break;
-//    case "d":
-//      switch_theme.toggle_dark_mode();
-//      break;
-//    case "m":
-//      document.location = "#sitemap";
-//      break;
-//    case "H":
-//      document.location = "#home";
-//      break;
-//    case "f":
-//      document.location =
-//        `mailto:contato.nest604@passinbox.com?subject=Feedback: ${document.title}`;
-//      break;
-//    case "h":
-//      history.back();
-//      break;
-//    case "j":
-//      window.scrollBy({ top: 100, behavior: 'smooth' });
-//      break;
-//    case "k":
-//      window.scrollBy({ top: -100, behavior: 'smooth' });
-//      break;
-//    case "l":
-//      history.forward();
-//      break;
-//  }
-//});
-//

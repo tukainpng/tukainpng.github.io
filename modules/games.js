@@ -36,7 +36,7 @@ Essa é a minha atual coleção de jogos, do meu Nintendo Switch.`,
           "class": "game",
           "alt": slug(String(game.title)),
           "title": String(game.title),
-          "src": `/assets/${game.cover}`,
+          "src": `/assets/img/games/${game.cover}`,
         }),
       ),
     );

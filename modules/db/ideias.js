@@ -2,8 +2,20 @@
 
 export const ideias = [
   {
+    title: "Definir o objetivo do site",
+    stat: 1,
+    content: `
+As minhas ideias para este site sempre mudam. Uma hora eu quero fazer algo que
+sirva como uma "vitrine" para meus projetos/habilidades, outra hora só quero
+um lugar onde posso jogar pensamentos ao vento.
+
+Sinto que preciso ter um objetivo definitivo para este site se eu quiser
+que ele tenha uma longividade maior e que eu tenha mais vontade de atualizar-lo.
+`
+  },
+  {
     title: "Limpar o código",
-    stat: 0,
+    stat: 1,
     content: `
 O código desse site atualmente é uma bagunça. Tem muita coisa aqui que eu
 simplesmente necessito mudar.

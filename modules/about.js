@@ -4,7 +4,7 @@ import { create_page, markup, tag } from "./common.js";
 export function about() {
   create_page(
     "about",
-    "Sobre",
+    "Sobre mim",
     tag(
       "div",
       {},
@@ -17,7 +17,7 @@ export function about() {
       tag("h4", {
         "style":
           "text-align: center; font-style: italic; font-weight: normal; margin-top: -1em",
-      }, "Usuário Linux / Blogger / Aspirante a programador"),
+      }, "Usuário Linux / Blogger / Curioso por tecnologia"),
       tag(
         "p",
         { "style": "text-align: justify" },
