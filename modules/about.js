@@ -57,7 +57,7 @@ Também gosto de customizar a aparência do meu desktop e brincar com CSS.
           {},
           tag("a", {
             "class": "blog_entry button",
-            "href": "https://github.com/ventriloquo",
+            "href": "https://github.com/tukainpng",
           }, "Github"),
         ),
       ),
