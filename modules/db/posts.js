@@ -1493,6 +1493,8 @@ Se você quiser ver ele, é só "[[https://ventriloquo.github.io/yearnyouahaskel
 
 * I HAVE HOPE!!!
 
+<img loading="lazy" src="/assets/hope.jpg">
+
 VALVE, LANÇA HALF-LIFE 3 PELO AMOR DE DEEEUUUSS 😭😭😭😭
 `,
   },
