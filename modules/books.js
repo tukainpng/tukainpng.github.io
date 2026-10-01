@@ -37,9 +37,7 @@ export function books() {
         {},
         "Eu não sou o tipo de pessoa que curte muito ler, porém tem certas obras que me atraem (boa parte são mangás).",
       ),
-
       tag("h3", {}, "Status"),
-
       tag(
         "table",
         { "style": "margin-bottom: -5px" },
@@ -62,31 +60,11 @@ export function books() {
           ),
         ),
       ),
-
-      tag("progress", {
-        "class": "book_progress_bar",
-        "style":
-          "width: -webkit-fill-available; border: solid 1px rgb(var(--ac-0))",
-        "value": `${livros_lidos}`,
-        "max": `${total_de_livros}`,
-      }),
-
-      tag(
-        "p",
-        { "style": "margin: 0; text-align: center" },
-        "Li " +
-          `<span style='color: rgba(var(--ac-1), 1)'>${livros_lidos}</span> ` +
-          "de " +
-          `<span style='color: rgba(var(--ac-0), 1)'>${total_de_livros}</span> ` +
-          "items da minha coleção.",
-      ),
-
+      tag("br"),
       tag("h3", {}, "Coleção"),
-
       tag(
         "div",
         { "id": "shelf" },
-
         // Livros lidos
         tag(
           "div",
@@ -97,11 +75,9 @@ export function books() {
           tag("h4", {}, "Lidos"),
           tag("div", {
             "class": "book_shelf",
-            "style":
-              "display: flex; flex-wrap: wrap; justify-content: center",
+            "style": "display: flex; flex-wrap: wrap; justify-content: center",
           }),
         ),
-
         // Livros sendo lidos
         tag(
           "div",
@@ -112,11 +88,9 @@ export function books() {
           tag("h4", {}, "Lendo"),
           tag("div", {
             "class": "book_shelf",
-            "style":
-              "display: flex; flex-wrap: wrap; justify-content: center",
+            "style": "display: flex; flex-wrap: wrap; justify-content: center",
           }),
         ),
-
         // Livros não lidos
         tag(
           "div",
@@ -127,8 +101,7 @@ export function books() {
           tag("h4", {}, "Não lidos"),
           tag("div", {
             "class": "book_shelf",
-            "style":
-              "display: flex; flex-wrap: wrap; justify-content: center",
+            "style": "display: flex; flex-wrap: wrap; justify-content: center",
           }),
         ),
       ),
@@ -174,7 +147,6 @@ export function books() {
       tag(
         "div",
         { "class": "book_info" },
-
         tag(
           "div",
           {
@@ -183,7 +155,6 @@ export function books() {
             "style":
               "background-color: var(--bg-0); padding: 10px; border-radius: 5px; width: fit-content; height: fit-content",
           },
-
           tag("img", {
             "loading": "lazy",
             "alt": book.title,
@@ -193,13 +164,11 @@ export function books() {
             "style": "margin-top: 0; object-fit: cover",
             "src": `/assets/img/books/${book.cover}`,
           }),
-
           tag("progress", {
             "class": "book_progress_bar",
             "value": `${book.progress.current}`,
             "max": `${book.progress.maximum}`,
           }),
-
           tag(
             "p",
             {
@@ -209,7 +178,6 @@ export function books() {
             `${book.progress.current}/${book.progress.maximum}`,
           ),
         ),
-
         tag(
           "div",
           {
@@ -222,13 +190,11 @@ export function books() {
             `<span>Minha opinião</span><br><br>${markup(book.review)}`,
           ),
         ),
-
         tag("p", {
           "class": "book_info_rating",
           "style": "text-align: center",
           "id": `${slug(book.title)}_rating`,
         }),
-
         tag(
           "a",
           {
@@ -273,7 +239,6 @@ export function books() {
           "class": "book",
           "id": `#${slug(book.title)}`,
         },
-
         tag(
           "a",
           {
@@ -289,24 +254,20 @@ export function books() {
             "src": `/assets/img/books/${book.cover}`,
           }),
         ),
-
         tag(
           "div",
           {
             "class": "book_progress",
           },
-
           tag("progress", {
             "class": "book_progress_bar",
             "value": book.progress.current,
             "max": book.progress.maximum,
           }),
-
           tag(
             "p",
             {
-              "style":
-                "margin: 0; text-align: center; font-family: 'code'",
+              "style": "margin: 0; text-align: center; font-family: 'code'",
             },
             `${book.progress.current}/${book.progress.maximum}`,
           ),
@@ -319,8 +280,7 @@ export function books() {
     );
 
     if (book.nota !== undefined) {
-      nota.innerHTML =
-        `A minha nota para esse treco é...<br>${book.nota}`;
+      nota.innerHTML = `A minha nota para esse treco é...<br>${book.nota}`;
     }
 
     const progress_bar = document.querySelectorAll(

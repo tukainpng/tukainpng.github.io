@@ -62,16 +62,6 @@ Também gosto de customizar a aparência do meu desktop e brincar com CSS.
         ),
       ),
       tag(
-        "p",
-        {},
-        markup(`
-* Paletas de cores utilizadas no site
-
-- Dark mode: [[https://monokai.pro][Monokai Pro]]
-- Light mode: [[https://everforest.vercel.app][Everforest Light Hard]]
-          `),
-      ),
-      tag(
         "div",
         {
           "style": `
@@ -155,17 +145,9 @@ Também gosto de customizar a aparência do meu desktop e brincar com CSS.
             height: 32px;
             border: solid 1px var(--purple);
             border-left:  none;
-            background-color: var(--purple)`,
-        }),
-        tag("div", {
-          "style": `display: inline-block;
-            flex-grow: 1;
-            height: 32px;
-            border: solid 1px var(--cyan);
-            border-left:  none;
             border-start-end-radius: 5px;
             border-end-end-radius: 5px;
-            background-color: var(--cyan)`,
+            background-color: var(--purple)`,
         }),
       ),
     ),
