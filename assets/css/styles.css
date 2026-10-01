@@ -374,7 +374,6 @@ pre {
   padding: 16px 18px;
   overflow: scroll;
   border: 1px solid var(--outline-variant);
-  border-radius: var(--radius-md);
   font-family: "code", monospace;
   line-height: 1.5;
   box-shadow: var(--shadow-1);
@@ -386,6 +385,7 @@ pre {
   &.src,
   &.example {
     border-color: var(--outline-variant);
+    border-radius: var(--radius-md);
   }
 
   &.src {
@@ -400,8 +400,8 @@ pre {
     &:has(+ &.example) {
       margin-bottom: 0;
       border-bottom: none;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
+      border-end-end-radius: 0;
+      border-end-start-radius: 0;
     }
   }
 
@@ -412,8 +412,14 @@ pre {
 
   &.src + &.example {
     border-top: none;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-start-start-radius: 0 !important;
+    border-start-end-radius: 0 !important;
+  }
+
+  &.src:has(+ &.example) {
+    border-top: none;
+    border-end-start-radius: 0 !important;
+    border-end-end-radius: 0 !important;
   }
 
   .red {
