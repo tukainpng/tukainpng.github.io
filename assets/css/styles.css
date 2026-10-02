@@ -803,6 +803,12 @@ table {
       background-color: var(--bg-0);
       animation: slide-down 300ms both;
     }
+
+    &:last-child {
+      .book_progress {
+        margin-bottom: -5em;
+      }
+    }
   }
 }
 
