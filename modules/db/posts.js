@@ -2,6 +2,56 @@
 
 export const posts = [
   {
+    title: "Uma possível solução para <s>sideload</s> instalação de Apps no Android",
+    date: "06.10.2026",
+    content: `
+Você provavelmente já sabe disso, mas se não souber, a Google anunciou em 
+agosto de 2025 que a partir de 2027
+[[https://keepandroidopen.org/pt-BR/#:~:text=todos%20os%20desenvolvedores%20de%20aplicativos%20Android%20dever%C3%A3o%20se%20registrar%20centralmente%20junto%20ao%20Google%20antes%20que%20seu%20software%20possa%20ser%20instalado%20em%20qualquer%20dispositivo.]["todos os desenvolvedores de aplicativos Android deverão se registrar centralmente junto ao Google antes que seu software possa ser instalado em qualquer dispositivo."]].
+O que, em resumo, significa que o seu aparelho android vai virar um iPhone de
+baixo custo.
+
+Ainda existirá uma maneira oficial de fazer a instalação de apps
+"de fontes desconhecidas", mas é um processo longo, chato, inconveniente e que
+pode ser revogado no futuro quando o Google quiser.
+
+A única forma confiável de poder instalar apps sem que o Google fique querendo
+empatar a foda é através de um computador com o ADB (Android Debug Bridge)...
+Ou será que não?
+
+O Android em si é só um sistema Linux muito maquiado e com uma interface 
+pensada para uso com touch-screens, mas isso não significa que você não possa
+executar commandos através de uma CLI, nem que você não possa usar um App que
+automatize esse processo.
+
+Se você costuma customizar o seu Android, provavelmente você já ouviu falar do
+[[https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api&hl=pt_BR][Shizuku]], e ele é um dos dois apps que vamos 
+precisar para ter a experiência de instalar Apps sem que o Google fique
+enchendo o saco.
+
+O segundo App é o [[https://play.google.com/store/apps/details?id=com.eightybee.app&hl=pt_BR][80bee]]
+(sim, é um trocadilho com ADB). Com o 80bee podemos executar qualquer commando do 
+ADB sem precisar de um computador, tudo o que você precisa é do Shizuku operando
+no seu celular. Ele inclusive tem uma ferramenta extremamente conveniente:
+um instalador de Apps via ADB!
+
+Com esse instalador, você <i>provavelmente</i> vai conseguir fazer um bypass na
+restrição imposta pelo Google Play Services e instalar qualquer <code>.apk</code> que
+quiser. Pelo menos eu consegui instalar um App dessa maneira mesmo com o
+[[https://developer.android.com › privacy-and-security][Modo de Proteção Avançada]]
+habilitado.
+
+Um detalhe importante é que eu deixei ambos os links dos Apps direcionados à
+Play Store. No momento é possível fazer tudo isso que eu falei somente com um
+celular, desde que ele tenha acesso à Play Store. Mas é basicamente critério do 
+Google se essa solução que não precisa de computador vai continuar existindo
+ou não.
+
+Bom, pelo menos até o momento essa é uma possível solução para a instalação de
+Apps a partir de janeiro de 2027.
+`
+  },
+  {
     title: "Não me sinto mais vontade para programar",
     date: "05.09.2026",
     content: `
