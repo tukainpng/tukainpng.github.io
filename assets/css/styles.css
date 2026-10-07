@@ -502,7 +502,7 @@ blockquote {
     left: 0;
     padding: .3em 1em;
     border-end-end-radius: var(--radius-md);
-    border-start-start-radius: 5px;
+    border-start-start-radius: 0;
     color: var(--bg-1);
     background: rgb(var(--ac-0));
   }
