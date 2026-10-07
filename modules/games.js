@@ -26,17 +26,25 @@ Essa é a minha atual coleção de jogos, do meu Nintendo Switch.`,
     }),
   );
 
+  let game_counter = 0;
   for (const game of game_colection) {
+    game_counter = game_counter + 1;
+    console.log(game_counter);
     document.getElementById("game_library").appendChild(
       tag(
         "div",
-        { "style": "margin: 5px" },
+        {
+          "style": `margin: 5px;`,
+        },
         tag("img", {
           "loading": "lazy",
           "class": "game",
           "alt": slug(String(game.title)),
           "title": String(game.title),
           "src": `/assets/img/games/${game.cover}`,
+          "style": `animation: slide-down 800ms both; animation-delay: ${
+            1 * game_counter
+          }00ms`,
         }),
       ),
     );

@@ -11,7 +11,7 @@ um lugar onde posso jogar pensamentos ao vento.
 
 Sinto que preciso ter um objetivo definitivo para este site se eu quiser
 que ele tenha uma longividade maior e que eu tenha mais vontade de atualizar-lo.
-`
+`,
   },
   {
     title: "Limpar o código",

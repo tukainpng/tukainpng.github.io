@@ -4,6 +4,15 @@ import { create_page, create_priv_page, markup, slug, tag } from "./common.js";
 
 import { bookshelf } from "./db/books.js";
 
+function stars(n) {
+  const filled = "&#9733;";
+  const blank = "&#9734;";
+
+  const result = `${filled.repeat(n) + blank.repeat(5 - n)}`;
+
+  return result;
+}
+
 export function books() {
   let livros_lidos = 0, livros_sendo_lidos = 0, livros_nao_lidos = 0;
 
@@ -24,8 +33,6 @@ export function books() {
     }
   }
 
-  const total_de_livros = bookshelf.length;
-
   create_page(
     "bookshelf",
     "Lista de Leitura",
@@ -37,7 +44,6 @@ export function books() {
         {},
         "Eu não sou o tipo de pessoa que curte muito ler, porém tem certas obras que me atraem (boa parte são mangás).",
       ),
-      tag("h3", {}, "Status"),
       tag(
         "table",
         { "style": "margin-bottom: -5px" },
@@ -47,13 +53,15 @@ export function books() {
           tag(
             "tr",
             {},
-            tag("th", {}, "Livros lidos"),
-            tag("th", {}, "Livros sendo lidos"),
-            tag("th", {}, "Livros não lidos"),
+            tag("th", {}, "Total"),
+            tag("th", {}, "Lidos"),
+            tag("th", {}, "Sendo lidos"),
+            tag("th", {}, "Não lidos"),
           ),
           tag(
             "tr",
             {},
+            tag("td", {}, `${bookshelf.length}`),
             tag("td", {}, `${livros_lidos}`),
             tag("td", {}, `${livros_sendo_lidos}`),
             tag("td", {}, `${livros_nao_lidos}`),
@@ -61,7 +69,6 @@ export function books() {
         ),
       ),
       tag("br"),
-      tag("h3", {}, "Coleção"),
       tag(
         "div",
         { "id": "shelf" },
@@ -116,28 +123,28 @@ export function books() {
     switch (Number(book.nota)) {
       case 0:
       case 1:
-        book.nota =
-          "<br>&#9733;&#9734;&#9734;&#9734;&#9734;<br><img loading='lazy' width='112' height='112' style='object-fit: cover' src='/assets/ashes_emoji.gif'>";
+        book.nota = `<br>${stars(1)}<br>` +
+          "<img loading='lazy' width='112' height='112' style='object-fit: cover' src='/assets/ashes_emoji.gif'>";
         break;
 
       case 2:
-        book.nota =
-          "<br>&#9733;&#9733;&#9734;&#9734;&#9734;<br><img loading='lazy' width='112' height='112' style='object-fit: cover' src='/assets/paia.jpg'>";
+        book.nota = `<br>${stars(2)}<br>` +
+          "<img loading='lazy' width='112' height='112' style='object-fit: cover' src='/assets/paia.jpg'>";
         break;
 
       case 3:
-        book.nota =
-          "<br>&#9733;&#9733;&#9733;&#9734;&#9734;<br><img loading='lazy' width='112' height='112' style='object-fit: cover' src='/assets/meh_emoji.gif'>";
+        book.nota = `<br>${stars(3)}<br>` +
+          "<img loading='lazy' width='112' height='112' style='object-fit: cover' src='/assets/meh_emoji.gif'>";
         break;
 
       case 4:
-        book.nota =
-          "<br>&#9733;&#9733;&#9733;&#9733;&#9734;<br><img loading='lazy' width='112' height='112' style='object-fit: cover' src='/assets/nice_emoji.gif'>";
+        book.nota = `<br>${stars(4)}<br>` +
+          "<img loading='lazy' width='112' height='112' style='object-fit: cover' src='/assets/nice_emoji.gif'>";
         break;
 
       case 5:
-        book.nota =
-          "<br>&#9733;&#9733;&#9733;&#9733;&#9733;<br><img loading='lazy' width='112' height='112' style='object-fit: cover' src='/assets/absolute_cinema.webp'>";
+        book.nota = `<br>${stars(5)}<br>` +
+          "<img loading='lazy' width='112' height='112' style='object-fit: cover' src='/assets/absolute_cinema.webp'>";
         break;
     }
 
@@ -153,7 +160,7 @@ export function books() {
             "class": "book_info_book",
             "id": `${slug(book.title)}_info_book`,
             "style":
-              "background-color: var(--bg-0); padding: 10px; border-radius: 5px; width: fit-content; height: fit-content",
+              "background-color: var(--bg-0); padding: 10px; border-radius: var(--radius-lg); width: fit-content; height: fit-content",
           },
           tag("img", {
             "loading": "lazy",

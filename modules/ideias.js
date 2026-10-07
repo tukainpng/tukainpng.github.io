@@ -36,7 +36,9 @@ export function ideias() {
 
     switch (i.stat) {
       case 1:
-        details("<span class='status' data-status='doing'>Parcialmente feito</span>");
+        details(
+          "<span class='status' data-status='doing'>Parcialmente feito</span>",
+        );
         break;
       case 2:
         details("<span class='status' data-status='done'>Feito</span>");

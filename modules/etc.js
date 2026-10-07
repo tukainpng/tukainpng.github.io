@@ -24,7 +24,7 @@ Se você está vendo esta página, é porquê seu navegador não o redirecionou 
   const io = new IntersectionObserver((entry) => {
     entry.forEach((entry) => {
       if (entry.isIntersecting) {
-        window.location.href = "/etc/";
+        globalThis.location.href = "/etc/";
         observador.unobserve(e);
       }
     });

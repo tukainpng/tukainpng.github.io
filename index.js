@@ -5,13 +5,18 @@ Este site não é completamente otimizado para o Firefox.
 
 Algumas partes do site podem ser renderizadas de forma incorreta ou falhar em renderizar por completo.
 
+PS: Esse aviso só será mostrado uma vez.
+
 Desculpe pelo transtorno.
-    -- Tukain
+    — Tukain
 `;
 
-if (isFirefox) {
+// Checar se o Firefox está sendo utilizado e se o aviso de compatibilidade
+// já foi mostrado ou não.
+if (isFirefox && !localStorage.firefoxWarning) {
   alert(errorMsg);
   console.error(errorMsg);
+  localStorage.setItem("firefoxWarning", isFirefox ? "true" : "false");
 }
 
 import { tag } from "./modules/common.js";

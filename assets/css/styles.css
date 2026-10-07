@@ -64,9 +64,9 @@
   --ac-3: 244, 198, 145;
 
   /* Complementares */
-  --red:    #d66a55;
-  --green:  #8fa56f;
-  --blue:   #7899a3;
+  --red: #d66a55;
+  --green: #8fa56f;
+  --blue: #7899a3;
   --purple: #a88bb8;
   --orange: #d98a4e;
   --yellow: #d6ad58;
@@ -92,7 +92,6 @@
   --shadow-2:
     0 8px 24px rgba(0, 0, 0, 0.28);
 }
-
 
 :root.light-mode {
   /* ─────────────────────────────────────────
@@ -560,10 +559,10 @@ blockquote {
   &.quote {
     background:
       radial-gradient(
-        circle at 100% 0%,
-        rgba(var(--ac-0), 0.16),
-        transparent 35%
-      ),
+      circle at 100% 0%,
+      rgba(var(--ac-0), 0.16),
+      transparent 35%
+    ),
       var(--bg-0);
 
     border-left-color: rgb(var(--ac-0));
@@ -606,10 +605,10 @@ blockquote {
     color: var(--fg);
     background:
       radial-gradient(
-        circle at 100% 0%,
-        rgba(var(--ac-1), 0.16),
-        transparent 35%
-      ),
+      circle at 100% 0%,
+      rgba(var(--ac-1), 0.16),
+      transparent 35%
+    ),
       var(--bg-0);
     border-left-color: rgb(var(--ac-1));
 
@@ -638,6 +637,7 @@ blockquote {
     left: 0;
     padding: 0.3em 1em;
     border-end-end-radius: var(--radius-md);
+    border-start-start-radius: 5px;
     color: var(--bg-1);
     background-color: rgb(var(--ac-0));
     font-weight: normal;

@@ -2,7 +2,8 @@
 
 export const posts = [
   {
-    title: "Uma possível solução para <s>sideload</s> instalação de Apps no Android",
+    title:
+      "Uma possível solução para <s>sideload</s> instalação de Apps no Android",
     date: "06.10.2026",
     content: `
 Você provavelmente já sabe disso, mas se não souber, a Google anunciou em 
@@ -49,7 +50,7 @@ ou não.
 
 Bom, pelo menos até o momento essa é uma possível solução para a instalação de
 Apps a partir de janeiro de 2027.
-`
+`,
   },
   {
     title: "Não me sinto mais vontade para programar",
@@ -111,7 +112,7 @@ que prestei deu ou vai dar algum retorno significativo.
 
 Eu só... não quero que tenha sido em vão, e espero não estar me enganando
 quando me convenço de que não foi.
-`
+`,
   },
   {
     title: "Eu sou viciado em computador?",
