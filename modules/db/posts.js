@@ -50,6 +50,15 @@ ou não.
 
 Bom, pelo menos até o momento essa é uma possível solução para a instalação de
 Apps a partir de janeiro de 2027.
+
+#+begin_quote
+<span>Uma pequena observação</span>
+
+O 80bee também possui um site, o [[https://80bee.com][80bee.com]] e nele você também
+tem acesso à ferramentas do ADB, tem até ferramentas a mais que o App. Por exemplo,
+um configurador de GCAM! Então se você tem um computador disponível, ele é uma boa
+ferramenta para se usar, ele funcionou até mesmo com o Chromebook do meu trabalho.
+#+end_quote
 `,
   },
   {
