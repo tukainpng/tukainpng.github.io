@@ -26,9 +26,9 @@ executar commandos através de uma CLI, nem que você não possa usar um App que
 automatize esse processo.
 
 Se você costuma customizar o seu Android, provavelmente você já ouviu falar do
-[[https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api&hl=pt_BR][Shizuku]], e ele é um dos dois apps que vamos 
-precisar para ter a experiência de instalar Apps sem que o Google fique
-enchendo o saco.
+[[https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api&hl=pt_BR][Shizuku]],
+e ele é um dos dois apps que vamos precisar para ter a experiência de instalar
+Apps sem que o Google fique enchendo o saco.
 
 O segundo App é o [[https://play.google.com/store/apps/details?id=com.eightybee.app&hl=pt_BR][80bee]]
 (sim, é um trocadilho com ADB). Com o 80bee podemos executar qualquer commando do 
