@@ -2,6 +2,105 @@
 
 export const posts = [
   {
+    title: "O NixOS é uma distro muito bacana",
+    date: "10.10.2026",
+    content: `
+#+begin_note
+Antes de qualquer coisa, não, eu não vou tentar te evangelizar para usar o NixOS
+nem nada do gênero. Ele não é o Santo Graal do mundo Linux e também tem vários
+problemas (como por exemplo o tanto que o gerenciador de pacotes dele depende
+depende do Github), o que eu quero fazer aqui é contar um pouco da minha
+experiência como um usuário.
+#+end_note
+
+Se você está nesse site eu posso presumir muitas coisas de você, uma delas é a
+que você no mínimo sabe o que o Linux é ou já testou alguma distro. Se você
+testou alguma distro ou usa uma regularmente (como por exemplo o Arch ou Fedora)
+há a possibilidade de já ter ouvido falar do [[https://nixos.org][NixOS]], até
+porque usuário de NixOS é uma praga que nem usuário de Arch Linux, sempre que puder
+vai fazer questão de dizer que usa.
+
+Eu estou usando ele a alguns meses e sinceramente, eu tô bem satisfeito. Ele é
+extremamente conveniente, estável e fácil de utilizar (depois da dor de cabeça
+de aprender a configurar ele, é claro).
+
+A facilidade de acesso à softwares nele é algo que eu acho muito bacana, a lógica
+de como funciona o gerenciador de pacotes dele também é muito conveniente para quem
+tem vários computadores ou que quer uma agilidade de ter um computador pronto em
+poucos minutos.
+
+Isso é algo que depois de anos fazendo **distro-hopping** trás um alívio imenso.
+
+A base imutável dele também trás uma segurança extra muito boa também. Literalmente
+se der merda com alguma configuração atual você pode "voltar no tempo" e ligar o
+PC em uma "versão" de antes de você ter aplicado a configuração que quebrou seu setup.
+
+Além de que fica extremamente fácil de ter uma cópia das suas configurações, softwares
+e etc, porque você só vai precisar de um repositório Git com alguns arquivos de texto
+nele.
+
+A linguagem de programação usada nele é bem... esquisita.
+
+#+begin_src
+let
+  a = {
+    x = 1;
+    y = 2;
+    z = 3;
+  };
+in
+with a; [ x y z ]
+#+end_src
+#+begin_example
+[ 1 2 3 ]
+#+end_example
+
+Eu me pergunto se não era mais fácil usar uma linguagem como a [[https://lua.org][Lua]]
+por exemplo, mas tudo bem, a gente aprende a lidar com isso com o tempo. Principalmente
+quando tudo o que você costuma alterar é só uma tabela com os softwares que você usa, tipo:
+
+#+begin_src
+environment.systemPackages = with pkgs; [
+  firefox
+  mpv
+  helix
+  audacious
+]
+#+end_src
+
+Tem também as tais das [[https://wiki.nixos.org/wiki/Flakes][**Flakes**]], mas eu prefiro
+não usar (Ô trequinho chato de se entender viu). Elas são, em tese, algo para facilitar
+a vida de quem usa o NixOS, mas acabam sendo complicadas de se entender direito e
+qualquer coisa feita com elas pode ser chamado de magia negra na minha opinião.
+A linguagem de programação do Nix já é esquisita o suficiente, não precisava
+complicar mais!
+
+Enfim, o resumo da ópera é que depois da dor de cabeça inicial, você se acostuma com
+como ele funciona e por fim, você consegue achar conforto nele.
+
+Eu acho ele tão conveniente quanto um Arch Linux com AUR pré-configurado, só que
+com muito mais facilidade de recuperar o seu sistema quando algo inevitavelmente
+quebrar.
+
+#+begin_quote
+Sempre façam backups pessoal! Nunca se sabe quando o seu HD/SSD vai fazer cosplay de
+Kurt Cobain.
+#+end_quote
+
+No meu caso dá para dizer que as facilidades e conveniências que o NixOS trás para mim
+são o que hoje em dia me deixam satisfeito com meu setup. Quase sempre que eu quiser
+instalar algo nele, ou já vai estar presente nos repositórios oficiais (que são enormes)
+ou a comunidade já fez um pacote que pode ser instalado facilmente sem interferir com
+nenhuma configuração do sistema (tem essa também: cada pacote é isolado um do outro
+praticamente). Esse foi o meu caso com o navegador [[https://helium.computer][Helium]]
+por exemplo, que está bem popular na bolha da internet que eu faço parte. Só precisei
+ir a um repositório no Github, clonar ele, rodar 1 comando e pronto, já podia usar ele.
+
+Esse tipo de coisa é o que prende alguém em algum sistema: a conveniência e facilidade
+de uso. E ele tem essas qualidades, do jeito dele, claro.
+    `,
+  },
+  {
     title:
       "Uma possível solução para <s>sideload</s> instalação de Apps no Android",
     date: "06.10.2026",
