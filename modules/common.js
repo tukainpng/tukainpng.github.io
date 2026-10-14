@@ -76,6 +76,19 @@ export function markup(text) {
     "volatile",
     "true",
     "false",
+    "str",
+    "i8",
+    "i16",
+    "i32",
+    "i64",
+    "u8",
+    "u16",
+    "u32",
+    "u64",
+    "f32",
+    "f64",
+    "opaque",
+    "size",
   ];
 
   const keywords = [
@@ -85,6 +98,7 @@ export function markup(text) {
     "union",
     "enum",
     "typedef",
+    "type",
     "const",
     "auto",
     "return",
@@ -101,10 +115,29 @@ export function markup(text) {
     "inline",
     "goto",
     "extern",
+    "export",
+    "use",
     "if",
+    "in",
+    "of",
+    "let",
+    "with",
+    "function",
+    "fn",
+    "defer",
+    "yield",
+    "match",
   ];
 
-  const builtins = ["sizeof", "typeof", "offsetof"];
+  const builtins = [
+    "sizeof",
+    "typeof",
+    "offsetof",
+    "assert",
+    "len",
+    "free",
+    "alloc",
+  ];
 
   const ponctuation = ["[", "]", "{", "}", ";"];
 

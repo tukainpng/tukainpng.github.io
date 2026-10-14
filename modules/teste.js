@@ -130,6 +130,82 @@ bool IsPathFile(const char *path)
 
 #+end_src
 
+#+begin_src
+// https://harelang.org/tutorials/introduction/#handling-errors-with-match
+
+use errors;
+use fmt;
+use fs;
+use fs::{flag};
+use io;
+use os;
+use strings;
+
+export fn main() void = {
+	const path = os::args[1];
+	const oflags = flag::WRONLY | flag::TRUNC;
+
+	const file = match (os::create(path, 0o644, oflags)) {
+	case let file: io::file =>
+		yield file;
+	case errors::noaccess =>
+		fmt::fatalf("Error opening {}: Access denied.", path);
+	case let err: fs::error =>
+		fmt::fatalf("Error opening {}: {}", path, fs::strerror(err));
+	};
+	defer io::close(file)!;
+
+	const buf = strings::toutf8("Hello world!\\n");
+	match (io::write(file, buf)) {
+	case let err: io::error =>
+		fmt::fatalf("Error writing file: {}", io::strerror(err));
+	case let z: size =>
+		assert(z == len(buf), "Unexpected short write");
+	};
+};
+#+end_src
+
+#+begin_src
+use raylib::*;
+
+export fn main() int = {
+	const screen_width: int = 800;
+	const screen_height: int = 450;
+
+	const bg = Color {
+		r=0x18,
+		g=0x18,
+		b=0x18,
+		a=0xFF,
+	};
+
+	const fg = Color {
+		r=0xEE,
+		g=0xEE,
+		b=0xEE,
+		a=0xFF,
+	};
+
+	init_window(screen_width, screen_height, "Raylib [core] example - basic window");
+	set_target_fps(60);
+
+	const text: str = "Raylib Rocks";
+	const font_size: int = 30;
+
+	for (!window_should_close()) {
+		begin_drawing();
+		clear_background(bg);
+		draw_text(text, screen_width / 2 - (measure_text(text, font_size) / 2), screen_height / 2, font_size, fg);
+		end_drawing();
+	};
+
+	close_window();
+
+	return 0;
+
+};
+#+end_src
+
 * Código dentro de parágrafo
 
 Lorem Ipsum Dolor <code>Sit</code> Amet
