@@ -123,9 +123,9 @@ body {
 noscript {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-self: center;
-  padding: 1em;
+  padding: 4em;
 }
 
 a {
