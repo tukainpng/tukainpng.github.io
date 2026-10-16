@@ -23,6 +23,7 @@
     width: 100%;
     position: initial;
     align-items: center;
+    box-shadow: none;
 
     .mobile_menu {
       display: initial;
