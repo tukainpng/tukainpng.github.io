@@ -38,28 +38,6 @@ ligar. (foi mal ae, Hare, mas você tá inclusa nesse bolo).
 #+end_note
 
 #+begin_src
-// Macros
-#include <stdio.h>
-#pragma once
-#define NOB_IMPLEMENTATION
-
-// Types
-true false char volatile static signed unsigned short int long float
-double void _Bool _Complex _Imaginary size_t ptrdiff_t int8_t int16_t
-int32_t int64_t uint8_t uint16_t uint32_t uint64_t intptr_t uintptr_t
-
-// Keywords
-auto break case const continue default do else enum extern for goto
-if inline register return struct switch typedef union while 
-
-// Built-ins
-sizeof typeof offsetof
-
-// Etc
-NULL
-#+end_src
-
-#+begin_src
 #include <stdio.h>
 #include <stdbool.h>
 

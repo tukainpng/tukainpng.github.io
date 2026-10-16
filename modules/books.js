@@ -180,7 +180,7 @@ export function books() {
             "p",
             {
               "style":
-                "font-family: 'code'; margin-top: 10px; text-align: center; font-size: larger",
+                "font-family: 'Iosevka Mono', 'Jetbrains Mono', 'Noto Sans Mono', 'Courier New', 'Courier', 'monospace'; margin-top: 10px; text-align: center; font-size: larger",
             },
             `${book.progress.current}/${book.progress.maximum}`,
           ),
@@ -274,7 +274,8 @@ export function books() {
           tag(
             "p",
             {
-              "style": "margin: 0; text-align: center; font-family: 'code'",
+              "style":
+                "margin: 0; text-align: center; font-family: 'Iosevka Mono', 'Jetbrains Mono', 'Noto Sans Mono', 'Courier New', 'Courier', 'monospace'",
             },
             `${book.progress.current}/${book.progress.maximum}`,
           ),

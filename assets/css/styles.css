@@ -1,17 +1,5 @@
 @import url("./intro.css");
 
-@font-face {
-  font-family: text;
-  src: url("/assets/fonts/Nunito-Regular.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: code;
-  src: url("/assets/fonts/GoogleSansCode-Regular.ttf");
-  font-display: swap;
-}
-
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -58,7 +46,7 @@
   --radius-xl: 1.5rem;
   --radius-pill: 2.5rem;
   --shadow-1: 0 2px 4px rgb(0 0 0 / .18);
-  --shadow-2: 0 6px 12px rgb(0 0 0 / .28);
+  --shadow-2: inset -5px 0px 5px -6px rgb(0 0 0 / .28);
 }
 
 :root.light-mode {
@@ -116,7 +104,7 @@ body {
   overflow-x: hidden;
   color: var(--fg);
   background: var(--bg-1);
-  font: large/1.5 text,system-ui,sans-serif;
+  font: large/1.5 "Google Sans", "San Francisco", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -262,7 +250,8 @@ p {
     border-radius: var(--radius-sm);
     color: var(--fg);
     background: var(--bg-0);
-    font: medium code,monospace;
+    font: medium "Iosevka Mono", "Jetbrains Mono", "Fira Code",
+      "Noto Sans Mono", "Roboto", monospace;
   }
 }
 
@@ -291,7 +280,8 @@ pre {
   padding: 16px 18px;
   overflow: scroll;
   border: 1px solid var(--outline-variant);
-  font: 1em/1.5 code,monospace;
+  font: 1em/1.5 "Iosevka Mono", "Jetbrains Mono", "Fira Code", "Noto Sans Mono",
+    "Roboto", monospace;
   box-shadow: var(--shadow-1);
 
   &::-webkit-scrollbar {
@@ -387,7 +377,7 @@ pre {
     color: var(--bg-1);
     background: rgb(var(--ac-0));
     transform: translateY(-2px);
-    box-shadow: var(--shadow-2);
+    box-shadow: var(--shadow-1);
   }
 
   &:active {
@@ -624,7 +614,7 @@ table {
     z-index: 300;
     scale: 1.2;
     background: var(--bg-2);
-    box-shadow: var(--shadow-2);
+    box-shadow: var(--shadow-1);
 
     img {
       border-end-start-radius: 0;
@@ -793,7 +783,7 @@ details {
   &[open] {
     border-color: color-mix(in srgb,var(--status-color)
       50%,var(--outline-variant));
-    box-shadow: var(--shadow-2);
+    box-shadow: var(--shadow-1);
   }
 
   &:hover {
@@ -903,7 +893,7 @@ section#mobile_menu {
         color: var(--bg-1);
         background: rgb(var(--ac-0));
         border-color: rgb(var(--ac-0));
-        box-shadow: var(--shadow-2);
+        box-shadow: var(--shadow-1);
       }
 
       &:active {
@@ -935,7 +925,7 @@ section#mobile_menu {
       color: var(--bg-1);
       background: rgb(var(--ac-0));
       border-color: rgb(var(--ac-0));
-      box-shadow: var(--shadow-2);
+      box-shadow: var(--shadow-1);
     }
 
     &:active {

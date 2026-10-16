@@ -3,7 +3,8 @@ const isFirefox = navigator.userAgent.toLowerCase().includes("firefox");
 const errorMsg = `ATENÇÃO:
 Este site não é completamente otimizado para o Firefox.
 
-Algumas partes do site podem ser renderizadas de forma incorreta ou falhar em renderizar por completo.
+Algumas partes do site podem ser renderizadas de forma incorreta ou falhar em
+renderizar por completo.
 
 PS: Esse aviso só será mostrado uma vez.
 
@@ -43,17 +44,7 @@ function main() {
       tag(
         "div",
         { "class": "desktop_menu" },
-        tag(
-          "a",
-          { "href": "/#home" },
-          tag("img", {
-            "loading": "lazy",
-            "src": "/assets/fav.png",
-            "style": "margin: 0 auto; border-radius: 5px",
-            "width": "80",
-            "height": "80",
-          }),
-        ),
+        tag("a", { "href": "/#home", "class": "button" }, "Início"),
       ),
       tag("div", { "class": "desktop_menu", "id": "desktop_menu" }),
       tag(

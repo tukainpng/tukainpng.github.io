@@ -61,8 +61,7 @@ export function create_post() {
         tag("a", {
           "class": "button",
           "style": "display: inline-block",
-          "href":
-            `mailto:contato.nest604@passinbox.com?subject=Feedback: ${post.title}`,
+          "href": `mailto:tukain@duck.com?subject=Feedback: ${post.title}`,
         }, "Feedback"),
       ),
     );
