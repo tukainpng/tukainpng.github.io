@@ -249,7 +249,7 @@ export function markup(text) {
   return parsedTables
     .replaceAll(
       /^$/gm,
-      "<span id='padding' style='display: block; margin-top: 1em'></span>",
+      "<span id='padding'></span>",
     )
     .replaceAll("#+begin_src", "<pre class='src'>")
     .replaceAll("#+end_src", "</pre>")

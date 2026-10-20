@@ -29,7 +29,7 @@
   --outline: #8b949e;
   --outline-variant: #30363d;
   --ac-0: 88,166,255;
-  --ac-1: 47,129,247;
+  --ac-1: 147, 83, 224;
   --ac-2: 121,192,255;
   --ac-3: 165,214,255;
   --red: #ff7b72;
@@ -58,7 +58,7 @@
   --outline: #57606a;
   --outline-variant: #d0d7de;
   --ac-0: 9,105,218;
-  --ac-1: 9,105,218;
+  --ac-1: 104, 22, 204;
   --ac-2: 84,174,255;
   --ac-3: 128,189,255;
   --red: #cf222e;
@@ -253,6 +253,11 @@ p {
     font: medium "Iosevka Mono", "Jetbrains Mono", "Fira Code",
       "Noto Sans Mono", "Roboto", monospace;
   }
+}
+
+#padding {
+  display: block;
+  margin-top: 1.5em;
 }
 
 li {
@@ -581,6 +586,12 @@ table {
   }
 }
 
+.book_shelf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .book {
   height: fit-content;
   margin: 5px;
@@ -647,15 +658,40 @@ table {
 
   .book_info_book {
     grid-area: book;
+    background-color: var(--bg-0);
+    padding: 10px;
+    border-radius: var(--radius-lg);
+    width: fit-content;
+    height: fit-content;
+
+    img {
+      margin-top: 0;
+      object-fit: cover;
+    }
+
+    p {
+      font-family: 'Iosevka Mono', 'Jetbrains Mono', 'Noto Sans Mono',
+        'Courier New', 'Courier', 'monospace';
+      margin-top: 10px;
+      text-align: center;
+      font-size: larger;
+    }
   }
+
   .book_info_review {
     grid-area: review;
   }
+
   .book_info_rating {
     grid-area: rating;
+    text-align: center;
   }
+
   .book_info_exit {
     grid-area: exit;
+    width: -webkit-fill-available;
+    margin: auto;
+    text-align: center;
   }
 
   .book_info_book img {
@@ -680,6 +716,16 @@ table {
   }
 }
 
+#game_library {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div:has(.game) {
+  margin: 5px;
+}
+
 .game {
   position: relative;
   z-index: 100;
@@ -687,12 +733,19 @@ table {
   height: 180px;
   margin: 0;
   transition: scale 300ms ease,filter 300ms ease;
+  animation: slide-down 800ms both;
 
   &:hover {
     z-index: 200;
     scale: 1.15;
     filter: drop-shadow(0 10px 18px rgb(0 0 0 / .25));
   }
+}
+
+#links_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #searchBox {

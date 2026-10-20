@@ -18,10 +18,7 @@ export function links() {
           "Estes são alguns links dos [[https://neocities.org/site/tukainpng/follows][sites que eu acompanho]].",
         ),
       ),
-      tag("div", {
-        "id": "links_container",
-        "style": "display: flex; flex-wrap: wrap; justify-content: center",
-      }),
+      tag("div", { "id": "links_container" }),
     ),
   );
 

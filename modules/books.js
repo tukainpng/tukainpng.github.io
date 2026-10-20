@@ -80,10 +80,7 @@ export function books() {
             "id": "books_read",
           },
           tag("h4", {}, "Lidos"),
-          tag("div", {
-            "class": "book_shelf",
-            "style": "display: flex; flex-wrap: wrap; justify-content: center",
-          }),
+          tag("div", { "class": "book_shelf" }),
         ),
         // Livros sendo lidos
         tag(
@@ -93,10 +90,7 @@ export function books() {
             "id": "books_reading",
           },
           tag("h4", {}, "Lendo"),
-          tag("div", {
-            "class": "book_shelf",
-            "style": "display: flex; flex-wrap: wrap; justify-content: center",
-          }),
+          tag("div", { "class": "book_shelf" }),
         ),
         // Livros não lidos
         tag(
@@ -106,10 +100,7 @@ export function books() {
             "id": "books_unread",
           },
           tag("h4", {}, "Não lidos"),
-          tag("div", {
-            "class": "book_shelf",
-            "style": "display: flex; flex-wrap: wrap; justify-content: center",
-          }),
+          tag("div", { "class": "book_shelf" }),
         ),
       ),
     ),
@@ -159,8 +150,6 @@ export function books() {
           {
             "class": "book_info_book",
             "id": `${slug(book.title)}_info_book`,
-            "style":
-              "background-color: var(--bg-0); padding: 10px; border-radius: var(--radius-lg); width: fit-content; height: fit-content",
           },
           tag("img", {
             "loading": "lazy",
@@ -168,7 +157,6 @@ export function books() {
             "title": book.title,
             "width": "250",
             "height": "400",
-            "style": "margin-top: 0; object-fit: cover",
             "src": `/assets/img/books/${book.cover}`,
           }),
           tag("progress", {
@@ -176,14 +164,7 @@ export function books() {
             "value": `${book.progress.current}`,
             "max": `${book.progress.maximum}`,
           }),
-          tag(
-            "p",
-            {
-              "style":
-                "font-family: 'Iosevka Mono', 'Jetbrains Mono', 'Noto Sans Mono', 'Courier New', 'Courier', 'monospace'; margin-top: 10px; text-align: center; font-size: larger",
-            },
-            `${book.progress.current}/${book.progress.maximum}`,
-          ),
+          tag("p", {}, `${book.progress.current}/${book.progress.maximum}`),
         ),
         tag(
           "div",
@@ -199,7 +180,6 @@ export function books() {
         ),
         tag("p", {
           "class": "book_info_rating",
-          "style": "text-align: center",
           "id": `${slug(book.title)}_rating`,
         }),
         tag(
@@ -207,8 +187,6 @@ export function books() {
           {
             "class": "book_info_exit button",
             "id": `${slug(book.title)}_exit_button`,
-            "style":
-              "width: -webkit-fill-available; margin: auto; text-align: center",
             "onclick": "history.back()",
             "href": `#bookshelf/${slug(book.title)}`,
           },

@@ -20,10 +20,7 @@ Essa é a minha atual coleção de jogos, do meu Nintendo Switch.`,
   );
 
   document.getElementById("jogos").appendChild(
-    tag("div", {
-      "id": "game_library",
-      "style": "display: flex; flex-wrap: wrap; justify-content: center",
-    }),
+    tag("div", { "id": "game_library" }),
   );
 
   let game_counter = 0;
@@ -32,18 +29,14 @@ Essa é a minha atual coleção de jogos, do meu Nintendo Switch.`,
     document.getElementById("game_library").appendChild(
       tag(
         "div",
-        {
-          "style": `margin: 5px;`,
-        },
+        {},
         tag("img", {
           "loading": "lazy",
           "class": "game",
           "alt": slug(String(game.title)),
           "title": String(game.title),
           "src": `/assets/img/games/${game.cover}`,
-          "style": `animation: slide-down 800ms both; animation-delay: ${
-            1 * game_counter
-          }00ms`,
+          "style": `animation-delay: ${1 * game_counter}00ms`,
         }),
       ),
     );
