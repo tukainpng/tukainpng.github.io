@@ -2,13 +2,6 @@
 
 export const posts = [
   {
-    title: "Teste",
-    date: "21.10.2026",
-    content: `
-{[https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxyh1TE2tLdz1wHhSb8AYDHk1osfQudPpMtHAuY7iX7h-2Uo-mE20J_eo&s=10]}
-    `,
-  },
-  {
     title: "O NixOS é uma distro muito bacana",
     date: "10.10.2026",
     content: `
