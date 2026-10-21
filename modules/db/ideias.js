@@ -42,23 +42,25 @@ Atualmente, é possível alternar entre temas com a tecla <code>T</code>.
     stat: 2,
     content: `
 A função <code>markup()</code> é a responsável por gerar strings HTML a partir
-de uma sintaxe para texto, tentando replicar a sintaxe do
-[[https://orgmode.org][Org Mode]] (com algumas adições/modificações).
+de uma sintaxe para texto, inspirada na sintaxe do
+[[https://orgmode.org][Org Mode]] e
+[[https://www.markdownguide.org/cheat-sheet/][Markdown]].
 
-No momento, ela é "compatível" com estas sintaxes:
+No momento, estas são as opções de formatação disponíveis:
 
-- listas desordenadas (<code>-&nbsp;</code>)
-- citações (<code>&#35;+begin_quote</code> e <code>&#35;+end_quote</code>)
-- exemplos (<code>&#35;+begin_example</code> e <code>&#35;+end_example</code>)
-- blocos de código (<code>&#35;+begin_src</code> e <code>&#35;+end_src</code>)
-- heading de nível 1 (<code>&#42;&nbsp;</code>)
-- links (<code>&#91;&#91;https://google.com&#93;&#91;Google&#93;&#93;</code>)
-- texto com cores diferentes (<code>&#44;&#44;cor&#58;texto&#44;&#44;</code>)
-- texto em negrito (<code>&#42;texto&#42;</code>)
-- texto itálico (<code>&#42;&#42;texto&#42;&#42;</code>)
-- texto negrito e itálico (<code>&#42;&#42;&#42;texto&#42;&#42;&#42;</code>)
-- texto pré-formatado/código (<code>&#39;&#39;texto&#39;&#39;</code>)
+- listas desordenadas (''-&nbsp;'')
+- citações (''&#35;+begin_quote'' e ''&#35;+end_quote'')
+- exemplos (''&#35;+begin_example'' e ''&#35;+end_example'')
+- blocos de código (''&#35;+begin_src'' e ''&#35;+end_src'')
+- heading de nível 1 (''&#42;&nbsp;'')
+- links (''&#91;&#91;https://google.com&#93;&#91;Google&#93;&#93;'')
+- texto com cores diferentes (''&#44;&#44;cor&#58;texto&#44;&#44;'')
+- texto em negrito (''&#42;texto&#42;'')
+- texto itálico (''&#42;&#42;texto&#42;&#42;'')
+- texto negrito e itálico (''&#42;&#42;&#42;texto&#42;&#42;&#42;'')
+- texto pré-formatado/código (''&#39;&#39;texto&#39;&#39;'')
 - tabelas ([[https://www.markdownguide.org/extended-syntax/#tables][Que nem no Markdown]])
+- images (''&#123;&#91;imagem&#93;&#125;'')
 `,
   },
   {

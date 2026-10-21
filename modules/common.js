@@ -141,17 +141,19 @@ export function markup(text) {
 
   const ponctuation = ["[", "]", "{", "}", ";"];
 
-  const etc = ["NULL", "0x", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  const etc = [
+    "NULL",
+  ];
 
   const htmlEntities = {
     ...Object.fromEntries(
-      types.map((k) => [k, `<span class='yellow'>${k}</span>`]),
+      types.map((k) => [k, `<span class='blue'>${k}</span>`]),
     ),
     ...Object.fromEntries(
       keywords.map((k) => [k, `<span class='red'>${k}</span>`]),
     ),
     ...Object.fromEntries(
-      builtins.map((k) => [k, `<span class='blue'>${k}</span>`]),
+      builtins.map((k) => [k, `<span class='cyan'>${k}</span>`]),
     ),
     ...Object.fromEntries(
       ponctuation.map(
@@ -160,7 +162,6 @@ export function markup(text) {
     ),
     ...Object.fromEntries(etc.map((k) => {
       if (k === "NULL") return [k, "<span class='purple'>NULL</span>"];
-      if (k === "0x") return [k, "<span class='purple'>&#48;x</span>"];
       return [k, `<span class='purple'>&#${48 + parseInt(k)};</span>`];
     })),
     "//": "<span class='dark-grey'>//",
@@ -211,7 +212,7 @@ export function markup(text) {
       return `#+begin_${b1}${
         content.replace(tokenRegex, (char) => {
           if (char.startsWith('"') || char.startsWith("'")) {
-            return `<span class='orange'>${char}</span>`;
+            return `<span class='green'>${char}</span>`;
           }
           return htmlEntities[char] || char;
         })
@@ -255,7 +256,7 @@ export function markup(text) {
     .replaceAll("#+end_src", "</pre>")
     .replaceAll(
       /(\w+)(&#40;)(.*?)(&#41;)/gm,
-      "<span class='green'>$1</span><span class='grey'>$2</span>$3<span class='grey'>$4</span>",
+      "<span class='yellow'>$1</span><span class='grey'>$2</span>$3<span class='grey'>$4</span>",
     )
     .replaceAll(/(&#40;|&#41;)/g, "<span class='grey'>$1</span>")
     .replaceAll(/(&#35;\w+)/gm, "<span class='orange'>$1</span>")
@@ -279,6 +280,8 @@ export function markup(text) {
     .replaceAll(/''([^'\n]+)''/g, "<code>$1</code>")
     .replaceAll(/\n- (.*)/gm, "<li>$1</li>")
     .replaceAll(/\n\* (.*$\n)/gm, "<h2>$1</h2>")
+    .replaceAll("{[", "<img loading='lazy' src='")
+    .replaceAll("]}", "'>")
     .replaceAll("[[", "<a target='_blank' href='")
     .replaceAll("][", "'>")
     .replaceAll("]]", "</a>");

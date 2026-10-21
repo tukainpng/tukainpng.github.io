@@ -2,6 +2,13 @@
 
 export const posts = [
   {
+    title: "Teste",
+    date: "21.10.2026",
+    content: `
+{[https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxyh1TE2tLdz1wHhSb8AYDHk1osfQudPpMtHAuY7iX7h-2Uo-mE20J_eo&s=10]}
+    `,
+  },
+  {
     title: "O NixOS é uma distro muito bacana",
     date: "10.10.2026",
     content: `
@@ -417,7 +424,7 @@ dele, o init system, consumo de RAM, etc.
 Ainda estou me adaptando a ele, mas o que eu já posso dizer é que ele me lembra
 (muito) o OpenBSD.
 
-<img loading='lazy' src='/assets/3cc9c2980af43d306f77f6210a094129.png'>
+{[assets/3cc9c2980af43d306f77f6210a094129.png]}
 
 * Gerenciamento de pacotes
 
@@ -547,7 +554,7 @@ Ainda faltam alguns ajustes e otimizações a serem feitas, afinal de contas eu 
 estava planejando tacar uma bomba de hidrogênio num site que eu passei meses
 desenvolvendo.
 
-<img loading="lazy" src="/assets/hammy_crying.gif">
+{[/assets/hammy_crying.gif]}
 
 Para além disso, eu também não consegui replicar absolutamente tudo do meu site,
 e tive que fazer algumas adaptações. Por exemplo, antes, cada livro da minha
@@ -902,7 +909,7 @@ Um site simples é infinitas vezes mais versátil do que qualquer outra coisa.
 A parte mais maneira desse **Workflow** é que você pode literalmente selecionar
 qualquer elemento do site, e ficar modificando o CSS, e então, salvar o arquivo!
 Para um site em que o CSS é extremamente relevante (como esse) isso é uma **Killer Feature**.
-<img loading='lazy' src='/assets/chrome_devtools_screenshot.png'>
+{[/assets/chrome_devtools_screenshot.png]}
 `,
   },
   {
@@ -1084,7 +1091,7 @@ E então, depois de umas duas horas +/-, eu fiz um script em ''Elisp''
 que gera esses arquivos de configuração para mim e deixei ele pronto para
 executar sempre que o Emacs é aberto.
 
-<img loading="lazy" src="/assets/theme_switcher.gif">
+{[/assets/theme_switcher.gif]}
 
 A forma como ele funciona é bem simples: eu defini algumas variáveis contendo
 as cores que vou utilizar nas configurações (por exemplo, ''red'') e
@@ -1224,7 +1231,7 @@ Sendo assim, eu consigo fazer esse tipo de coisa aqui:
 "Perfeitamente equilibrado, como tudo deve ser."
 #+end_quote
 
-<img loading="lazy" src="https://i.redd.it/qpbqimfqx4p71.jpg">
+{[https://i.redd.it/qpbqimfqx4p71.jpg]}
 
 * Meu novo site
 
@@ -1570,7 +1577,7 @@ Se você quiser ver ele, é só "[[https://ventriloquo.github.io/yearnyouahaskel
 
 * I HAVE HOPE!!!
 
-<img loading="lazy" src="/assets/hope.jpg">
+{[/assets/hope.jpg]}
 
 VALVE, LANÇA HALF-LIFE 3 PELO AMOR DE DEEEUUUSS 😭😭😭😭
 `,

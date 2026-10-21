@@ -210,4 +210,6 @@ document.getElementById("theme_switcher_mobile").addEventListener(
 
 if (localStorage.theme === "light") {
   document.documentElement.classList.add("light-mode");
+} else {
+  document.documentElement.classList.add("dark-mode");
 }

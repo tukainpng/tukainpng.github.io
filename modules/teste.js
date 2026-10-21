@@ -165,6 +165,7 @@ export fn main() int = {
 	};
 
 	init_window(screen_width, screen_height, "Raylib [core] example - basic window");
+
 	set_target_fps(60);
 
 	const text: str = "Raylib Rocks";
@@ -173,7 +174,11 @@ export fn main() int = {
 	for (!window_should_close()) {
 		begin_drawing();
 		clear_background(bg);
-		draw_text(text, screen_width / 2 - (measure_text(text, font_size) / 2), screen_height / 2, font_size, fg);
+		draw_text(text,
+			screen_width / 2 - (measure_text(text, font_size) / 2),
+			screen_height / 2,
+			font_size,
+			fg);
 		end_drawing();
 	};
 
