@@ -61,7 +61,7 @@ export function create_post() {
         tag("a", {
           "class": "button",
           "style": "display: inline-block",
-          "href": `mailto:tukain@duck.com?subject=Feedback: ${post.title}`,
+          "href": `mailto:contato@tukain.win?subject=Feedback: ${post.title}`,
         }, "Feedback"),
       ),
     );
